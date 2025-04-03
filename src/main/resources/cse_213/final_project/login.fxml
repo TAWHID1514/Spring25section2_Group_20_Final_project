@@ -7,18 +7,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Login">
    <children>
-      <Label layoutX="263.0" layoutY="16.0" text="Log In">
+      <Label layoutX="273.0" layoutY="83.0" text="Log In">
          <font>
             <Font name="Georgia" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="178.0" layoutY="110.0" text="User ID:" />
-      <Label layoutX="177.0" layoutY="143.0" text="Password:" />
-      <TextField fx:id="userIDtf" layoutX="234.0" layoutY="106.0" promptText="User ID" />
-      <PasswordField fx:id="passwordTF" layoutX="234.0" layoutY="139.0" promptText="Password" />
-      <Button layoutX="309.0" layoutY="178.0" mnemonicParsing="false" onAction="#loginOA" prefHeight="26.0" prefWidth="72.0" text="Log In" />
+      <Label layoutX="178.0" layoutY="153.0" text="User ID:" />
+      <Label layoutX="177.0" layoutY="186.0" text="Password:" />
+      <TextField fx:id="userIDtf" layoutX="234.0" layoutY="149.0" promptText="User ID" />
+      <PasswordField fx:id="passwordTF" layoutX="234.0" layoutY="182.0" promptText="Password" />
+      <Button layoutX="309.0" layoutY="221.0" mnemonicParsing="false" onAction="#loginOA" prefHeight="26.0" prefWidth="72.0" text="Log In" />
+      <Label fx:id="errormassageLabel" layoutX="409.0" layoutY="150.0" prefHeight="56.0" prefWidth="191.0" textAlignment="CENTER" textFill="RED" wrapText="true" />
    </children>
 </AnchorPane>
