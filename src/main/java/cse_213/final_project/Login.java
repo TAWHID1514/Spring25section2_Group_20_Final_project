@@ -4,7 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
+
+import java.util.ArrayList;
 
 public class Login
 {
@@ -14,7 +15,6 @@ public class Login
     private PasswordField passwordTF;
     @javafx.fxml.FXML
     private Label errormassageLabel;
-
     @javafx.fxml.FXML
     public void initialize() {
     }
@@ -28,6 +28,10 @@ public class Login
         if (passwordTF.getText().isEmpty()){
             errormassageLabel.setText("Fill your accurate password");
             return;
+        }
+        else {
+            errormassageLabel.setText(" ");
+
         }
     }
 }
