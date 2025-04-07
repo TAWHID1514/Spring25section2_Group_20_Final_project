@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="498.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.TrafficControlOfficer.UpdateTollviolationRecord">
+   <children>
+      <Label layoutX="14.0" layoutY="62.0" text="Type:" />
+      <Label layoutX="14.0" layoutY="98.0" text="Registration No:" />
+      <Label layoutX="14.0" layoutY="155.0" text="Update Date:" />
+      <CheckBox layoutX="116.0" layoutY="127.0" mnemonicParsing="false" text="Paid Fine" />
+      <CheckBox layoutX="208.0" layoutY="127.0" mnemonicParsing="false" text="Unpaid Fine" />
+      <DatePicker fx:id="DateOfUpdateDP" layoutX="113.0" layoutY="151.0" promptText="Date of Update" />
+      <TextField fx:id="registrationNoTF" layoutX="113.0" layoutY="94.0" prefHeight="26.0" prefWidth="175.0" promptText="Dhaka metro XX-XXXX" />
+      <ComboBox fx:id="vehicleTypeCB" layoutX="113.0" layoutY="58.0" prefHeight="26.0" prefWidth="175.0" promptText="Vehicle Type" />
+      <TextField fx:id="TotalAmountTF" layoutX="113.0" layoutY="187.0" prefHeight="26.0" prefWidth="175.0" promptText="Total amount" />
+      <Label layoutX="14.0" layoutY="191.0" text="Amount of Taka:" />
+      <Label layoutX="208.0" layoutY="294.0" text="Update of unpaid Vehicles" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="unpaidTV" layoutX="37.0" layoutY="321.0" prefHeight="148.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="unPaidVehicleTypeCol" prefWidth="93.5999755859375" text="Vehicle Type" />
+          <TableColumn fx:id="unpaidRegNoCol" prefWidth="155.20001220703125" text="Reg No" />
+            <TableColumn fx:id="DateOfUpdateCOl" prefWidth="100.79998779296875" text="Date of Update " />
+            <TableColumn fx:id="amountofTAKAcol" prefWidth="96.800048828125" text="Amount of taka" />
+            <TableColumn fx:id="unpaidInfoCol" prefWidth="71.2000732421875" text="Info" />
+        </columns>
+      </TableView>
+      <Button layoutX="113.0" layoutY="223.0" mnemonicParsing="false" onAction="#updateButtonOS" prefHeight="26.0" prefWidth="175.0" text="Update List" />
+      <Label layoutX="360.0" layoutY="61.0" text="Update of paid Vehicles" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="paidTV" layoutX="326.0" layoutY="87.0" prefHeight="164.0" prefWidth="232.0">
+        <columns>
+          <TableColumn fx:id="paidRegNoCol" prefWidth="75.0" text="Reg No" />
+          <TableColumn fx:id="paidVehicleTypeCol" prefWidth="90.4000244140625" text="Vehicle Type" />
+            <TableColumn fx:id="paidinfoCol" prefWidth="64.79998779296875" text="Info" />
+        </columns>
+      </TableView>
+      <Line endX="499.0" layoutX="101.0" layoutY="279.0" startX="-100.0" />
+      <Line endX="86.20001220703125" endY="28.5" layoutX="225.0" layoutY="251.0" startX="86.20001220703125" startY="-249.39999389648438" />
+   </children>
+</AnchorPane>

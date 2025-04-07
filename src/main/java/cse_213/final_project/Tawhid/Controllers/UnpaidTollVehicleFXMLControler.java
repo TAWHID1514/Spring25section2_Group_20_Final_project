@@ -20,6 +20,8 @@ public class UnpaidTollVehicleFXMLControler
     @javafx.fxml.FXML
     private TableColumn tollAmountCol;
     @javafx.fxml.FXML
+    private Label massagelabe;
+    @javafx.fxml.FXML
     private TableColumn vehicleTypeCol;
 
     @javafx.fxml.FXML
@@ -28,5 +30,8 @@ public class UnpaidTollVehicleFXMLControler
 
     @javafx.fxml.FXML
     public void registerOA(ActionEvent actionEvent) {
+        if (tollAmountTF.getText().isEmpty()){
+            massagelabe.setText("Fill all text Fields");
+        }
     }
 }
