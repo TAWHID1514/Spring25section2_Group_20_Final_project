@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: 244,32,45;" type="BorderPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.Dashboard_TOCFXMLcontroller">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="14.0" layoutY="40.0" prefHeight="245.0" prefWidth="156.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#dashboardOA" prefHeight="26.0" prefWidth="209.0" text="Dashboard">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#trackUnpaidTollVehicleOA" prefHeight="26.0" prefWidth="164.0" text="Track Unpaid Toll Vehicle" />
+                  <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#UpdateTollViolationOA" prefHeight="26.0" prefWidth="162.0" text="Update Toll Violation" />
+                  <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#ManageExpemptionOA" prefHeight="26.0" prefWidth="178.0" text="Manage Exemption" />
+                  <Button layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#GenerateDailyReportOA" prefHeight="26.0" prefWidth="170.0" text="Generate daily report" />
+                  <Button layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#ResolveDipositeOA" prefHeight="26.0" prefWidth="185.0" text="Resolve Disputes" />
+                  <Button layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#GenerateTrafficReportOA" prefHeight="26.0" prefWidth="170.0" text="Generate traffic report" />
+                  <Button layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#FlagASuspicusCarOA" prefHeight="26.0" prefWidth="180.0" text="Flag a suspicus car" />
+                  <Button layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#EmergencyMovementOA" prefHeight="26.0" prefWidth="175.0" text="Emergency Movement" />
+                  <Button layoutX="10.0" layoutY="215.0" mnemonicParsing="false" onAction="#LogOutOA" prefHeight="26.0" prefWidth="164.0" text="Log out" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <Label text="Taffic control officer" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</fx:root>
