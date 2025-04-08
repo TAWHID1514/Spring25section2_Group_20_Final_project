@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.ManageExemptionController">
+   <children>
+      <Label layoutX="19.0" layoutY="80.0" text="Vehicle Type:" />
+      <Label layoutX="19.0" layoutY="110.0" text="Driving Licence No:" />
+      <Label layoutX="19.0" layoutY="145.0" text="Vechicle Reg No:" />
+      <Label layoutX="20.0" layoutY="182.0" text="Exemotion Reason:" />
+      <DatePicker layoutX="130.0" layoutY="214.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="218.0" text="Date:" />
+      <RadioButton layoutX="95.0" layoutY="80.0" mnemonicParsing="false" text="Government Car" />
+      <RadioButton layoutX="214.0" layoutY="80.0" mnemonicParsing="false" text="VIP" />
+      <RadioButton layoutX="265.0" layoutY="80.0" mnemonicParsing="false" text="Ambulance" />
+      <RadioButton layoutX="358.0" layoutY="80.0" mnemonicParsing="false" text="Fire Service" />
+      <RadioButton layoutX="452.0" layoutY="80.0" mnemonicParsing="false" text="Govt. Officer" />
+      <TextField layoutX="130.0" layoutY="106.0" />
+      <TextField layoutX="129.0" layoutY="141.0" />
+      <TextField layoutX="130.0" layoutY="178.0" />
+   </children>
+</AnchorPane>
