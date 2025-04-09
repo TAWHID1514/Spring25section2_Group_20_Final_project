@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 public class LoginFXMLController
 {
@@ -13,6 +14,8 @@ public class LoginFXMLController
     private PasswordField passwordTF;
     @javafx.fxml.FXML
     private Label errormassageLabel;
+
+
     @javafx.fxml.FXML
     public void initialize() {
     }
@@ -31,5 +34,9 @@ public class LoginFXMLController
             errormassageLabel.setText(" ");
 
         }
+    }
+
+    @javafx.fxml.FXML
+    public void addEmployeeOA(ActionEvent actionEvent) {
     }
 }
