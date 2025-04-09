@@ -4,36 +4,26 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.UnpaidTollVehicleFXMLController">
    <children>
-      <ComboBox fx:id="vehicleTypeCB" layoutX="130.0" layoutY="54.0" prefHeight="26.0" prefWidth="170.0" promptText="Vehicle Type" />
-      <Label layoutX="7.0" layoutY="58.0" text="Type:" />
-      <Label layoutX="5.0" layoutY="90.0" text="Car Regestration No:" />
-      <TextField fx:id="carRegNOTF" layoutX="131.0" layoutY="86.0" prefHeight="26.0" prefWidth="170.0" promptText="Dhaka Metro XX-XXXX" />
-      <DatePicker fx:id="ruleBreakDateDP" layoutX="131.0" layoutY="120.0" prefHeight="26.0" prefWidth="170.0" promptText="Rule breaking date" />
-      <Label layoutX="7.0" layoutY="124.0" text="Date:" />
-      <Label layoutX="7.0" layoutY="159.0" text="Toll amount:" />
-      <TextField fx:id="tollAmountTF" layoutX="131.0" layoutY="155.0" prefHeight="26.0" prefWidth="170.0" promptText="XXXX.XX Taka" />
-      <TableView fx:id="UnpaidtollTV" layoutX="15.0" layoutY="227.0" prefHeight="158.0" prefWidth="350.0">
-        <columns>
-          <TableColumn fx:id="vehicleTypeCol" prefWidth="87.20001220703125" text="Vehicle Type" />
-          <TableColumn fx:id="regNoCol" prefWidth="110.4000244140625" text="Reg NO" />
-            <TableColumn fx:id="dateCol" prefWidth="63.99993896484375" text="Date" />
-            <TableColumn fx:id="tollAmountCol" prefWidth="87.99997558593748" text="Toll Amount" />
-        </columns>
-      </TableView>
-      <Button layoutX="132.0" layoutY="189.0" mnemonicParsing="false" onAction="#registerOA" text="Register Unpaid Toll Vehicles" />
-      <Label layoutX="207.0" layoutY="14.0" text="Unpaid toll Vehicle Info">
+      <ComboBox fx:id="vehicleTypeCB" layoutX="130.0" layoutY="116.0" prefHeight="26.0" prefWidth="170.0" promptText="Vehicle Type" style="-fx-border-color: #1877F2;" />
+      <Label layoutX="7.0" layoutY="120.0" text="Type:" />
+      <Label layoutX="5.0" layoutY="152.0" text="Car Regestration No:" />
+      <TextField fx:id="carRegNOTF" layoutX="131.0" layoutY="148.0" prefHeight="26.0" prefWidth="170.0" promptText="Dhaka Metro XX-XXXX" style="-fx-border-color: #1877F2;" />
+      <DatePicker fx:id="ruleBreakDateDP" layoutX="131.0" layoutY="182.0" prefHeight="26.0" prefWidth="170.0" promptText="Rule breaking date" style="-fx-border-color: #1877F2;" />
+      <Label layoutX="7.0" layoutY="186.0" text="Date:" />
+      <Label layoutX="7.0" layoutY="221.0" text="Toll amount:" />
+      <TextField fx:id="tollAmountTF" layoutX="131.0" layoutY="217.0" prefHeight="26.0" prefWidth="170.0" promptText="XXXX.XX Taka" style="-fx-border-color: #1877F2;" />
+      <Button layoutX="132.0" layoutY="251.0" mnemonicParsing="false" onAction="#registerOA" style="-fx-background-color: #1877F2;" text="Register Unpaid Toll Vehicles" textFill="WHITE" />
+      <Label layoutX="150.0" layoutY="50.0" text="Unpaid toll Vehicle Info">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="massagelabe" layoutX="310.0" layoutY="92.0" prefHeight="82.0" prefWidth="185.0" textAlignment="CENTER" textFill="RED" wrapText="true" />
+      <Label fx:id="massagelabe" layoutX="310.0" layoutY="154.0" prefHeight="82.0" prefWidth="185.0" textAlignment="CENTER" textFill="RED" wrapText="true" />
    </children>
 </AnchorPane>

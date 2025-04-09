@@ -12,19 +12,9 @@ public class UnpaidTollVehicleFXMLController
     @javafx.fxml.FXML
     private TextField tollAmountTF;
     @javafx.fxml.FXML
-    private TableColumn dateCol;
-    @javafx.fxml.FXML
     private ComboBox vehicleTypeCB;
     @javafx.fxml.FXML
-    private TableColumn regNoCol;
-    @javafx.fxml.FXML
-    private TableColumn tollAmountCol;
-    @javafx.fxml.FXML
-    private TableView UnpaidtollTV;
-    @javafx.fxml.FXML
     private Label massagelabe;
-    @javafx.fxml.FXML
-    private TableColumn vehicleTypeCol;
 
     @javafx.fxml.FXML
     public void initialize() {
