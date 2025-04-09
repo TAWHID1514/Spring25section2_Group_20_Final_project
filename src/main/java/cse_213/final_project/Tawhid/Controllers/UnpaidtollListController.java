@@ -3,7 +3,7 @@ package cse_213.final_project.Tawhid.Controllers;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
-public class UnpaidtollList
+public class UnpaidtollListController
 {
 
     @javafx.fxml.FXML
