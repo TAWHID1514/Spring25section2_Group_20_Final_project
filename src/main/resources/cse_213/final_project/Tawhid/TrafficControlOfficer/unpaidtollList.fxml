@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.UnpaidtollList">
+   <children>
+      <TableView fx:id="tollUnpaidTableView" layoutX="14.0" layoutY="120.0" prefHeight="200.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="tollUnpaidVehicleRegNoCol" prefWidth="200.800048828125" text="Vehicle Reg NO" />
+          <TableColumn fx:id="tollUnpaidVehicleTypeCol" prefWidth="150.39996337890625" text="Vehicle Type" />
+            <TableColumn fx:id="tollUnpaidDateCol" prefWidth="100.0" text="Date" />
+            <TableColumn fx:id="unpaidtollAmountCol" prefWidth="111.20001220703125" text="Toll Amount" />
+        </columns>
+      </TableView>
+      <Text layoutX="234.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unpaid Toll List">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#backtounpaidTollInfoOA" style="-fx-background-color: #1877F2;" text="Back" textFill="WHITE" underline="true" />
+   </children>
+</AnchorPane>

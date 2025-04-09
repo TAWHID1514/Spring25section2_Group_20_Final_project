@@ -14,13 +14,13 @@
       <Label layoutX="20.0" layoutY="174.0" text="Exemotion Reason:" />
       <DatePicker layoutX="130.0" layoutY="202.0" prefHeight="26.0" prefWidth="150.0" promptText="Travel Date" />
       <Label layoutX="20.0" layoutY="206.0" text="Date:" />
-      <RadioButton layoutX="130.0" layoutY="80.0" mnemonicParsing="false" text="Government Car" />
-      <RadioButton layoutX="249.0" layoutY="80.0" mnemonicParsing="false" text="VIP" />
-      <RadioButton layoutX="300.0" layoutY="80.0" mnemonicParsing="false" text="Ambulance" />
-      <RadioButton layoutX="393.0" layoutY="80.0" mnemonicParsing="false" text="Fire Service" />
-      <RadioButton layoutX="487.0" layoutY="80.0" mnemonicParsing="false" text="Govt. Officer" />
+      <RadioButton layoutX="95.0" layoutY="82.0" mnemonicParsing="false" text="Govt Car" />
+      <RadioButton layoutX="167.0" layoutY="82.0" mnemonicParsing="false" text="VIP" />
+      <RadioButton layoutX="212.0" layoutY="82.0" mnemonicParsing="false" text="Ambulance" />
+      <RadioButton layoutX="300.0" layoutY="82.0" mnemonicParsing="false" text="Fire Service" />
       <TextField layoutX="130.0" layoutY="106.0" promptText="Driving Licence" />
       <TextField layoutX="129.0" layoutY="138.0" promptText="Registration No" />
       <TextField layoutX="130.0" layoutY="170.0" promptText="Reason of exemotion" />
+      <RadioButton layoutX="385.0" layoutY="82.0" mnemonicParsing="false" text="Govt. Officer" />
    </children>
 </AnchorPane>

@@ -9,24 +9,33 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="498.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.UpdateTollviolationRecordFXMLController">
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.UpdateTollviolationRecordFXMLController">
    <children>
-      <Label layoutX="223.0" layoutY="158.0" text="Type:" />
-      <Label layoutX="223.0" layoutY="194.0" text="Registration No:" />
-      <Label layoutX="223.0" layoutY="251.0" text="Update Date:" />
-      <CheckBox layoutX="325.0" layoutY="223.0" mnemonicParsing="false" text="Paid Fine" />
-      <CheckBox layoutX="417.0" layoutY="223.0" mnemonicParsing="false" text="Unpaid Fine" />
-      <DatePicker fx:id="DateOfUpdateDP" layoutX="322.0" layoutY="247.0" promptText="Date of Update" />
-      <TextField fx:id="registrationNoTF" layoutX="322.0" layoutY="190.0" prefHeight="26.0" prefWidth="175.0" promptText="Dhaka metro XX-XXXX" />
-      <ComboBox fx:id="vehicleTypeCB" layoutX="322.0" layoutY="154.0" prefHeight="26.0" prefWidth="175.0" promptText="Vehicle Type" />
-      <TextField fx:id="TotalAmountTF" layoutX="322.0" layoutY="283.0" prefHeight="26.0" prefWidth="175.0" promptText="Total amount" />
-      <Label layoutX="223.0" layoutY="287.0" text="Amount of Taka:" />
-      <Button layoutX="322.0" layoutY="319.0" mnemonicParsing="false" onAction="#updateButtonOS" prefHeight="26.0" prefWidth="175.0" text="Update List" />
-      <Label layoutX="300.0" layoutY="93.0" text="Violation Update ">
+      <Label layoutX="121.0" layoutY="124.0" text="Type:" />
+      <Label layoutX="121.0" layoutY="160.0" text="Registration No:" />
+      <Label layoutX="121.0" layoutY="218.0" text="Update Date:" />
+      <CheckBox layoutX="223.0" layoutY="189.0" mnemonicParsing="false" text="Paid Fine" />
+      <CheckBox layoutX="315.0" layoutY="189.0" mnemonicParsing="false" text="Unpaid Fine" />
+      <DatePicker fx:id="DateOfUpdateDP" layoutX="220.0" layoutY="213.0" promptText="Date of Update" style="-fx-border-color: #1877F2;" />
+      <TextField fx:id="registrationNoTF" layoutX="220.0" layoutY="156.0" prefHeight="26.0" prefWidth="175.0" promptText="Dhaka metro XX-XXXX" style="-fx-border-color: #1877F2;" />
+      <ComboBox fx:id="vehicleTypeCB" layoutX="220.0" layoutY="120.0" prefHeight="26.0" prefWidth="175.0" promptText="Vehicle Type" style="-fx-border-color: #1877F2;" />
+      <TextField fx:id="TotalAmountTF" layoutX="220.0" layoutY="249.0" prefHeight="26.0" prefWidth="175.0" promptText="Total amount" style="-fx-border-color: #1877F2;" />
+      <Label layoutX="120.0" layoutY="254.0" text="Amount of Taka:" />
+      <Button layoutX="315.0" layoutY="285.0" mnemonicParsing="false" onAction="#paidFineListOA" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #1877F2;" text="Paid Fine List" textFill="#eaeaea">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="198.0" layoutY="69.0" text="Violation Update ">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="223.0" layoutY="351.0" prefHeight="26.0" prefWidth="282.0" textFill="RED" />
+      <Label layoutX="152.0" layoutY="324.0" prefHeight="26.0" prefWidth="282.0" textAlignment="CENTER" textFill="RED" wrapText="true" />
+      <Button layoutX="191.0" layoutY="285.0" mnemonicParsing="false" onAction="#unpaidFineListOA" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #1877F2;" text="Unpaid Fine List" textFill="#eaeaea">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="121.0" layoutY="189.0" text="Status:" />
    </children>
 </AnchorPane>

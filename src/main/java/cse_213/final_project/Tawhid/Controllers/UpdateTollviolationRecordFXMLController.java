@@ -6,31 +6,11 @@ import javafx.scene.control.*;
 public class UpdateTollviolationRecordFXMLController
 {
     @javafx.fxml.FXML
-    private TableColumn unpaidInfoCol;
-    @javafx.fxml.FXML
-    private TableColumn paidRegNoCol;
-    @javafx.fxml.FXML
     private ComboBox vehicleTypeCB;
-    @javafx.fxml.FXML
-    private TableColumn paidVehicleTypeCol;
     @javafx.fxml.FXML
     private TextField registrationNoTF;
     @javafx.fxml.FXML
-    private TableView paidTV;
-    @javafx.fxml.FXML
-    private TableColumn unpaidRegNoCol;
-    @javafx.fxml.FXML
-    private TableColumn unPaidVehicleTypeCol;
-    @javafx.fxml.FXML
-    private TableColumn DateOfUpdateCOl;
-    @javafx.fxml.FXML
     private TextField TotalAmountTF;
-    @javafx.fxml.FXML
-    private TableColumn amountofTAKAcol;
-    @javafx.fxml.FXML
-    private TableView unpaidTV;
-    @javafx.fxml.FXML
-    private TableColumn paidinfoCol;
     @javafx.fxml.FXML
     private DatePicker DateOfUpdateDP;
 
@@ -38,7 +18,15 @@ public class UpdateTollviolationRecordFXMLController
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void updateButtonOS(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void unpaidFineListOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void paidFineListOA(ActionEvent actionEvent) {
     }
 }

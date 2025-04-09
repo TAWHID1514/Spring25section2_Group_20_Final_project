@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.PaidfineListController">
+   <children>
+      <TableView fx:id="paidFineTableView" layoutX="8.0" layoutY="121.0" prefHeight="200.0" prefWidth="483.0">
+        <columns>
+          <TableColumn fx:id="paidFineregNoCol" prefWidth="75.0" text="Reg No" />
+            <TableColumn fx:id="paidVehicleTpyeCol" prefWidth="84.79998779296875" text="Vehicle Type" />
+            <TableColumn fx:id="paidAmountCol" prefWidth="100.800048828125" text="Paid Amount" />
+          <TableColumn fx:id="dateOfPayingFineCol" prefWidth="136.0" text="Date of paying Fine" />
+            <TableColumn fx:id="paidFineStatusCol" prefWidth="72.0" text="Status" />
+        </columns>
+      </TableView>
+      <Text layoutX="191.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paid fine list">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="28.0" layoutY="26.0" mnemonicParsing="false" onAction="#paidbackToUpdateViolationOA" style="-fx-background-color: #1877F2;" text="Back" textFill="#eaeaea" />
+   </children>
+</AnchorPane>

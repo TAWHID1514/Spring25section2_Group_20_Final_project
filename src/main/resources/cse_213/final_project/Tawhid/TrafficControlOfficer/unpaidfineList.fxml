@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.UnpaidfineListController">
+   <children>
+      <TableView fx:id="updateUnpaidFineListTableView" layoutX="14.0" layoutY="113.0" prefHeight="200.0" prefWidth="474.0">
+        <columns>
+          <TableColumn fx:id="unpaidFineregNoCol" prefWidth="148.79999351501465" text="Reg No" />
+          <TableColumn fx:id="unpaidFinevehTypeCol" prefWidth="129.5999755859375" text="Vehicle Type" />
+            <TableColumn fx:id="unpaidFinestatusCol" prefWidth="66.4000244140625" text="Status" />
+            <TableColumn fx:id="unpaidFinedueFineCol" prefWidth="131.20001220703125" text="Due Fine" />
+        </columns>
+      </TableView>
+      <Text layoutX="133.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Updated unpaid fine list" underline="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#unpaidbackToUpdateViolationOA" style="-fx-background-color: #1877F2;" text="Back" textAlignment="CENTER" textFill="WHITE" underline="true" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
