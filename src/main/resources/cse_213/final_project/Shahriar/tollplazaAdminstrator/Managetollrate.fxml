@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.Managetollrate">
+   <children>
+      <Label fx:id="managetollratelabelid" layoutX="46.0" layoutY="14.0" text="ManageTollRateController" />
+      <TextField fx:id="vehicletypefiled" layoutX="41.0" layoutY="54.0" promptText="vehicleType" />
+      <TextField fx:id="tollamountfield" layoutX="41.0" layoutY="95.0" promptText="tollAmount" />
+      <Label fx:id="messagellabelid" layoutX="46.0" layoutY="139.0" text="messagelabel" />
+      <Button layoutX="108.0" layoutY="200.0" mnemonicParsing="false" onAction="#savetollrateonaction" prefHeight="26.0" prefWidth="102.0" text="saveTollRate" />
+   </children>
+</AnchorPane>

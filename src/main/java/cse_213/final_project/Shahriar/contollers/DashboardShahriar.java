@@ -44,4 +44,8 @@ public class DashboardShahriar
     @javafx.fxml.FXML
     public void tollratemangamentOnaction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void logoutonaction(ActionEvent actionEvent) {
+    }
 }
