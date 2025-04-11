@@ -1,6 +1,13 @@
 package cse_213.final_project.Tawhid.Controllers;
 
 import javafx.event.*;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Dashboard_TOCFXMLcontroller
 {
@@ -21,7 +28,16 @@ public class Dashboard_TOCFXMLcontroller
     }
 
     @javafx.fxml.FXML
-    public void trackUnpaidTollVehicleOA(ActionEvent actionEvent) {
+    public void trackUnpaidTollVehicleOA(ActionEvent actionEvent) throws IOException {
+        Parent root =null;
+        FXMLLoader fxmlLoader = new FXMLLoader(UnpaidTollVehicleFXMLController.class.getResource("UnpaidTollVehicle.fxml"));
+        root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+//        Stage stage = new Stage();
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setTitle("Create your Account!");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @javafx.fxml.FXML
