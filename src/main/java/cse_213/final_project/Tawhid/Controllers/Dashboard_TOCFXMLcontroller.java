@@ -16,10 +16,6 @@ public class Dashboard_TOCFXMLcontroller
     }
 
     @javafx.fxml.FXML
-    public void GenerateTrafficReportOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
     public void ResolveDipositeOA(ActionEvent actionEvent) {
     }
 
@@ -62,5 +58,9 @@ public class Dashboard_TOCFXMLcontroller
 
     @javafx.fxml.FXML
     public void GenerateDailyReportOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void manageLaneOA(ActionEvent actionEvent) {
     }
 }
