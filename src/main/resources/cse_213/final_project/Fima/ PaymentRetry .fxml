@@ -9,28 +9,27 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="528.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.PaymentRetry">
    <children>
-      <ComboBox layoutX="35.0" layoutY="90.0" prefWidth="150.0" promptText="Vehicle Type" />
-      <RadioButton layoutX="111.0" layoutY="44.0" mnemonicParsing="false" text="Payment Issue" />
-      <Label layoutX="33.0" layoutY="44.0" text="Issue Type" />
-      <RadioButton layoutX="210.0" layoutY="44.0" mnemonicParsing="false" text="Vehicle Issue" />
-      <TextField layoutX="36.0" layoutY="151.0" promptText="Reg Num" />
-      <TextField layoutX="209.0" layoutY="151.0" promptText="Booth Operator Name" />
-      <TextField layoutX="216.0" layoutY="90.0" promptText="Toll Booth Number" />
-      <Label layoutX="443.0" layoutY="29.0" prefHeight="94.0" prefWidth="132.0" style="-fx-background-color: red;" />
-      <Button layoutX="497.0" layoutY="455.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="Submit" />
-      <TableView layoutX="-2.0" layoutY="232.0" prefHeight="200.0" prefWidth="656.0">
+      <ComboBox fx:id="VehicleTypeCOMBOBOX" layoutX="35.0" layoutY="90.0" prefWidth="150.0" promptText="Vehicle Type" />
+      <RadioButton fx:id="PaymentIssueRADIOBUTTON" layoutX="111.0" layoutY="44.0" mnemonicParsing="false" text="Payment Issue" />
+      <Label fx:id="IssueTypeLABLE" layoutX="33.0" layoutY="44.0" text="Issue Type" />
+      <RadioButton fx:id="VehicleIssueRADIOBUTTON" layoutX="210.0" layoutY="44.0" mnemonicParsing="false" text="Vehicle Issue" />
+      <TextField fx:id="REGNUMBERTEXTFIELD" layoutX="36.0" layoutY="151.0" promptText="Reg Num" />
+      <TextField fx:id="BOOTHOPERATORNAMETEXTFIELD" layoutX="209.0" layoutY="151.0" promptText="Booth Operator Name" />
+      <TextField fx:id="TOLLBOOTHNUMBERTEXTFIELD" layoutX="216.0" layoutY="90.0" promptText="Toll Booth Number" />
+      <Label fx:id="SHOWMASAGGELABLE" layoutX="443.0" layoutY="29.0" prefHeight="94.0" prefWidth="132.0" style="-fx-background-color: red;" />
+      <Button layoutX="497.0" layoutY="455.0" mnemonicParsing="false" onAction="#SUBMITONACTIONBUTTON" prefHeight="35.0" prefWidth="90.0" text="Submit" />
+      <TableView fx:id="SHOWDATATABLEVIEW" layoutY="221.0" prefHeight="200.0" prefWidth="656.0">
         <columns>
-          <TableColumn prefWidth="96.79998624324799" text="Issue Type" />
-          <TableColumn prefWidth="103.20001983642578" text="Vehicle Type" />
-            <TableColumn prefWidth="86.39996337890625" text="Reg Num" />
-            <TableColumn prefWidth="144.800048828125" text="Toll Booth Number" />
-            <TableColumn prefWidth="138.39999389648438" text="Booth Operator Name" />
-            <TableColumn prefWidth="85.5999755859375" text="Vehicle Type" />
+          <TableColumn fx:id="IssueTypeTABLECOLUMN" prefWidth="96.79998624324799" text="Issue Type" />
+          <TableColumn fx:id="VehicleTypeTABLECOLUMN" prefWidth="103.20001983642578" text="Vehicle Type" />
+            <TableColumn fx:id="RegNumTABLECOLUMN" prefWidth="86.39996337890625" text="Reg Num" />
+            <TableColumn fx:id="TollBoothNumberTABLECOLUMN" prefWidth="144.800048828125" text="Toll Booth Number" />
+            <TableColumn fx:id="BoothOperatorNameTABLECOLUMN" prefWidth="138.39999389648438" text="Booth Operator Name" />
+            <TableColumn fx:id="VehicleTypeTABLECOLUMN" prefWidth="85.5999755859375" text="Vehicle Type" />
         </columns>
       </TableView>
-      <Button layoutX="402.0" layoutY="460.0" mnemonicParsing="false" text="Home" />
+      <Button layoutX="402.0" layoutY="460.0" mnemonicParsing="false" onAction="#HOMEONACTIONBUTTON" text="Home" />
    </children>
 </AnchorPane>
