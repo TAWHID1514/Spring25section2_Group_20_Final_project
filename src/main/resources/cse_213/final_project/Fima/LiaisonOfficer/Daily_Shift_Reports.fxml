@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="520.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.DailyShiftReports">
+   <children>
+      <Label layoutX="27.0" layoutY="82.0" text="Booth ID" />
+      <TextField layoutX="110.0" layoutY="78.0" />
+      <Label layoutX="27.0" layoutY="129.0" text="Toll Operator" />
+      <TextField layoutX="110.0" layoutY="125.0" />
+      <Label layoutX="27.0" layoutY="174.0" text="Vehicle Count" />
+      <TextField layoutX="110.0" layoutY="170.0" />
+      <TextArea layoutX="27.0" layoutY="206.0" prefHeight="200.0" prefWidth="200.0" />
+      <Line endX="-66.70001220703125" endY="244.19287109375" layoutX="347.0" layoutY="278.0" startX="-66.70001220703125" startY="-203.89999389648438" />
+      <Line endX="327.89288330078125" endY="-30.399993896484375" layoutX="385.0" layoutY="104.0" startX="-104.20001220703125" startY="-30.399993896484375" />
+      <Label layoutX="284.0" layoutY="14.0" text="Daily Shift Reports">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView layoutX="284.0" layoutY="96.0" prefHeight="200.0" prefWidth="433.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Booth ID" />
+          <TableColumn prefWidth="96.79998779296875" text="Toll Operator" />
+            <TableColumn prefWidth="91.20001220703125" text="Vehicle Count" />
+            <TableColumn prefWidth="38.399993896484375" />
+        </columns>
+      </TableView>
+      <Button layoutX="632.0" layoutY="320.0" mnemonicParsing="false" text="Submit" />
+      <Button layoutX="175.0" layoutY="443.0" mnemonicParsing="false" text="Export PDF" />
+   </children>
+</AnchorPane>

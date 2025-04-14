@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="538.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.TechnicalIssues">
    <children>
       <Label layoutX="53.0" layoutY="128.0" text="Technical Issues " />
-      <TextField fx:id="issueDescriptiontextfield" layoutX="166.0" layoutY="110.0" prefHeight="53.0" prefWidth="246.0" promptText="issue Description" />
+      <TextField fx:id="TECHNICALissuetextfield" layoutX="166.0" layoutY="110.0" prefHeight="53.0" prefWidth="246.0" />
       <ComboBox fx:id="Issuestypecombobox" layoutX="166.0" layoutY="225.0" prefHeight="44.0" prefWidth="176.0" />
       <TextArea fx:id="massagetextarea" layoutX="36.0" layoutY="335.0" prefHeight="134.0" prefWidth="527.0" style="-fx-background-color: green;" />
       <Button layoutX="456.0" layoutY="269.0" mnemonicParsing="false" onAction="#submitOnActionButton" prefHeight="36.0" prefWidth="88.0" text="submit" />
