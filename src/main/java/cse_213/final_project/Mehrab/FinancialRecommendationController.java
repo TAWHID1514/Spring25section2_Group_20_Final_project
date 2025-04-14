@@ -1,5 +1,8 @@
 package cse_213.final_project.Mehrab;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class FinancialRecommendationController
 {
     @javafx.fxml.FXML
