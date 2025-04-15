@@ -1,9 +1,7 @@
 package cse_213.final_project.Tawhid.Controllers;
-
-import javafx.event.ActionEvent;
+import javafx.event.*;
 import javafx.scene.control.*;
-
-public class DailyTollcollectionReportFXMLcontroller
+public class G_4_DailyTollcollectionReportFXMLcontroller
 {
     @javafx.fxml.FXML
     private DatePicker todaysDateDP;
@@ -17,6 +15,8 @@ public class DailyTollcollectionReportFXMLcontroller
     private TableColumn ratePerVehicle;
     @javafx.fxml.FXML
     private TableColumn vehicleTypeCOL;
+    @javafx.fxml.FXML
+    private TableColumn DateCOL;
     @javafx.fxml.FXML
     private TextField noOfVehicleTF;
     @javafx.fxml.FXML

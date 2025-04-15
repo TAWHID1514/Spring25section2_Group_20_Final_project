@@ -9,8 +9,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.DailyTollcollectionReportFXMLcontroller">
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.G_4_DailyTollcollectionReportFXMLcontroller">
    <children>
       <ComboBox fx:id="VehicleTypeCB" layoutX="113.0" layoutY="100.0" prefWidth="150.0" promptText="Select Vehicle" />
       <Label layoutX="15.0" layoutY="363.0" text="Amount:" />
@@ -21,11 +20,12 @@
       <Label layoutX="14.0" layoutY="104.0" text="Vehicle Type:" />
       <Label layoutX="14.0" layoutY="68.0" text="Report date:" />
       <Button layoutX="172.0" layoutY="174.0" mnemonicParsing="false" onAction="#canculateTotalOA" style="-fx-background-color: #1877F2;" text="Calculate total" textFill="WHITE" />
-      <TableView fx:id="tollamountTV" layoutX="15.0" layoutY="212.0" prefHeight="138.0" prefWidth="343.0">
+      <TableView fx:id="tollamountTV" layoutX="15.0" layoutY="212.0" prefHeight="138.0" prefWidth="446.0">
         <columns>
           <TableColumn fx:id="vehicleTypeCOL" prefWidth="99.20001029968262" text="Vehicle Type" />
           <TableColumn fx:id="ratePerVehicle" prefWidth="113.59998321533203" text="Rate per Vehicle" />
             <TableColumn fx:id="amountCol" prefWidth="117.5999755859375" text="Amount" />
+            <TableColumn fx:id="DateCOL" prefWidth="99.20001029968262" text="Date" />
         </columns>
       </TableView>
       <Button layoutX="314.0" layoutY="358.0" mnemonicParsing="false" onAction="#submitAmountOA" prefHeight="27.0" prefWidth="159.0" style="-fx-background-color: #1877F2;" text="Submit Today's Amount" textAlignment="CENTER" textFill="WHITE" wrapText="true" />

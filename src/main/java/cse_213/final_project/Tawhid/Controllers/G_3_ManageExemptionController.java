@@ -1,9 +1,7 @@
 package cse_213.final_project.Tawhid.Controllers;
-
 import javafx.event.*;
 import javafx.scene.control.*;
-
-public class ManageExemptionController
+public class G_3_ManageExemptionController
 {
     @javafx.fxml.FXML
     private TextField manageExemptionReasonTF;
