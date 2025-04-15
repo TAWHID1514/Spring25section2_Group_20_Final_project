@@ -22,14 +22,14 @@
       <ComboBox layoutX="105.0" layoutY="124.0" prefWidth="150.0" />
       <TableView layoutX="5.0" layoutY="195.0" prefHeight="200.0" prefWidth="427.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Booth No" />
-          <TableColumn prefWidth="75.0" text="Issue Type" />
-            <TableColumn prefWidth="75.0" />
-            <TableColumn prefWidth="75.0" />
+          <TableColumn prefWidth="113.60003519058228" text="Booth No" />
+          <TableColumn prefWidth="98.39997100830078" text="Issue Type" />
+            <TableColumn prefWidth="93.5999755859375" text="Device" />
+            <TableColumn prefWidth="121.5999755859375" text="Priority" />
         </columns>
       </TableView>
-      <Button layoutX="313.0" layoutY="413.0" mnemonicParsing="false" text="Submit" />
-      <Button layoutX="441.0" layoutY="446.0" mnemonicParsing="false" text="Home" />
+      <Button layoutX="168.0" layoutY="412.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="Submit" />
+      <Button layoutX="517.0" layoutY="484.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="83.0" text="Home" />
       <Label layoutX="290.0" layoutY="78.0" text="Device" />
       <ComboBox layoutX="340.0" layoutY="74.0" prefWidth="150.0" />
       <RadioButton layoutX="344.0" layoutY="128.0" mnemonicParsing="false" text="yes" />
