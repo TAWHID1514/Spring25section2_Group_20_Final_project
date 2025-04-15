@@ -12,7 +12,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="476.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.IncidentReportsPlazaL6">
    <children>
       <Label layoutX="179.0" layoutY="14.0" text="Incident Reports from the Plaza">
@@ -39,5 +38,6 @@
       <Button layoutX="179.0" layoutY="424.0" mnemonicParsing="false" onAction="#Submitonactionbutton" prefHeight="26.0" prefWidth="90.0" text="Submit" />
       <ComboBox fx:id="BoothNumbercombobox" layoutX="114.0" layoutY="165.0" prefHeight="26.0" prefWidth="158.0" />
       <DatePicker fx:id="ReportDatedatepicker" layoutX="115.0" layoutY="122.0" prefHeight="26.0" prefWidth="157.0" />
+      <Button layoutX="630.0" layoutY="412.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" text="Home" />
    </children>
 </AnchorPane>

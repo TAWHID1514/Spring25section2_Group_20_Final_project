@@ -1,4 +1,4 @@
-package cse_213.final_project.Fima;
+package cse_213.final_project.Fima.Controllers;
 
 public class VehicleInformation
 {

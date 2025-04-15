@@ -10,15 +10,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="497.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.ExternalInquiriesContractorsOfficialsL7">
    <children>
-      <Label layoutX="189.0" layoutY="14.0" text=" External Inquiries from Contractors or Officials">
+      <Label layoutX="224.0" layoutY="14.0" text=" External Inquiries from Officials">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="73.0" text="Contractors Name" />
+      <Label layoutX="14.0" layoutY="73.0" text=" Name" />
       <Label layoutX="56.0" layoutY="111.0" text="ID" />
       <Label layoutX="17.0" layoutY="148.0" text="Contact Info" />
       <TextField layoutX="129.0" layoutY="69.0" />
@@ -28,10 +27,10 @@
       <Label layoutX="18.0" layoutY="191.0" text="Department" />
       <ComboBox layoutX="130.0" layoutY="187.0" prefWidth="150.0" />
       <Label layoutX="334.0" layoutY="64.0" text="Inquiries Purpose" />
-      <TextArea layoutX="334.0" layoutY="82.0" prefHeight="126.0" prefWidth="232.0" />
+      <TextArea layoutX="334.0" layoutY="82.0" prefHeight="92.0" prefWidth="232.0" />
       <TableView layoutX="1.0" layoutY="234.0" prefHeight="200.0" prefWidth="511.0">
         <columns>
-          <TableColumn prefWidth="127.20001220703125" text="Contractors Name" />
+          <TableColumn prefWidth="127.20001220703125" text="Name" />
           <TableColumn prefWidth="58.39996337890625" text="ID" />
             <TableColumn prefWidth="104.00006103515625" text="Contact Info" />
             <TableColumn prefWidth="91.20001220703125" text="Department" />

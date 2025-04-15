@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="StaffIDtextfield" prefHeight="390.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.TollBoothStaffManagementL1">
+   <children>
+      <Label fx:id="StaffNametextfield" layoutX="14.0" layoutY="88.0" text="Staff Name" />
+      <Label layoutX="14.0" layoutY="131.0" text="Staff ID " />
+      <TextField layoutX="133.0" layoutY="84.0" />
+      <TextField layoutX="133.0" layoutY="127.0" />
+      <TextArea fx:id="issuedescribetextarea" layoutX="13.0" layoutY="244.0" prefHeight="83.0" prefWidth="270.0" promptText="Issue Describe" />
+      <Label layoutX="14.0" layoutY="174.0" text="Sending Depertment" />
+      <ComboBox fx:id="SendingDepertmentcombobox" layoutX="132.0" layoutY="170.0" prefWidth="150.0" />
+      <TableView fx:id="showdatatableview" layoutX="343.0" layoutY="106.0" prefHeight="200.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="StaffNametablecolumn" prefWidth="143.199951171875" text="Staff Name" />
+          <TableColumn fx:id="StaffIDtablecloumn" prefWidth="102.40005493164062" text="Staff ID " />
+            <TableColumn fx:id="SendingDepertmenttablecloumn" prefWidth="148.800048828125" text="Sending Depertment" />
+        </columns>
+      </TableView>
+      <Line endX="-90.19998168945312" endY="3.9999847412109375" layoutX="407.0" layoutY="84.0" startX="-90.199951171875" startY="305.9999694824219" />
+      <Line endX="324.4000244140625" layoutX="417.0" layoutY="88.0" startX="-100.0" />
+      <Button layoutX="205.0" layoutY="338.0" mnemonicParsing="false" onAction="#sendonactionbutton" prefHeight="26.0" prefWidth="69.0" text="Send" />
+      <Button layoutX="642.0" layoutY="338.0" mnemonicParsing="false" onAction="#homeonactionbutton" prefHeight="26.0" prefWidth="77.0" text="Home" />
+      <Label layoutX="254.0" layoutY="14.0" text="Toll Booth Staff and Management">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

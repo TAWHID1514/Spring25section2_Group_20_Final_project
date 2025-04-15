@@ -9,7 +9,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="528.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.PaymentRetry">
+<AnchorPane prefHeight="528.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.Controllers.PaymentRetry">
    <children>
       <ComboBox fx:id="VehicleTypeCOMBOBOX" layoutX="35.0" layoutY="90.0" prefWidth="150.0" promptText="Vehicle Type" />
       <RadioButton fx:id="PaymentIssueRADIOBUTTON" layoutX="111.0" layoutY="44.0" mnemonicParsing="false" text="Payment Issue" />

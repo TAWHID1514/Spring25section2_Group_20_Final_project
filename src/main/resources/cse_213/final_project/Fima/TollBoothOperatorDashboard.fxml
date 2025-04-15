@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="542.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.TollBoothOperatorDashboardFima">
+<AnchorPane prefHeight="542.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.Controllers.TollBoothOperatorDashboardFima">
    <children>
       <Label fx:id="TollBoothOperatorDashboardlable" layoutX="159.0" layoutY="30.0" text="Toll Booth Operator Dashboard" textAlignment="CENTER">
          <font>

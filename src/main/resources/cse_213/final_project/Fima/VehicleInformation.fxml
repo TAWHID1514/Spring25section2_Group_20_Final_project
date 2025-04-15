@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.VehicleInformation">
+<AnchorPane prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.Controllers.VehicleInformation">
    <children>
       <ComboBox fx:id="VehicleTypecombobox" layoutX="22.0" layoutY="28.0" prefWidth="150.0" promptText="Vehicle Type" />
       <ComboBox layoutX="191.0" layoutY="28.0" prefWidth="150.0" />

@@ -10,7 +10,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="462.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.ShiftAttendance">
+<AnchorPane prefHeight="462.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.Controllers.ShiftAttendance">
    <children>
       <TextField fx:id="IDTEXTFIELD" layoutX="31.0" layoutY="25.0" promptText="ID" />
       <TextField fx:id="OPERATORNAMETEXTFIELD" layoutX="31.0" layoutY="72.0" promptText="Operator Name" />
