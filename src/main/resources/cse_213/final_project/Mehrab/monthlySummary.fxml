@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="885.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse_213.final_project.Mehrab.MonthlySummaryReportController">
+
+    <Label layoutX="200" layoutY="20" text="Monthly Summary Report" />
+
+    <Label layoutX="30" layoutY="70" text="Month" />
+    <DatePicker fx:id="monthPicker" layoutX="150" layoutY="70" prefWidth="200" />
+
+    <Label layoutX="30.0" layoutY="120.0" text="Total Revenue" />
+    <TextField fx:id="totalRevenueField" layoutX="150.0" layoutY="120.0" prefWidth="200" promptText="Enter total revenue" />
+
+    <Label layoutX="30" layoutY="170" text="Number of Vehicles" />
+    <TextField fx:id="numVehiclesField" layoutX="150" layoutY="170" prefWidth="200" promptText="Enter number of vehicles" />
+
+    <Button fx:id="generateSummaryButton" layoutX="30" layoutY="220" onAction="#handleGenerateSummary" prefWidth="120" text="Generate Summary" />
+
+    <TableView fx:id="summaryTable" layoutX="30" layoutY="270" prefHeight="150" prefWidth="422.0">
+        <columns>
+            <TableColumn fx:id="monthColumn" prefWidth="120" text="Month" />
+            <TableColumn fx:id="totalRevenueColumn" prefWidth="150" text="Total Revenue" />
+            <TableColumn fx:id="numVehiclesColumn" prefWidth="150" text="Number of Vehicles" />
+        </columns>
+    </TableView>
+
+    <PieChart fx:id="revenuePieChart" layoutX="495.0" layoutY="394.0" prefHeight="150" prefWidth="260.0" />
+
+    <Label fx:id="errorMessage" layoutX="30" layoutY="480" textFill="red" visible="false" />
+    <Label fx:id="confirmationMessage" layoutX="30" layoutY="500" textFill="green" visible="false" />
+   <Label layoutX="597.0" layoutY="561.0" text="PIE CHART" />
+</AnchorPane>

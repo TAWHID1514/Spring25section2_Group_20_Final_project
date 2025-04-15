@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="517.0" prefWidth="726.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse_213.final_project.Mehrab.DailyRevenueReportController">
+
+    <Label layoutX="314.0" layoutY="24.0" text="Daily Revenue Report" />
+
+    <Label layoutX="30" layoutY="70" text="Date" />
+    <DatePicker fx:id="datePicker" layoutX="150" layoutY="70" prefWidth="200" />
+
+    <Label layoutX="30" layoutY="120" text="Vehicle Type" />
+    <ComboBox fx:id="vehicleTypeComboBox" layoutX="150" layoutY="120" prefWidth="200" />
+
+    <Label layoutX="365.0" layoutY="66.0" prefHeight="17.0" prefWidth="105.0" text="Toll for Each" />
+    <TextField fx:id="tollField" layoutX="485.0" layoutY="66.0" prefWidth="200" promptText="Enter toll For Each" />
+
+    <Label layoutX="365.0" layoutY="111.0" text="Number of Vehicles" />
+    <TextField fx:id="numVehiclesField" layoutX="485.0" layoutY="111.0" prefWidth="200" promptText="Enter number of vehicles" />
+
+    <Button fx:id="generateReportButton" layoutX="290.0" layoutY="198.0" onAction="#handleGenerateReport" prefWidth="120" text="Generate Report" />
+
+    <TableView fx:id="revenueReportTable" layoutX="95.0" layoutY="259.0" prefHeight="150" prefWidth="540">
+        <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="100" text="Date" />
+            <TableColumn fx:id="vehicleTypeColumn" prefWidth="150" text="Vehicle Type" />
+            <TableColumn fx:id="totalRevenueColumn" prefWidth="150" text="Total Revenue" />
+            <TableColumn fx:id="numVehiclesColumn" prefWidth="150" text="Number of Vehicles" />
+        </columns>
+    </TableView>
+
+    <Label fx:id="errorMessage" layoutX="30" layoutY="480" textFill="red" visible="false" />
+    <Label fx:id="confirmationMessage" layoutX="30" layoutY="500" textFill="green" visible="false" />
+</AnchorPane>
