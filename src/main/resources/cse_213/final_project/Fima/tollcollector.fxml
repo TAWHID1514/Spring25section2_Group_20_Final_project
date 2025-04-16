@@ -16,16 +16,16 @@
       <TextField fx:id="regnumtextfield" layoutX="14.0" layoutY="111.0" promptText="Reg Num" />
       <TextField fx:id="amounttextfield" layoutX="206.0" layoutY="24.0" promptText="Amount" />
       <Button layoutX="199.0" layoutY="108.0" mnemonicParsing="false" onAction="#generateOnActionButton" text="Generate" />
-      <Button layoutX="525.0" layoutY="470.0" mnemonicParsing="false" onAction="#retryOnActionButton" text="Retry" />
+      <Button layoutX="524.0" layoutY="470.0" mnemonicParsing="false" onAction="#retryOnActionButton" text="Retry" />
       <Button layoutX="367.0" layoutY="470.0" mnemonicParsing="false" onAction="#paymentOnActionButton" text="Payment" />
-      <TableView fx:id="tableview" layoutX="32.0" layoutY="258.0" prefHeight="200.0" prefWidth="303.0">
+      <TableView fx:id="showdatatableview" layoutX="32.0" layoutY="258.0" prefHeight="200.0" prefWidth="303.0">
         <columns>
-          <TableColumn fx:id="vehicleTypetableview" prefWidth="91.20001602172852" text="vehicle Type" />
-          <TableColumn fx:id="RegNumtableview" prefWidth="76.79998779296875" text="Reg Num" />
-            <TableColumn fx:id="datetableview" prefWidth="58.40000915527344" text="Date" />
-            <TableColumn fx:id="amounttableview" prefWidth="75.0" text="Amount" />
+          <TableColumn fx:id="vehicleTypetablecolumn" prefWidth="91.20001602172852" text="vehicle Type" />
+          <TableColumn fx:id="RegNumtablecolumn" prefWidth="76.79998779296875" text="Reg Num" />
+            <TableColumn fx:id="datetablecolumn" prefWidth="58.40000915527344" text="Date" />
+            <TableColumn fx:id="amounttablecolumn" prefWidth="75.0" text="Amount" />
         </columns>
       </TableView>
-      <Label fx:id="errorlable" layoutX="442.0" layoutY="121.0" prefHeight="63.0" prefWidth="82.0" style="-fx-border-color: red;" text="Error" textAlignment="CENTER" />
+      <Label fx:id="showmassagelable" layoutX="442.0" layoutY="121.0" prefHeight="63.0" prefWidth="82.0" style="-fx-border-color: red;" textAlignment="CENTER" />
    </children>
 </AnchorPane>

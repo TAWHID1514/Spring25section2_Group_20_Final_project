@@ -9,7 +9,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="548.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.Controllers.VipEmergencyVehicles">
    <children>
       <Label fx:id="PriorityPassageLable" layoutX="44.0" layoutY="51.0" text="Priority Passage" />
@@ -18,14 +17,14 @@
       <ComboBox fx:id="VehicleTypecombobox" layoutX="35.0" layoutY="93.0" prefWidth="150.0" promptText="Vehicle Type" />
       <TextField fx:id="RegNumTextfield" layoutX="36.0" layoutY="150.0" promptText="Reg Num" />
       <Button layoutX="218.0" layoutY="150.0" mnemonicParsing="false" onAction="#generateOnActionButton" text="Generate" />
-      <TableView fx:id="tableview" layoutX="14.0" layoutY="208.0" prefHeight="200.0" prefWidth="390.0">
+      <TableView fx:id="showdatatableview" layoutX="14.0" layoutY="208.0" prefHeight="200.0" prefWidth="390.0">
         <columns>
-          <TableColumn fx:id="VehicleTypetableview" prefWidth="111.20001220703125" text="Vehicle Type" />
-          <TableColumn fx:id="VehicleModeltableview" prefWidth="104.79998779296875" text="Vehicle Model" />
-            <TableColumn fx:id="RegNumtableview" prefWidth="64.0" text="Reg Num" />
-            <TableColumn fx:id="PriorityPassagetableview" prefWidth="109.60003662109375" text="Priority Passage" />
+          <TableColumn fx:id="VehicleTypetablecolumn" prefWidth="111.20001220703125" text="Vehicle Type" />
+          <TableColumn fx:id="VehicleModeltablecolumn" prefWidth="104.79998779296875" text="Vehicle Model" />
+            <TableColumn fx:id="RegNumtablecolumn" prefWidth="64.0" text="Reg Num" />
+            <TableColumn fx:id="PriorityPassagetablecolumn" prefWidth="109.60003662109375" text="Priority Passage" />
         </columns>
       </TableView>
-      <TextField fx:id="vehiclemodeltextfield" layoutX="330.0" layoutY="150.0" promptText="Vehicle Model" />
+      <TextField fx:id="vehiclemodeltextfield" layoutX="218.0" layoutY="93.0" promptText="Vehicle Model" />
    </children>
 </AnchorPane>
