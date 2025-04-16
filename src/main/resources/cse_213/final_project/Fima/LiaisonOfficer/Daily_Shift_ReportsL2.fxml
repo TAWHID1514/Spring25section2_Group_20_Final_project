@@ -12,13 +12,13 @@
 
 <AnchorPane prefHeight="443.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.DailyShiftReports">
    <children>
-      <Label layoutX="27.0" layoutY="82.0" text="Booth ID" />
-      <TextField layoutX="110.0" layoutY="78.0" />
+      <Label fx:id="BoothIDtextfield" layoutX="27.0" layoutY="82.0" text="Booth ID" />
+      <TextField fx:id="BoothIDtextfield" layoutX="110.0" layoutY="78.0" />
       <Label layoutX="27.0" layoutY="129.0" text="Toll Operator" />
-      <TextField layoutX="110.0" layoutY="125.0" />
+      <TextField fx:id="TollOperatortextfield" layoutX="110.0" layoutY="125.0" />
       <Label layoutX="27.0" layoutY="174.0" text="Vehicle Count" />
-      <TextField layoutX="110.0" layoutY="170.0" />
-      <TextArea layoutX="27.0" layoutY="208.0" prefHeight="151.0" prefWidth="232.0" promptText="Describe Issue" />
+      <TextField fx:id="vehiclecounttextfield" layoutX="110.0" layoutY="170.0" />
+      <TextArea fx:id="describeissuetextarea" layoutX="27.0" layoutY="208.0" prefHeight="151.0" prefWidth="232.0" promptText="Describe Issue" />
       <Line endX="-66.70001220703125" endY="165.20001220703125" layoutX="347.0" layoutY="278.0" startX="-66.70001220703125" startY="-203.89999389648438" />
       <Line endX="327.89288330078125" endY="-30.399993896484375" layoutX="385.0" layoutY="104.0" startX="-104.20001220703125" startY="-30.399993896484375" />
       <Label layoutX="284.0" layoutY="14.0" text="Daily Shift Reports">
@@ -26,15 +26,15 @@
             <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <TableView layoutX="300.0" layoutY="92.0" prefHeight="200.0" prefWidth="400.0">
+      <TableView fx:id="showdatatableview" layoutX="300.0" layoutY="92.0" prefHeight="200.0" prefWidth="400.0">
         <columns>
-          <TableColumn prefWidth="103.20001220703125" text="Booth ID" />
-          <TableColumn prefWidth="108.0" text="Toll Operator" />
-            <TableColumn prefWidth="96.0" text="Vehicle Count" />
-            <TableColumn prefWidth="95.20001220703125" text="Issue" />
+          <TableColumn fx:id="BoothIDtablecolumn" prefWidth="103.20001220703125" text="Booth ID" />
+          <TableColumn fx:id="TollOperatortablecolumn" prefWidth="108.0" text="Toll Operator" />
+            <TableColumn fx:id="VehicleCounttablecolumn" prefWidth="96.0" text="Vehicle Count" />
+            <TableColumn fx:id="Issuetablecolumn" prefWidth="95.20001220703125" text="Issue" />
         </columns>
       </TableView>
-      <Button layoutX="185.0" layoutY="371.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" text="Submit" />
-      <Button layoutX="595.0" layoutY="328.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Home" />
+      <Button layoutX="185.0" layoutY="371.0" mnemonicParsing="false" onAction="#submitonactionbutton" prefHeight="26.0" prefWidth="74.0" text="Submit" />
+      <Button layoutX="595.0" layoutY="328.0" mnemonicParsing="false" onAction="#homeonactionbutton" prefHeight="26.0" prefWidth="89.0" text="Home" />
    </children>
 </AnchorPane>
