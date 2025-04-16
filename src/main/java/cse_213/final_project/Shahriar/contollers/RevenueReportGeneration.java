@@ -6,6 +6,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class RevenueReportGeneration
 {
     @javafx.fxml.FXML
@@ -27,14 +31,14 @@ public class RevenueReportGeneration
     public void initialize() {
         // Initialize DB connection
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tollplaza", "root", "");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tollplaza", "root", "");
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
         // Link table columns to RevenueData properties
-        dateColumn.setCellValueFactory(cellData -> cellData.getValue().dateProperty());
-        amountColumn.setCellValueFactory(cellData -> cellData.getValue().amountProperty().asObject());
+//        dateColumn.setCellValueFactory(cellData -> cellData.getValue().dateProperty());
+//        amountColumn.setCellValueFactory(cellData -> cellData.getValue().amountProperty().asObject());
     }
 
     @javafx.fxml.FXML

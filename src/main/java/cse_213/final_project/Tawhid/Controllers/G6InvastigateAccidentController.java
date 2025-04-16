@@ -1,5 +1,6 @@
 package cse_213.final_project.Tawhid.Controllers;
-
+import javafx.event.*;
+import javafx.scene.control.*;
 public class G6InvastigateAccidentController
 {
     @javafx.fxml.FXML
