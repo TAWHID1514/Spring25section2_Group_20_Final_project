@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.G1HandleSecurity">
+   <children>
+      <Label layoutX="85.0" layoutY="1.0" text="Handle Security and Illegal Activity">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="Flagged_vehicleListTV" layoutX="17.0" layoutY="89.0" prefHeight="160.0" prefWidth="465.0">
+        <columns>
+          <TableColumn fx:id="regNoCOL" prefWidth="103.20001029968262" text="Reg No" />
+          <TableColumn fx:id="FlaggedReasonCOL" prefWidth="110.40003204345703" text="Flagged Reason" />
+            <TableColumn fx:id="DrivingLicenceNoCOL" prefWidth="145.5999755859375" text="Licence No" />
+            <TableColumn fx:id="DateCOL" prefWidth="95.20001220703125" text="Date" />
+        </columns>
+      </TableView>
+      <TextField layoutX="179.0" layoutY="259.0" />
+      <Button layoutX="250.0" layoutY="329.0" mnemonicParsing="false" onAction="#SecurityIncidentOA" prefHeight="26.0" prefWidth="77.0" text="Save" />
+      <Text layoutX="97.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fine Amount:" />
+      <DatePicker layoutX="178.0" layoutY="293.0" prefHeight="26.0" prefWidth="150.0" />
+      <Text layoutX="91.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fine Due Date:" />
+      <TextField fx:id="regNoTF" layoutX="80.0" layoutY="49.0" />
+      <Text layoutX="33.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reg No:" />
+      <Button layoutX="250.0" layoutY="49.0" mnemonicParsing="false" onAction="#searchOA" text="Search" />
+   </children>
+</AnchorPane>

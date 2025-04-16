@@ -10,8 +10,6 @@ public class G_6_LaneManageController
     @javafx.fxml.FXML
     private TableColumn LanetfourCOL;
     @javafx.fxml.FXML
-    private ComboBox VehicleTypeCB;
-    @javafx.fxml.FXML
     private TableColumn laneSixCOL;
     @javafx.fxml.FXML
     private TableView alortedTV;
@@ -19,40 +17,25 @@ public class G_6_LaneManageController
     private TableColumn laneFiveCol;
     @javafx.fxml.FXML
     private TableColumn LaneoneCOL;
+    @javafx.fxml.FXML
+    private ComboBox Lane5CB;
+    @javafx.fxml.FXML
+    private ComboBox Lane6CB;
+    @javafx.fxml.FXML
+    private ComboBox Lane1CB;
+    @javafx.fxml.FXML
+    private ComboBox Lane2CB;
+    @javafx.fxml.FXML
+    private ComboBox Lane3CB;
+    @javafx.fxml.FXML
+    private ComboBox Lane4CB;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
-    public void Lane_SixOA(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
-    public void Lane_ThreeOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void Lane_twoOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void Lane_FourOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void AllowRouteOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void Lane_oneOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void notifyOwnerOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void Lane_FiveOA(ActionEvent actionEvent) {
+    public void SaveOA(ActionEvent actionEvent) {
     }
 }
