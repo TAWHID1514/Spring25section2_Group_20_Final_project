@@ -1,43 +1,52 @@
 package cse_213.final_project.Fima.Controllers;
 
-public class TollBoothOperatorDashboardFima
-{
-    @javafx.fxml.FXML
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+public class TollBoothOperatorDashboardFima {
+
+    @FXML
     private Label TollBoothOperatorDashboardlable;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    void collecttollpaymentsonactionbutton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void shiftattendanceonactionbutton(ActionEvent actionEvent) {
+    @FXML
+    void informationandsupportonactionbutton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void technicalissuesonactionbutton(ActionEvent actionEvent) {
+    @FXML
+    void logoutonactionbutton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void informationandsupportonactionbutton(ActionEvent actionEvent) {
+    @FXML
+    void profileinformationonactionbutton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void logoutonactionbutton(ActionEvent actionEvent) {
+    @FXML
+    void shiftattendanceonactionbutton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void vehicleinformationOnActionButton(ActionEvent actionEvent) {
+    @FXML
+    void technicalissuesonactionbutton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void collecttollpaymentsonactionbutton(ActionEvent actionEvent) {
+    @FXML
+    void vehicleinformationOnActionButton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void profileinformationonactionbutton(ActionEvent actionEvent) {
+    @FXML
+    void vipemergencyvehiclesonactionbutton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void vipemergencyvehiclesonactionbutton(ActionEvent actionEvent) {
-    }
 }

@@ -12,7 +12,7 @@
       <Label layoutX="53.0" layoutY="128.0" text="Technical Issues " />
       <TextField fx:id="TECHNICALissuetextfield" layoutX="166.0" layoutY="110.0" prefHeight="53.0" prefWidth="246.0" />
       <ComboBox fx:id="Issuestypecombobox" layoutX="166.0" layoutY="225.0" prefHeight="44.0" prefWidth="176.0" />
-      <TextArea fx:id="massagetextarea" layoutX="36.0" layoutY="335.0" prefHeight="134.0" prefWidth="527.0" style="-fx-background-color: green;" />
+      <TextArea fx:id="massageshowtextarea" layoutX="36.0" layoutY="335.0" prefHeight="134.0" prefWidth="527.0" style="-fx-background-color: green;" />
       <Button layoutX="456.0" layoutY="269.0" mnemonicParsing="false" onAction="#submitOnActionButton" prefHeight="36.0" prefWidth="88.0" text="submit" />
       <Button layoutX="467.0" layoutY="481.0" mnemonicParsing="false" onAction="#backonactionbutton" prefHeight="36.0" prefWidth="106.0" text="Back" />
       <Label layoutX="53.0" layoutY="238.0" text="Issues type" />
