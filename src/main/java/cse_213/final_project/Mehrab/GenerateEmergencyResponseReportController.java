@@ -1,5 +1,12 @@
 package cse_213.final_project.Mehrab;
 
+import javafx.event.ActionEvent;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.PieChart;
+import javafx.scene.control.*;
+
 public class GenerateEmergencyResponseReportController
 {
     @javafx.fxml.FXML
