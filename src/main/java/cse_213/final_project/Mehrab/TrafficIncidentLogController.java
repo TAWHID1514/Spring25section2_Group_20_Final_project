@@ -1,5 +1,8 @@
 package cse_213.final_project.Mehrab;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class TrafficIncidentLogController
 {
     @javafx.fxml.FXML
@@ -27,4 +30,9 @@ public class TrafficIncidentLogController
 
     @javafx.fxml.FXML
     public void initialize() {
-    }}
+    }
+
+    @javafx.fxml.FXML
+    public void logIncidentButtonOA(ActionEvent actionEvent) {
+    }
+}
