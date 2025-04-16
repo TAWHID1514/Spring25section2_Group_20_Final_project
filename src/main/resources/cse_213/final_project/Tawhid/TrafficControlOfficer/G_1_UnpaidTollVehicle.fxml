@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.UnpaidTollVehicleFXMLController">
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.G_1_UnpaidTollVehicleFXMLController">
    <children>
       <ComboBox fx:id="vehicleTypeCB" layoutX="130.0" layoutY="116.0" prefHeight="26.0" prefWidth="170.0" promptText="Vehicle Type" style="-fx-border-color: #1877F2;" />
       <Label layoutX="7.0" layoutY="120.0" text="Type:" />

@@ -22,7 +22,7 @@
                   <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#UpdateTollViolationOA" prefHeight="26.0" prefWidth="162.0" text="Update Toll Violation" />
                   <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#ManageExpemptionOA" prefHeight="26.0" prefWidth="178.0" text="Manage Exemption" />
                   <Button layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#GenerateDailyReportOA" prefHeight="26.0" prefWidth="170.0" text="Generate daily report" />
-                  <Button layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#ResolveDipositeOA" prefHeight="26.0" prefWidth="185.0" text="Resolve Disputes" />
+                  <Button layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#emergencyModeOA" prefHeight="26.0" prefWidth="185.0" text="Emergency Mode" />
                   <Button layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#manageLaneOA" prefHeight="26.0" prefWidth="170.0" text="Manage Lane" />
                   <Button layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#FlagASuspicusCarOA" prefHeight="26.0" prefWidth="180.0" text="Flag a suspicus car" />
                   <Button layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#EmergencyMovementOA" prefHeight="26.0" prefWidth="175.0" text="Emergency Movement" />

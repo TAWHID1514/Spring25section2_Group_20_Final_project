@@ -1,10 +1,7 @@
 package cse_213.final_project.Tawhid.Controllers;
-
-import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
-
-public class VIPmovementController
+import javafx.event.*;
+import javafx.scene.control.*;
+public class G_8_VIPmovementController
 {
     @javafx.fxml.FXML
     private ComboBox vehicleTypeCB;

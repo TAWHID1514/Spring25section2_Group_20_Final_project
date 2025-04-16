@@ -1,9 +1,7 @@
 package cse_213.final_project.Tawhid.Controllers;
-
 import javafx.event.*;
 import javafx.scene.control.*;
-
-public class ExemptionController
+public class G_3_1_exemptionFxmlController
 {
     @javafx.fxml.FXML
     private TableColumn exemptionVehicleTypeCol;

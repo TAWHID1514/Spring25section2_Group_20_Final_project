@@ -15,7 +15,7 @@ public class Dashboard_TOCFXMLcontroller
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void ResolveDipositeOA(ActionEvent actionEvent) {
     }
 
@@ -26,7 +26,7 @@ public class Dashboard_TOCFXMLcontroller
     @javafx.fxml.FXML
     public void trackUnpaidTollVehicleOA(ActionEvent actionEvent) throws IOException {
         Parent root =null;
-        FXMLLoader fxmlLoader = new FXMLLoader(UnpaidTollVehicleFXMLController.class.getResource("UnpaidTollVehicle.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(UnpaidTollVehicleFXMLController.class.getResource("G_1_UnpaidTollVehicle.fxml"));
         root = fxmlLoader.load();
         Scene scene = new Scene(root);
 //        Stage stage = new Stage();
@@ -62,5 +62,9 @@ public class Dashboard_TOCFXMLcontroller
 
     @javafx.fxml.FXML
     public void manageLaneOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void emergencyModeOA(ActionEvent actionEvent) {
     }
 }

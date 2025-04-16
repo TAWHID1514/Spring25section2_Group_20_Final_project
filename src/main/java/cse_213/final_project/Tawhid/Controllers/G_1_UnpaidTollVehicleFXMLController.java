@@ -3,7 +3,7 @@ package cse_213.final_project.Tawhid.Controllers;
 import javafx.event.*;
 import javafx.scene.control.*;
 
-public class UnpaidTollVehicleFXMLController
+public class G_1_UnpaidTollVehicleFXMLController
 {
     @javafx.fxml.FXML
     private TextField carRegNOTF;
@@ -22,16 +22,5 @@ public class UnpaidTollVehicleFXMLController
 
     @javafx.fxml.FXML
     public void registerOA(ActionEvent actionEvent) {
-    }
-
-    public static class UnpaidfineList
-    {
-        @javafx.fxml.FXML
-        public void initialize() {
-        }
-
-        @javafx.fxml.FXML
-        public void backToUpdateViolationOA(ActionEvent actionEvent) {
-        }
     }
 }
