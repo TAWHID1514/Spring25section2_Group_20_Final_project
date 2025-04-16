@@ -9,9 +9,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="885.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse_213.final_project.Mehrab.MonthlySummaryReportController">
+<AnchorPane prefHeight="600.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Mehrab.MonthlySummaryReportController">
 
-    <Label layoutX="200" layoutY="20" text="Monthly Summary Report" />
+    <Label layoutX="319.0" layoutY="24.0" prefHeight="17.0" prefWidth="143.0" text="Monthly Summary Report" />
 
     <Label layoutX="30" layoutY="70" text="Month" />
     <DatePicker fx:id="monthPicker" layoutX="150" layoutY="70" prefWidth="200" />
@@ -32,7 +32,7 @@
         </columns>
     </TableView>
 
-    <PieChart fx:id="revenuePieChart" layoutX="495.0" layoutY="394.0" prefHeight="150" prefWidth="260.0" />
+    <PieChart fx:id="revenuePieChart" layoutX="512.0" layoutY="394.0" prefHeight="150" prefWidth="243.0" />
 
     <Label fx:id="errorMessage" layoutX="30" layoutY="480" textFill="red" visible="false" />
     <Label fx:id="confirmationMessage" layoutX="30" layoutY="500" textFill="green" visible="false" />
