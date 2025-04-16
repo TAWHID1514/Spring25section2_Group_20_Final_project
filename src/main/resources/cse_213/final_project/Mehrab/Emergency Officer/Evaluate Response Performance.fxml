@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="758.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse_213.final_project.Mehrab.EvaluateResponsePerformanceController">
+
+    <Label layoutX="250" layoutY="20" text="Evaluate Response Performance" />
+
+    <Label layoutX="30" layoutY="70" text="Start Date" />
+    <DatePicker fx:id="startDatePicker" layoutX="150" layoutY="70" prefWidth="200" />
+
+    <Label layoutX="30" layoutY="120" text="End Date" />
+    <DatePicker fx:id="endDatePicker" layoutX="150" layoutY="120" prefWidth="200" />
+
+    <Label layoutX="432.0" layoutY="70.0" text="Incident Type" />
+    <ComboBox fx:id="incidentTypeComboBox" layoutX="552.0" layoutY="70.0" prefWidth="200" />
+
+    <Label layoutX="29.0" layoutY="170.0" text="Response Time (minutes)" />
+    <TextField fx:id="responseTimeField" layoutX="186.0" layoutY="170.0" prefWidth="200" promptText="Enter response time" />
+
+    <Label layoutX="29.0" layoutY="220.0" text="Number of Incidents Handled" />
+    <TextField fx:id="numIncidentsField" layoutX="203.0" layoutY="216.0" prefWidth="200" promptText="Enter number of incidents" />
+
+    <Label layoutX="428.0" layoutY="170.0" text="Team Performance" />
+    <ComboBox fx:id="teamPerformanceComboBox" layoutX="548.0" layoutY="170.0" prefWidth="200" />
+
+    <Label layoutX="431.0" layoutY="220.0" text="Efficiency Rating" />
+    <ComboBox fx:id="efficiencyRatingComboBox" layoutX="551.0" layoutY="220.0" prefWidth="200" />
+
+    <Button fx:id="evaluatePerformanceButton" layoutX="109.0" layoutY="334.0" onAction="#evaluatePerformanceButtonOA" prefWidth="150" text="Evaluate Performance" />
+
+    <Label layoutX="20.0" layoutY="379.0" text="Performance Data" />
+    <TextArea fx:id="performanceDataArea" editable="false" layoutX="20.0" layoutY="399.0" prefHeight="100" prefWidth="740" wrapText="true" />
+
+    <Label layoutX="20.0" layoutY="516.0" text="Bar Chart of Emergency Responses" />
+    <BarChart fx:id="performanceBarChart" layoutX="20.0" layoutY="536.0" prefHeight="150" prefWidth="740">
+        <xAxis>
+            <CategoryAxis fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis" />
+        </yAxis>
+    </BarChart>
+
+    <Label fx:id="errorMessage" layoutX="30" layoutY="770" textFill="red" visible="false" />
+    <Label fx:id="confirmationMessage" layoutX="30" layoutY="790" textFill="green" visible="false" />
+   <Button layoutX="403.0" layoutY="334.0" mnemonicParsing="false" onAction="#showbarChartOA" prefHeight="25.0" prefWidth="249.0" text="Show Bar Chart" />
+</AnchorPane>
