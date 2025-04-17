@@ -17,11 +17,12 @@ public class Dashboard_TOCFXMLcontroller
     }
 
     @Deprecated
-    public void ResolveDipositeOA(ActionEvent actionEvent) {
+    public void ResolveDipositeOA(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("Tawhid/Controllers/TrafficControlOfficer/.fxml");
     }
 
     @javafx.fxml.FXML
-    public void FlagASuspicusCarOA(ActionEvent actionEvent) {
+    public void FlagASuspicusCarOA(ActionEvent actionEvent) throws IOException {
     }
 
     @javafx.fxml.FXML
@@ -29,11 +30,12 @@ public class Dashboard_TOCFXMLcontroller
     }
 
     @javafx.fxml.FXML
-    public void EmergencyMovementOA(ActionEvent actionEvent) {
+    public void EmergencyMovementOA(ActionEvent actionEvent) throws IOException {
     }
 
     @javafx.fxml.FXML
-    public void UpdateTollViolationOA(ActionEvent actionEvent) {
+    public void UpdateTollViolationOA(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo(".fxml");
     }
 
     @javafx.fxml.FXML
@@ -42,22 +44,24 @@ public class Dashboard_TOCFXMLcontroller
     }
 
     @javafx.fxml.FXML
-    public void ManageExpemptionOA(ActionEvent actionEvent) {
+    public void ManageExpemptionOA(ActionEvent actionEvent) throws IOException {
     }
 
     @javafx.fxml.FXML
-    public void dashboardOA(ActionEvent actionEvent) {
+    public void dashboardOA(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("Tawhid/Controllers/TrafficControlOfficer/Dashboard_TCO.fxml");
     }
 
     @javafx.fxml.FXML
-    public void GenerateDailyReportOA(ActionEvent actionEvent) {
+    public void GenerateDailyReportOA(ActionEvent actionEvent) throws IOException {
     }
 
     @javafx.fxml.FXML
-    public void manageLaneOA(ActionEvent actionEvent) {
+    public void manageLaneOA(ActionEvent actionEvent) throws IOException {
     }
 
     @javafx.fxml.FXML
-    public void emergencyModeOA(ActionEvent actionEvent) {
+    public void emergencyModeOA(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("Tawhid/Controllers/TrafficControlOfficer/G_8_VIPMovement.fxml");
     }
 }
