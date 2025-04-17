@@ -8,17 +8,18 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="534.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.Controllers.Tollcollector">
+<AnchorPane prefHeight="561.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.Controllers.Tollcollector">
    <children>
-      <ComboBox fx:id="vehicleTypecombobox" layoutX="14.0" layoutY="24.0" prefWidth="150.0" promptText="vehicle Type" />
-      <DatePicker fx:id="datedatepicker" layoutX="14.0" layoutY="69.0" promptText="Date" />
-      <TextField fx:id="regnumtextfield" layoutX="14.0" layoutY="111.0" promptText="Reg Num" />
-      <TextField fx:id="amounttextfield" layoutX="206.0" layoutY="24.0" promptText="Amount" />
-      <Button layoutX="199.0" layoutY="108.0" mnemonicParsing="false" onAction="#generateOnActionButton" text="Generate" />
-      <Button layoutX="524.0" layoutY="470.0" mnemonicParsing="false" onAction="#retryOnActionButton" text="Retry" />
-      <Button layoutX="367.0" layoutY="470.0" mnemonicParsing="false" onAction="#paymentOnActionButton" text="Payment" />
-      <TableView fx:id="showdatatableview" layoutX="32.0" layoutY="258.0" prefHeight="200.0" prefWidth="303.0">
+      <ComboBox fx:id="vehicleTypecombobox" layoutX="26.0" layoutY="95.0" prefWidth="150.0" promptText="vehicle Type" />
+      <DatePicker fx:id="datedatepicker" layoutX="26.0" layoutY="145.0" prefHeight="26.0" prefWidth="150.0" promptText="Date" />
+      <TextField fx:id="regnumtextfield" layoutX="26.0" layoutY="190.0" promptText="Reg Num" />
+      <TextField fx:id="amounttextfield" layoutX="205.0" layoutY="95.0" promptText="Amount" />
+      <Button layoutX="144.0" layoutY="232.0" mnemonicParsing="false" onAction="#generateOnActionButton" prefHeight="26.0" prefWidth="90.0" text="Generate" />
+      <Button layoutX="389.0" layoutY="402.0" mnemonicParsing="false" onAction="#retryOnActionButton" prefHeight="26.0" prefWidth="112.0" text="Retry" />
+      <Button layoutX="387.0" layoutY="358.0" mnemonicParsing="false" onAction="#paymentOnActionButton" prefHeight="26.0" prefWidth="112.0" text="Payment" />
+      <TableView fx:id="showdatatableview" layoutX="12.0" layoutY="271.0" prefHeight="200.0" prefWidth="303.0">
         <columns>
           <TableColumn fx:id="vehicleTypetablecolumn" prefWidth="91.20001602172852" text="vehicle Type" />
           <TableColumn fx:id="RegNumtablecolumn" prefWidth="76.79998779296875" text="Reg Num" />
@@ -26,6 +27,11 @@
             <TableColumn fx:id="amounttablecolumn" prefWidth="75.0" text="Amount" />
         </columns>
       </TableView>
-      <Label fx:id="showmassagelable" layoutX="442.0" layoutY="121.0" prefHeight="63.0" prefWidth="82.0" style="-fx-border-color: red;" textAlignment="CENTER" />
+      <Label fx:id="showmassagelable" layoutX="328.0" layoutY="149.0" prefHeight="81.0" prefWidth="118.0" style="-fx-border-color: red;" textAlignment="CENTER" />
+      <Label layoutX="218.0" layoutY="20.0" prefHeight="27.0" prefWidth="193.0" text="Toll Collector">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
