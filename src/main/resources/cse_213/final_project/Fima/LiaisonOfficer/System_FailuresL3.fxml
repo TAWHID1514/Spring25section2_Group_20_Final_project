@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="542.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.SystemFailures">
+<AnchorPane prefHeight="484.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.SystemFailures">
    <children>
       <Label layoutX="255.0" layoutY="14.0" text="System Failures">
          <font>
@@ -18,22 +18,22 @@
       </Label>
       <Label layoutX="36.0" layoutY="78.0" text="Booth No" />
       <Label layoutX="36.0" layoutY="128.0" text="Issue Type" />
-      <ComboBox layoutX="105.0" layoutY="74.0" prefWidth="150.0" />
-      <ComboBox layoutX="105.0" layoutY="124.0" prefWidth="150.0" />
-      <TableView layoutX="5.0" layoutY="195.0" prefHeight="200.0" prefWidth="427.0">
+      <ComboBox fx:id="BoothNocombobox" layoutX="105.0" layoutY="74.0" prefWidth="150.0" />
+      <ComboBox fx:id="IssueTypecombobox" layoutX="105.0" layoutY="124.0" prefWidth="150.0" />
+      <TableView fx:id="showdatatableview" layoutX="5.0" layoutY="195.0" prefHeight="200.0" prefWidth="427.0">
         <columns>
-          <TableColumn prefWidth="113.60003519058228" text="Booth No" />
-          <TableColumn prefWidth="98.39997100830078" text="Issue Type" />
-            <TableColumn prefWidth="93.5999755859375" text="Device" />
-            <TableColumn prefWidth="121.5999755859375" text="Priority" />
+          <TableColumn fx:id="BoothNotablecolumn" prefWidth="113.60003519058228" text="Booth No" />
+          <TableColumn fx:id="IssueTypetablecolumn" prefWidth="98.39997100830078" text="Issue Type" />
+            <TableColumn fx:id="Devicetablecolumn" prefWidth="93.5999755859375" text="Device" />
+            <TableColumn fx:id="Prioritytablecolumn" prefWidth="121.5999755859375" text="Priority" />
         </columns>
       </TableView>
-      <Button layoutX="168.0" layoutY="412.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="Submit" />
-      <Button layoutX="517.0" layoutY="484.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="83.0" text="Home" />
+      <Button layoutX="103.0" layoutY="412.0" mnemonicParsing="false" onAction="#submitonactionbutton" prefHeight="26.0" prefWidth="171.0" text="Submit" />
+      <Button layoutX="507.0" layoutY="443.0" mnemonicParsing="false" onAction="#homeonactionbutton" prefHeight="26.0" prefWidth="114.0" text="Home" />
       <Label layoutX="290.0" layoutY="78.0" text="Device" />
-      <ComboBox layoutX="340.0" layoutY="74.0" prefWidth="150.0" />
-      <RadioButton layoutX="344.0" layoutY="128.0" mnemonicParsing="false" text="yes" />
+      <ComboBox fx:id="devicecombobox" layoutX="340.0" layoutY="74.0" prefWidth="150.0" />
+      <RadioButton fx:id="yesradiobutton" layoutX="344.0" layoutY="128.0" mnemonicParsing="false" text="yes" />
       <Label layoutX="294.0" layoutY="128.0" text="Priority" />
-      <RadioButton layoutX="412.0" layoutY="128.0" mnemonicParsing="false" text="no" />
+      <RadioButton fx:id="noradiobutton" layoutX="412.0" layoutY="128.0" mnemonicParsing="false" text="no" />
    </children>
 </AnchorPane>

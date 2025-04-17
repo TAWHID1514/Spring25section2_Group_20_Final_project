@@ -11,13 +11,12 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="StaffIDtextfield" prefHeight="390.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.TollBoothStaffManagementL1">
    <children>
-      <Label fx:id="StaffNametextfield" layoutX="14.0" layoutY="88.0" text="Staff Name" />
+      <Label layoutX="14.0" layoutY="88.0" text="Staff Name" />
       <Label layoutX="14.0" layoutY="131.0" text="Staff ID " />
-      <TextField layoutX="133.0" layoutY="84.0" />
-      <TextField layoutX="133.0" layoutY="127.0" />
+      <TextField fx:id="StaffNametextfield" layoutX="132.0" layoutY="84.0" />
+      <TextField fx:id="StaffIDtextfield" layoutX="133.0" layoutY="127.0" />
       <TextArea fx:id="issuedescribetextarea" layoutX="13.0" layoutY="244.0" prefHeight="83.0" prefWidth="270.0" promptText="Issue Describe" />
       <Label layoutX="14.0" layoutY="174.0" text="Sending Depertment" />
       <ComboBox fx:id="SendingDepertmentcombobox" layoutX="132.0" layoutY="170.0" prefWidth="150.0" />

@@ -1,4 +1,4 @@
-package cse_213.final_project.Fima.LiaisonOfficer;
+package cse_213.final_project.Fima.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
