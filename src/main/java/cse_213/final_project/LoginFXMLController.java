@@ -30,18 +30,6 @@ public class LoginFXMLController
 
     @javafx.fxml.FXML
     public void loginOA(ActionEvent actionEvent) throws IOException {
-//        if (userIDtf.getText().isEmpty()){
-//            errormassageLabel.setText("Fill your user ID");
-//            return;
-//        }
-//        if (passwordTF.getText().isEmpty()){
-//            errormassageLabel.setText("Fill your accurate password");
-//            return;
-//        }
-//        else {
-//            errormassageLabel.setText(" ");
-//
-//        }
         SceneSwitcher.switchTo("Tawhid/TrafficControlOfficer/Dashboard_TCO.fxml");
     }
 
