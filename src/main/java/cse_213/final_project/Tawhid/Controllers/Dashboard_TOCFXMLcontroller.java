@@ -1,5 +1,6 @@
 package cse_213.final_project.Tawhid.Controllers;
 
+import cse_213.final_project.SceneSwitcher;
 import javafx.event.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -36,7 +37,8 @@ public class Dashboard_TOCFXMLcontroller
     }
 
     @javafx.fxml.FXML
-    public void LogOutOA(ActionEvent actionEvent) {
+    public void LogOutOA(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("login.fxml");
     }
 
     @javafx.fxml.FXML

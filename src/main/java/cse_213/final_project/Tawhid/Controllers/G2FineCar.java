@@ -1,27 +1,31 @@
 package cse_213.final_project.Tawhid.Controllers;
 import javafx.event.*;
 import javafx.scene.control.*;
-public class G1HandleSecurityController
+public class G2FineCar
 {
     @javafx.fxml.FXML
-    private TableColumn FlaggedReasonCOL;
+    private DatePicker DuedateDP;
     @javafx.fxml.FXML
-    private TableColumn DrivingLicenceNoCOL;
+    private TextField fineAmountTF;
     @javafx.fxml.FXML
-    private TableColumn regNoCOL;
+    private ComboBox flaggedReasonCB;
     @javafx.fxml.FXML
-    private TextField regNoTF;
+    private TableColumn regNoCol;
     @javafx.fxml.FXML
-    private TableView Flagged_vehicleListTV;
+    private TableColumn licenceNoCol;
     @javafx.fxml.FXML
-    private TableColumn DateCOL;
+    private TableView flaggedCarTV;
+    @javafx.fxml.FXML
+    private TableColumn flaggedReasonCOl;
+    @javafx.fxml.FXML
+    private TextField searchTF;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void SecurityIncidentOA(ActionEvent actionEvent) {
+    public void saveOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
