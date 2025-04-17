@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class LoginFXMLController
 {
@@ -54,9 +55,14 @@ public class LoginFXMLController
         if (UserType==null||UserType.isEmpty()){
             errormassageLabel.setText("Select user Type");
         }
-        if (!userID.matches("\\d{4,}")){
-            errormassageLabel.setText("User ID must be greater then 4 ");
+        if ((UsertypeCB.getValue().equals("Traffic control officer"))){
+            SceneSwitcher.switchTo("Tawhid/TrafficControlOfficer/Dashboard_TCO.fxml");
         }
+
+
+
+
+
     }
 
     @javafx.fxml.FXML
