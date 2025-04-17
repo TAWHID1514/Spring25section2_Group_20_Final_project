@@ -8,22 +8,27 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="497.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.InterdepartmentalCommunicationL4">
+<AnchorPane prefHeight="450.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Fima.LiaisonOfficer.InterdepartmentalCommunicationL4">
    <children>
-      <TableView layoutX="14.0" layoutY="95.0" prefHeight="107.0" prefWidth="386.0">
+      <TableView fx:id="showdatatableview" layoutX="14.0" layoutY="95.0" prefHeight="107.0" prefWidth="386.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Message Title " />
-          <TableColumn prefWidth="75.0" text="Sender" />
-            <TableColumn prefWidth="75.0" text="Status" />
+          <TableColumn fx:id="MessageTitletablecolumn" prefWidth="146.40002918243408" text="Message Title " />
+          <TableColumn fx:id="Sendertablecolumn" prefWidth="115.20001220703125" text="Sender" />
+            <TableColumn fx:id="Statustablecolumn" prefWidth="124.00006103515625" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="323.0" layoutY="211.0" mnemonicParsing="false" text="Load Button" />
-      <TextArea layoutX="14.0" layoutY="294.0" prefHeight="75.0" prefWidth="212.0" promptText="Reply Massage" />
-      <TextField layoutX="76.0" layoutY="384.0" />
+      <Button layoutX="323.0" layoutY="211.0" mnemonicParsing="false" onAction="#loadonactionbutton" text="Load " />
+      <TextArea fx:id="replymassagetextarea" layoutX="14.0" layoutY="294.0" prefHeight="75.0" prefWidth="212.0" promptText="Reply Massage" />
+      <TextField fx:id="receivertextfield" layoutX="76.0" layoutY="384.0" />
       <Label layoutX="14.0" layoutY="388.0" text="Receiver" />
-      <Button layoutX="246.0" layoutY="318.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" text="Send" />
-      <Line endX="522.0" endY="-0.5" layoutX="106.0" layoutY="249.0" startX="-105.99999237060547" startY="-0.5" />
+      <Button layoutX="246.0" layoutY="318.0" mnemonicParsing="false" onAction="#sendonactionbutton" prefHeight="26.0" prefWidth="101.0" text="Send" />
+      <Line endX="398.29998779296875" endY="-0.5" layoutX="106.0" layoutY="249.0" startX="-105.99999237060547" startY="-0.5" />
+      <Label layoutX="107.0" layoutY="14.0" text="Interdepartmental Communication">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

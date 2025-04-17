@@ -20,25 +20,25 @@
       <Label layoutX="14.0" layoutY="73.0" text=" Name" />
       <Label layoutX="56.0" layoutY="111.0" text="ID" />
       <Label layoutX="17.0" layoutY="148.0" text="Contact Info" />
-      <TextField layoutX="129.0" layoutY="69.0" />
-      <TextField layoutX="130.0" layoutY="107.0" />
-      <TextField layoutX="131.0" layoutY="144.0" />
+      <TextField fx:id="nametextfield" layoutX="131.0" layoutY="69.0" />
+      <TextField fx:id="idtextfield" layoutX="130.0" layoutY="107.0" />
+      <TextField fx:id="contactinfotextfield" layoutX="131.0" layoutY="144.0" />
       <Label layoutX="50.0" layoutY="190.0" />
       <Label layoutX="18.0" layoutY="191.0" text="Department" />
-      <ComboBox layoutX="130.0" layoutY="187.0" prefWidth="150.0" />
-      <Label layoutX="334.0" layoutY="64.0" text="Inquiries Purpose" />
-      <TextArea layoutX="334.0" layoutY="82.0" prefHeight="92.0" prefWidth="232.0" />
-      <TableView layoutX="1.0" layoutY="234.0" prefHeight="200.0" prefWidth="511.0">
+      <ComboBox fx:id="departmentcombobox" layoutX="130.0" layoutY="187.0" prefWidth="150.0" />
+      <Label layoutX="334.0" layoutY="73.0" text="Inquiries Purpose" />
+      <TextArea fx:id="inquiriespurposetextarea" layoutX="334.0" layoutY="98.0" prefHeight="92.0" prefWidth="232.0" />
+      <TableView fx:id="showdatatableview" layoutX="1.0" layoutY="234.0" prefHeight="200.0" prefWidth="511.0">
         <columns>
-          <TableColumn prefWidth="127.20001220703125" text="Name" />
-          <TableColumn prefWidth="58.39996337890625" text="ID" />
-            <TableColumn prefWidth="104.00006103515625" text="Contact Info" />
-            <TableColumn prefWidth="91.20001220703125" text="Department" />
-            <TableColumn prefWidth="134.39996337890625" text="Inquiries Purpose" />
+          <TableColumn fx:id="Nametablecolumn" prefWidth="127.20001220703125" text="Name" />
+          <TableColumn fx:id="idtablecolumn" prefWidth="58.39996337890625" text="ID" />
+            <TableColumn fx:id="ContactInfotablecolumn" prefWidth="104.00006103515625" text="Contact Info" />
+            <TableColumn fx:id="Departmenttablecolumn" prefWidth="91.20001220703125" text="Department" />
+            <TableColumn fx:id="InquiriesPurposetablecolumn" prefWidth="134.39996337890625" text="Inquiries Purpose" />
         </columns>
       </TableView>
-      <Label layoutX="566.0" layoutY="234.0" prefHeight="78.0" prefWidth="118.0" style="-fx-border-color: red;" text="Label" />
-      <Button layoutX="379.0" layoutY="448.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" text="Approve" />
-      <Button layoutX="611.0" layoutY="387.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Home" />
+      <Label fx:id="showmassagelable" layoutX="566.0" layoutY="234.0" prefHeight="78.0" prefWidth="118.0" style="-fx-border-color: red;" text="Label" />
+      <Button layoutX="379.0" layoutY="448.0" mnemonicParsing="false" onAction="#approveonactionbutton" prefHeight="26.0" prefWidth="97.0" text="Approve" />
+      <Button layoutX="611.0" layoutY="387.0" mnemonicParsing="false" onAction="#homeonactionbutton" prefHeight="26.0" prefWidth="98.0" text="Home" />
    </children>
 </AnchorPane>
