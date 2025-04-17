@@ -25,15 +25,6 @@ public class Dashboard_TOCFXMLcontroller
 
     @javafx.fxml.FXML
     public void trackUnpaidTollVehicleOA(ActionEvent actionEvent) throws IOException {
-        Parent root =null;
-        FXMLLoader fxmlLoader = new FXMLLoader(UnpaidTollVehicleFXMLController.class.getResource("G_1_UnpaidTollVehicle.fxml"));
-        root = fxmlLoader.load();
-        Scene scene = new Scene(root);
-//        Stage stage = new Stage();
-        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        stage.setTitle("Create your Account!");
-        stage.setScene(scene);
-        stage.show();
     }
 
     @javafx.fxml.FXML

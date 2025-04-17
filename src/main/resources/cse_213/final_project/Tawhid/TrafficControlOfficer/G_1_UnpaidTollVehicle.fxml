@@ -17,7 +17,7 @@
       <DatePicker fx:id="ruleBreakDateDP" layoutX="131.0" layoutY="182.0" prefHeight="26.0" prefWidth="170.0" promptText="Rule breaking date" style="-fx-border-color: #1877F2;" />
       <Label layoutX="7.0" layoutY="186.0" text="Date:" />
       <Label layoutX="7.0" layoutY="221.0" text="Toll amount:" />
-      <TextField fx:id="tollAmountTF" layoutX="131.0" layoutY="217.0" prefHeight="26.0" prefWidth="170.0" promptText="XXXX.XX Taka" style="-fx-border-color: #1877F2;" />
+      <TextField fx:id="tollAmountTF" layoutX="131.0" layoutY="217.0" prefHeight="26.0" prefWidth="170.0" promptText="XX.XX Taka" style="-fx-border-color: #1877F2;" />
       <Button layoutX="132.0" layoutY="251.0" mnemonicParsing="false" onAction="#registerOA" style="-fx-background-color: #1877F2;" text="Register Unpaid Toll Vehicles" textFill="WHITE" />
       <Label layoutX="150.0" layoutY="50.0" text="Unpaid toll Vehicle Info">
          <font>

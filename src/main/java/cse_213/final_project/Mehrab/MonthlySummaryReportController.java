@@ -1,7 +1,11 @@
 package cse_213.final_project.Mehrab;
 
-public class MonthlySummaryReportController
-{
+import javafx.event.*;
+import javafx.scene.chart.PieChart;
+import javafx.scene.control.*;
+
+public class MonthlySummaryReportController{
+
     @javafx.fxml.FXML
     private TableColumn monthColumn;
     @javafx.fxml.FXML
