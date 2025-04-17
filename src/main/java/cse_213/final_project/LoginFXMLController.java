@@ -1,36 +1,62 @@
 package cse_213.final_project;
 
-import cse_213.final_project.Tawhid.Controllers.Dashboard_TOCFXMLcontroller;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginFXMLController
 {
+//    public static List<User> userList = new ArrayList<>();
+
+    static {
+
+//        try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("data/user.bin"))) {
+//            userList.clear();
+//            List< User > loadedList = (List<User>) inputStream.readObject();
+//            userList.addAll(loadedList);
+//
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+    }
     @javafx.fxml.FXML
     private TextField userIDtf;
     @javafx.fxml.FXML
     private PasswordField passwordTF;
     @javafx.fxml.FXML
     private Label errormassageLabel;
+    @javafx.fxml.FXML
+    private ComboBox<String> UsertypeCB;
 
 
     @javafx.fxml.FXML
     public void initialize() {
+        UsertypeCB.getItems().addAll("Toll Plaza Administrator", "Vehicle Owner", "Police Authority",
+                "Traffic control officer", "Liaison Officer", "Toll booth operator",
+                "Finance Officer", "Emergency response Officer");
     }
 
     @javafx.fxml.FXML
     public void loginOA(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Tawhid/TrafficControlOfficer/Dashboard_TCO.fxml");
+        String UserType = UsertypeCB.getValue();
+        String userID = userIDtf.getText();
+        String password = passwordTF.getText();
+        if (UserType==null||UserType.isEmpty()){
+            errormassageLabel.setText("Select user Type");
+        }
+        if (!userID.matches("\\d{4,}")){
+            errormassageLabel.setText("User ID must be greater then 4 ");
+        }
     }
 
     @javafx.fxml.FXML

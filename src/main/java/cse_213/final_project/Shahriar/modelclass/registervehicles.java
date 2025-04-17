@@ -1,6 +1,6 @@
 package cse_213.final_project.Shahriar.modelclass;
 
-public class registervehicles {
+public class    registervehicles {
     private String licensePlate;
     private String vehicleType;
 
