@@ -53,4 +53,7 @@ public class VipEmergencyVehicles {
 
     }
 
+    @FXML
+    public void homeonactionbutton(ActionEvent actionEvent) {
+    }
 }
