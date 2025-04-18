@@ -1,5 +1,10 @@
 package cse_213.final_project.Mehrab;
 
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.control.*;
+
 public class MonitorIncidentResponseTimeController
 {
     @javafx.fxml.FXML
