@@ -12,10 +12,10 @@ import javafx.scene.control.TextField;
 public class Tollcollector {
 
     @FXML
-    private TableColumn<?, ?> RegNumtablecolumn;
+    private TableColumn<String, Tollcollector> RegNumtablecolumn;
 
     @FXML
-    private TableColumn<?, ?> amounttablecolumn;
+    private TableColumn<String, Tollcollector> amounttablecolumn;
 
     @FXML
     private TextField amounttextfield;
@@ -24,7 +24,7 @@ public class Tollcollector {
     private DatePicker datedatepicker;
 
     @FXML
-    private TableColumn<?, ?> datetablecolumn;
+    private TableColumn<String, Tollcollector> datetablecolumn;
 
     @FXML
     private TextField regnumtextfield;
@@ -39,7 +39,12 @@ public class Tollcollector {
     private ComboBox<?> vehicleTypecombobox;
 
     @FXML
-    private TableColumn<?, ?> vehicleTypetablecolumn;
+    private TableColumn<String, Tollcollector> vehicleTypetablecolumn;
+
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
 
     @FXML
     void generateOnActionButton(ActionEvent event) {

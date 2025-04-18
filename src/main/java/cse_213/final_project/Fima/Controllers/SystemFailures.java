@@ -13,19 +13,19 @@ public class SystemFailures {
     private ComboBox<?> BoothNocombobox;
 
     @FXML
-    private TableColumn<?, ?> BoothNotablecolumn;
+    private TableColumn<String, SystemFailures> BoothNotablecolumn;
 
     @FXML
-    private TableColumn<?, ?> Devicetablecolumn;
+    private TableColumn<String, SystemFailures> Devicetablecolumn;
 
     @FXML
     private ComboBox<?> IssueTypecombobox;
 
     @FXML
-    private TableColumn<?, ?> IssueTypetablecolumn;
+    private TableColumn<String, SystemFailures> IssueTypetablecolumn;
 
     @FXML
-    private TableColumn<?, ?> Prioritytablecolumn;
+    private TableColumn<String, SystemFailures> Prioritytablecolumn;
 
     @FXML
     private ComboBox<?> devicecombobox;

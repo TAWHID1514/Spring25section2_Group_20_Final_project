@@ -24,7 +24,7 @@ public class ProfileInformation {
     private TableColumn<String, ProfileInformation> DateofBirthTABLECOLUMN;
 
     @FXML
-    private TableColumn<?, ?> DateofJoiningTABLECOLUMN;
+    private TableColumn<String, ProfileInformation> DateofJoiningTABLECOLUMN;
 
     @FXML
     private DatePicker DateofJoiningdatepicker;
@@ -33,10 +33,10 @@ public class ProfileInformation {
     private RadioButton FemaleRADIOBUTTON;
 
     @FXML
-    private TableColumn<?, ?> GenderTABLECOLUMN;
+    private TableColumn<String, ProfileInformation> GenderTABLECOLUMN;
 
     @FXML
-    private TableColumn<?, ?> IDTABLECOLUMN;
+    private TableColumn<String, ProfileInformation> IDTABLECOLUMN;
 
     @FXML
     private TextField IDTEXTFIELD;
@@ -48,7 +48,7 @@ public class ProfileInformation {
     private TextField NAMETEXTFIELD;
 
     @FXML
-    private TableColumn<?, ?> NameTABLECOLUMN;
+    private TableColumn<String, ProfileInformation> NameTABLECOLUMN;
 
     @FXML
     private TableView<?> SHOWDATATABLEVIEW;

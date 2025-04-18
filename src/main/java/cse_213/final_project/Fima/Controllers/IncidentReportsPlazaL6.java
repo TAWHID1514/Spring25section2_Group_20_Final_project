@@ -15,10 +15,10 @@ public class IncidentReportsPlazaL6 {
     private ComboBox<?> BoothNumbercombobox;
 
     @FXML
-    private TableColumn<?, ?> BoothNumbertablecolumn;
+    private TableColumn<String, IncidentReportsPlazaL6> BoothNumbertablecolumn;
 
     @FXML
-    private TableColumn<?, ?> IncidentDetailstablecolumn;
+    private TableColumn<String, IncidentReportsPlazaL6> IncidentDetailstablecolumn;
 
     @FXML
     private TextArea IncidentDetailstextarea;
@@ -27,10 +27,10 @@ public class IncidentReportsPlazaL6 {
     private DatePicker ReportDatedatepicker;
 
     @FXML
-    private TableColumn<?, ?> ReportDatetablecolumn;
+    private TableColumn<String, IncidentReportsPlazaL6> ReportDatetablecolumn;
 
     @FXML
-    private TableColumn<?, ?> ReportTimetablecolumn;
+    private TableColumn<String, IncidentReportsPlazaL6> ReportTimetablecolumn;
 
     @FXML
     private TextField reporttimetextfield;

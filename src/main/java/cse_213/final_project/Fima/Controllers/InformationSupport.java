@@ -9,10 +9,10 @@ import javafx.scene.control.TextField;
 public class InformationSupport {
 
     @FXML
-    private ComboBox<?> VehicleTypecombobox;
+    private ComboBox<String> VehicleTypecombobox;
 
     @FXML
-    private ComboBox<?> Wheelcombobox;
+    private ComboBox<String> Wheelcombobox;
 
     @FXML
     private Label showmassagelable1;

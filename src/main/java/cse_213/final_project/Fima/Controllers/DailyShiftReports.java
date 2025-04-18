@@ -1,4 +1,4 @@
-package cse_213.final_project.Fima.LiaisonOfficer;
+package cse_213.final_project.Fima.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,22 +10,22 @@ import javafx.scene.control.TextField;
 public class DailyShiftReports {
 
     @FXML
-    private TableColumn<?, ?> BoothIDtablecolumn;
+    private TableColumn<String, DailyShiftReports> BoothIDtablecolumn;
 
     @FXML
     private TextField BoothIDtextfield;
 
     @FXML
-    private TableColumn<?, ?> Issuetablecolumn;
+    private TableColumn<String, DailyShiftReports> Issuetablecolumn;
 
     @FXML
-    private TableColumn<?, ?> TollOperatortablecolumn;
+    private TableColumn<String, DailyShiftReports> TollOperatortablecolumn;
 
     @FXML
     private TextField TollOperatortextfield;
 
     @FXML
-    private TableColumn<?, ?> VehicleCounttablecolumn;
+    private TableColumn<String, DailyShiftReports> VehicleCounttablecolumn;
 
     @FXML
     private TextArea describeissuetextarea;

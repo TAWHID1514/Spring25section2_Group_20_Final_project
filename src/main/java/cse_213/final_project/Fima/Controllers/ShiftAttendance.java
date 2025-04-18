@@ -18,16 +18,16 @@ public class ShiftAttendance {
     private RadioButton DAYRADIOBUTTON;
 
     @FXML
-    private TableColumn<?, ?> DateTABLECOLUMN;
+    private TableColumn<String, ShiftAttendance> DateTABLECOLUMN;
 
     @FXML
     private TextField ENDTIMETEXTFIELD;
 
     @FXML
-    private TableColumn<?, ?> EndTimeTABLECOLUMN;
+    private TableColumn<String, ShiftAttendance> EndTimeTABLECOLUMN;
 
     @FXML
-    private TableColumn<?, ?> IDTABLECOLUMN;
+    private TableColumn<String, ShiftAttendance> IDTABLECOLUMN;
 
     @FXML
     private TextField IDTEXTFIELD;
@@ -39,7 +39,7 @@ public class ShiftAttendance {
     private TextField OPERATORNAMETEXTFIELD;
 
     @FXML
-    private TableColumn<?, ?> OperatorNameTABLECOLUMN;
+    private TableColumn<String, ShiftAttendance> OperatorNameTABLECOLUMN;
 
     @FXML
     private TableView<?> SHOWDATATABLEVIEW;
@@ -48,16 +48,16 @@ public class ShiftAttendance {
     private TextField STARTTIMETEXTFIELD;
 
     @FXML
-    private TableColumn<?, ?> ShiftTABLECOLUMN;
+    private TableColumn<String, ShiftAttendance> ShiftTABLECOLUMN;
 
     @FXML
-    private TableColumn<?, ?> StartTimeTABLECOLUMN;
+    private TableColumn<String, ShiftAttendance> StartTimeTABLECOLUMN;
 
     @FXML
     private ComboBox<?> TOLLBOOTHOPERATORCOMBOBOX;
 
     @FXML
-    private TableColumn<?, ?> TollBoothNumberTABLECOLUMN;
+    private TableColumn<String, ShiftAttendance> TollBoothNumberTABLECOLUMN;
 
 
     @javafx.fxml.FXML

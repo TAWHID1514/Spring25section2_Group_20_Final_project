@@ -13,31 +13,31 @@ import javafx.scene.control.TextField;
 public class VehicleInformation {
 
     @FXML
-    private TableColumn<?, ?> Datetablecolumn;
+    private TableColumn<String, VehicleInformation> Datetablecolumn;
 
     @FXML
-    private TableColumn<?, ?> OwnerNametablecolumn;
+    private TableColumn<String, VehicleInformation> OwnerNametablecolumn;
 
     @FXML
-    private TableColumn<?, ?> RegNumtablecolumn;
+    private TableColumn<String, VehicleInformation> RegNumtablecolumn;
 
     @FXML
     private Label Regestrationlable;
 
     @FXML
-    private TableColumn<?, ?> Regestrationtablecolumn;
+    private TableColumn<String, VehicleInformation> Regestrationtablecolumn;
 
     @FXML
     private ComboBox<?> VehicleTollcombobox;
 
     @FXML
-    private TableColumn<?, ?> VehicleTolltablecolumn;
+    private TableColumn<String, VehicleInformation> VehicleTolltablecolumn;
 
     @FXML
     private ComboBox<?> VehicleTypecombobox;
 
     @FXML
-    private TableColumn<?, ?> VehicleTypetablecolumn;
+    private TableColumn<String, VehicleInformation> VehicleTypetablecolumn;
 
     @FXML
     private RadioButton Yesradiobutton;
@@ -56,6 +56,11 @@ public class VehicleInformation {
 
     @FXML
     private TableView<?> tableview;
+
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
 
     @FXML
     void backOnActionButton(ActionEvent event) {

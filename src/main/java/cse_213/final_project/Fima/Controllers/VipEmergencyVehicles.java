@@ -15,22 +15,22 @@ public class VipEmergencyVehicles {
     private Label PriorityPassageLable;
 
     @FXML
-    private TableColumn<?, ?> PriorityPassagetablecolumn;
+    private TableColumn<String, VipEmergencyVehicles> PriorityPassagetablecolumn;
 
     @FXML
     private TextField RegNumTextfield;
 
     @FXML
-    private TableColumn<?, ?> RegNumtablecolumn;
+    private TableColumn<String, VipEmergencyVehicles> RegNumtablecolumn;
 
     @FXML
-    private TableColumn<?, ?> VehicleModeltablecolumn;
+    private TableColumn<String, VipEmergencyVehicles> VehicleModeltablecolumn;
 
     @FXML
     private ComboBox<?> VehicleTypecombobox;
 
     @FXML
-    private TableColumn<?, ?> VehicleTypetablecolumn;
+    private TableColumn<String, VipEmergencyVehicles> VehicleTypetablecolumn;
 
     @FXML
     private RadioButton noradiobutton;
@@ -43,6 +43,10 @@ public class VipEmergencyVehicles {
 
     @FXML
     private RadioButton yesradiobutton;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
 
     @FXML
     void generateOnActionButton(ActionEvent event) {

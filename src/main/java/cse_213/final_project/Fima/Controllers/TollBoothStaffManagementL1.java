@@ -14,16 +14,16 @@ public class TollBoothStaffManagementL1 {
     private ComboBox<?> SendingDepertmentcombobox;
 
     @FXML
-    private TableColumn<?, ?> SendingDepertmenttablecloumn;
+    private TableColumn<String, TollBoothStaffManagementL1> SendingDepertmenttablecloumn;
 
     @FXML
-    private TableColumn<?, ?> StaffIDtablecloumn;
+    private TableColumn<String, TollBoothStaffManagementL1> StaffIDtablecloumn;
 
     @FXML
     private TextField StaffIDtextfield;
 
     @FXML
-    private TableColumn<?, ?> StaffNametablecolumn;
+    private TableColumn<String, TollBoothStaffManagementL1> StaffNametablecolumn;
 
     @FXML
     private TextField StaffNametextfield;
@@ -33,6 +33,11 @@ public class TollBoothStaffManagementL1 {
 
     @FXML
     private TableView<?> showdatatableview;
+
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
 
     @FXML
     void homeonactionbutton(ActionEvent event) {

@@ -6,6 +6,10 @@ import javafx.scene.control.Label;
 
 public class TollBoothOperatorDashboardFima {
 
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @FXML
     private Label TollBoothOperatorDashboardlable;
 

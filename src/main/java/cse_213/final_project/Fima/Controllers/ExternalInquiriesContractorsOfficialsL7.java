@@ -12,25 +12,25 @@ import javafx.scene.control.TextField;
 public class ExternalInquiriesContractorsOfficialsL7 {
 
     @FXML
-    private TableColumn<?, ?> ContactInfotablecolumn;
+    private TableColumn<String, ExternalInquiriesContractorsOfficialsL7> ContactInfotablecolumn;
 
     @FXML
-    private TableColumn<?, ?> Departmenttablecolumn;
+    private TableColumn<String, ExternalInquiriesContractorsOfficialsL7> Departmenttablecolumn;
 
     @FXML
-    private TableColumn<?, ?> InquiriesPurposetablecolumn;
+    private TableColumn<String, ExternalInquiriesContractorsOfficialsL7> InquiriesPurposetablecolumn;
 
     @FXML
-    private TableColumn<?, ?> Nametablecolumn;
+    private TableColumn<String, ExternalInquiriesContractorsOfficialsL7> Nametablecolumn;
 
     @FXML
     private TextField contactinfotextfield;
 
     @FXML
-    private ComboBox<?> departmentcombobox;
+    private ComboBox<String> departmentcombobox;
 
     @FXML
-    private TableColumn<?, ?> idtablecolumn;
+    private TableColumn<String, ExternalInquiriesContractorsOfficialsL7> idtablecolumn;
 
     @FXML
     private TextField idtextfield;

@@ -15,13 +15,13 @@ public class PaymentRetry {
     private TextField BOOTHOPERATORNAMETEXTFIELD;
 
     @FXML
-    private TableColumn<?, ?> BoothOperatorNameTABLECOLUMN;
+    private TableColumn<String, PaymentRetry> BoothOperatorNameTABLECOLUMN;
 
     @FXML
     private Label IssueTypeLABLE;
 
     @FXML
-    private TableColumn<?, ?> IssueTypeTABLECOLUMN;
+    private TableColumn<String, PaymentRetry> IssueTypeTABLECOLUMN;
 
     @FXML
     private RadioButton PaymentIssueRADIOBUTTON;
@@ -30,7 +30,7 @@ public class PaymentRetry {
     private TextField REGNUMBERTEXTFIELD;
 
     @FXML
-    private TableColumn<?, ?> RegNumTABLECOLUMN;
+    private TableColumn<String, PaymentRetry> RegNumTABLECOLUMN;
 
     @FXML
     private TableView<?> SHOWDATATABLEVIEW;
@@ -42,7 +42,7 @@ public class PaymentRetry {
     private TextField TOLLBOOTHNUMBERTEXTFIELD;
 
     @FXML
-    private TableColumn<?, ?> TollBoothNumberTABLECOLUMN;
+    private TableColumn<String, PaymentRetry> TollBoothNumberTABLECOLUMN;
 
     @FXML
     private RadioButton VehicleIssueRADIOBUTTON;
@@ -51,7 +51,7 @@ public class PaymentRetry {
     private ComboBox<?> VehicleTypeCOMBOBOX;
 
     @FXML
-    private TableColumn<?, ?> VehicleTypeTABLECOLUMN;
+    private TableColumn<String, PaymentRetry> VehicleTypeTABLECOLUMN;
 
 
 

@@ -13,13 +13,13 @@ import javafx.scene.control.TextField;
 public class StaffMeetingsBriefingsL5 {
 
     @FXML
-    private TableColumn<?, ?> MeetingInfotablecolumn;
+    private TableColumn<String, StaffMeetingsBriefingsL5> MeetingInfotablecolumn;
 
     @FXML
     private TextArea MeetingInfotextarea;
 
     @FXML
-    private TableColumn<?, ?> MeetingTimetablecolumn;
+    private TableColumn<String, StaffMeetingsBriefingsL5> MeetingTimetablecolumn;
 
     @FXML
     private TextField MeetingTimetextfield;
@@ -28,13 +28,13 @@ public class StaffMeetingsBriefingsL5 {
     private ComboBox<?> MeetingTypecombobox;
 
     @FXML
-    private TableColumn<?, ?> MeetingTypetablecolumn;
+    private TableColumn<String, StaffMeetingsBriefingsL5> MeetingTypetablecolumn;
 
     @FXML
     private RadioButton StaffAttendeesnoradiobutton;
 
     @FXML
-    private TableColumn<?, ?> StaffAttendeestablecolumn;
+    private TableColumn<String, StaffMeetingsBriefingsL5> StaffAttendeestablecolumn;
 
     @FXML
     private RadioButton StaffAttendeesyesradiobutton;
@@ -43,7 +43,7 @@ public class StaffMeetingsBriefingsL5 {
     private DatePicker meetingdatedatepicker;
 
     @FXML
-    private TableColumn<?, ?> meetingdatetablecolumn;
+    private TableColumn<String, StaffMeetingsBriefingsL5> meetingdatetablecolumn;
 
     @FXML
     private TableView<?> showdatratableview;
