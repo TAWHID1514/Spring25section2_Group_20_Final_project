@@ -1,66 +1,40 @@
-package cse_213.final_project.Fima.LiaisonOfficer;
+package cse_213.final_project.Fima.Controllers;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
-public class StaffMeetingsBriefingsL5 {
-
-    @FXML
-    private TableColumn<String, StaffMeetingsBriefingsL5> MeetingInfotablecolumn;
-
-    @FXML
-    private TextArea MeetingInfotextarea;
-
-    @FXML
-    private TableColumn<String, StaffMeetingsBriefingsL5> MeetingTimetablecolumn;
-
-    @FXML
-    private TextField MeetingTimetextfield;
-
-    @FXML
-    private ComboBox<String> MeetingTypecombobox;
-
-    @FXML
-    private TableColumn<String, StaffMeetingsBriefingsL5> MeetingTypetablecolumn;
-
-    @FXML
-    private RadioButton StaffAttendeesnoradiobutton;
-
-    @FXML
-    private TableColumn<String, StaffMeetingsBriefingsL5> StaffAttendeestablecolumn;
-
-    @FXML
+public class StaffMeetingsBriefingsL5
+{
+    @javafx.fxml.FXML
     private RadioButton StaffAttendeesyesradiobutton;
-
-    @FXML
+    @javafx.fxml.FXML
+    private TableColumn StaffAttendeestablecolumn;
+    @javafx.fxml.FXML
+    private TableColumn meetingdatetablecolumn;
+    @javafx.fxml.FXML
+    private RadioButton StaffAttendeesnoradiobutton;
+    @javafx.fxml.FXML
     private DatePicker meetingdatedatepicker;
-
-    @FXML
-    private TableColumn<String, StaffMeetingsBriefingsL5> meetingdatetablecolumn;
-
-    @FXML
-    private TableView<StaffMeetingsBriefingsL5> showdatratableview;
-
+    @javafx.fxml.FXML
+    private TableColumn MeetingTimetablecolumn;
+    @javafx.fxml.FXML
+    private TableView showdatratableview;
+    @javafx.fxml.FXML
+    private TextField MeetingTimetextfield;
+    @javafx.fxml.FXML
+    private TableColumn MeetingInfotablecolumn;
+    @javafx.fxml.FXML
+    private TextArea MeetingInfotextarea;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @FXML
-    void homeonactionbutton(ActionEvent event) {
-
+    @javafx.fxml.FXML
+    public void homeonactionbutton(ActionEvent actionEvent) {
     }
 
-    @FXML
-    void submitonactionbutton(ActionEvent event) {
-
+    @javafx.fxml.FXML
+    public void submitonactionbutton(ActionEvent actionEvent) {
     }
-
 }

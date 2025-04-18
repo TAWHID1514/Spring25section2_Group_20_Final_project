@@ -2,12 +2,12 @@ package cse_213.final_project.Fima.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.util.ArrayList;
+
+
 
 public class ShiftAttendance {
 
@@ -54,14 +54,38 @@ public class ShiftAttendance {
     private TableColumn<String, ShiftAttendance> StartTimeTABLECOLUMN;
 
     @FXML
-    private ComboBox<String> TOLLBOOTHOPERATORCOMBOBOX;
-
-    @FXML
     private TableColumn<String, ShiftAttendance> TollBoothNumberTABLECOLUMN;
+    @FXML
+    private ComboBox TOLLBOOTHnumberCOMBOBOX;
 
 
     @javafx.fxml.FXML
     public void initialize() {
+
+
+        TOLLBOOTHnumberCOMBOBOX.getItems().addAll("1","2","3","4","5","6");
+
+
+        IDTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,ShiftAttendance>("ID"));
+        OperatorNameTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,ShiftAttendance>("Operator Name"));
+        DateTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,ShiftAttendance>(" Date "));
+        ShiftTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,ShiftAttendance>("Shift"));
+        TollBoothNumberTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,ShiftAttendance>("Toll Booth Number"));
+        StartTimeTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,ShiftAttendance>("Start Time"));
+        EndTimeTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,ShiftAttendance>("End Time"));
+
+
+
+        ArrayList<ShiftAttendance> shiftAttendanceArrayList;
+        ToggleGroup tg;
+
+        String Shift ="";
+
+        if(DAYRADIOBUTTON.isSelected())
+            Shift="Day";
+        else if (NIGHTRADIOBUTTON.isSelected())
+            Shift="Night";
+
     }
 
     @FXML

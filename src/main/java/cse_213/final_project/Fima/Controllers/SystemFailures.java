@@ -6,6 +6,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class SystemFailures {
 
@@ -41,6 +42,22 @@ public class SystemFailures {
 
     @javafx.fxml.FXML
     public void initialize() {
+
+        BoothNocombobox.getItems().addAll("1","2","3","4","5","6");
+        IssueTypecombobox.getItems().addAll("TECHNICALISSUE","MAINTENANCEISSUE","SOFTWAREISSUE");
+        devicecombobox.getItems().addAll("CAMERA","MOUSE","PC");
+
+
+
+
+        BoothNotablecolumn.setCellValueFactory(new PropertyValueFactory<String,SystemFailures>("Booth No"));
+        IssueTypetablecolumn.setCellValueFactory(new PropertyValueFactory<String,SystemFailures>("Issue Type"));
+        Devicetablecolumn.setCellValueFactory(new PropertyValueFactory<String,SystemFailures>(" Device "));
+        Prioritytablecolumn.setCellValueFactory(new PropertyValueFactory<String,SystemFailures>("Priority"));
+
+
+
+
     }
 
     @FXML

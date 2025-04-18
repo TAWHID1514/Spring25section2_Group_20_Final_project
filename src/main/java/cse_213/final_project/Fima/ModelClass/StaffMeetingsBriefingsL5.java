@@ -4,26 +4,17 @@ import java.time.LocalDate;
 
 public class StaffMeetingsBriefingsL5 {
 
-    private String meetingtype,meetinginfo,staffattendees;
+    private String meetinginfo,staffattendees;
     private float meetingtime;
     private LocalDate meetingdate;
 
-    public StaffMeetingsBriefingsL5(String meetingtype, String meetinginfo, String staffattendees, float meetingtime, LocalDate meetingdate) {
-        this.meetingtype = meetingtype;
+    public StaffMeetingsBriefingsL5(String meetinginfo, String staffattendees, float meetingtime, LocalDate meetingdate) {
         this.meetinginfo = meetinginfo;
         this.staffattendees = staffattendees;
         this.meetingtime = meetingtime;
         this.meetingdate = meetingdate;
     }
 
-
-    public String getMeetingtype() {
-        return meetingtype;
-    }
-
-    public void setMeetingtype(String meetingtype) {
-        this.meetingtype = meetingtype;
-    }
 
     public String getMeetinginfo() {
         return meetinginfo;
@@ -57,15 +48,20 @@ public class StaffMeetingsBriefingsL5 {
         this.meetingdate = meetingdate;
     }
 
-
     @Override
     public String toString() {
         return "StaffMeetingsBriefingsL5{" +
-                "meetingtype='" + meetingtype + '\'' +
-                ", meetinginfo='" + meetinginfo + '\'' +
+                "meetinginfo='" + meetinginfo + '\'' +
                 ", staffattendees='" + staffattendees + '\'' +
                 ", meetingtime=" + meetingtime +
                 ", meetingdate=" + meetingdate +
                 '}';
     }
 }
+
+
+
+
+
+
+

@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class Tollcollector {
 
@@ -44,6 +45,18 @@ public class Tollcollector {
 
     @javafx.fxml.FXML
     public void initialize() {
+
+
+        vehicleTypecombobox.getItems().addAll("BUS","TRUCK","MICROBUS");
+
+
+
+
+        vehicleTypetablecolumn.setCellValueFactory(new PropertyValueFactory<String,Tollcollector>(" vehicle Type"));
+        RegNumtablecolumn.setCellValueFactory(new PropertyValueFactory<String,Tollcollector>("Reg Num"));
+        datetablecolumn.setCellValueFactory(new PropertyValueFactory<String,Tollcollector>(" date "));
+        amounttablecolumn.setCellValueFactory(new PropertyValueFactory<String,Tollcollector>(" amount "));
+
     }
 
     @FXML
