@@ -5,6 +5,11 @@ import javafx.fxml.FXML;
 
 public class LiaisonOfficerDashboard {
 
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @FXML
     void CrisisResponseonactionbutton(ActionEvent event) {
 

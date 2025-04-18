@@ -10,13 +10,13 @@ import javafx.scene.control.TextField;
 public class InterdepartmentalCommunicationL4 {
 
     @FXML
-    private TableColumn<?, ?> MessageTitletablecolumn;
+    private TableColumn<String,InterdepartmentalCommunicationL4> MessageTitletablecolumn;
 
     @FXML
-    private TableColumn<?, ?> Sendertablecolumn;
+    private TableColumn<String, InterdepartmentalCommunicationL4> Sendertablecolumn;
 
     @FXML
-    private TableColumn<?, ?> Statustablecolumn;
+    private TableColumn<String, InterdepartmentalCommunicationL4> Statustablecolumn;
 
     @FXML
     private TextField receivertextfield;
@@ -26,6 +26,11 @@ public class InterdepartmentalCommunicationL4 {
 
     @FXML
     private TableView<?> showdatatableview;
+
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
 
     @FXML
     void loadonactionbutton(ActionEvent event) {

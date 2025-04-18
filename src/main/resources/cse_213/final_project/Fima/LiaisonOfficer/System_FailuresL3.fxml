@@ -35,5 +35,6 @@
       <RadioButton fx:id="yesradiobutton" layoutX="344.0" layoutY="128.0" mnemonicParsing="false" text="yes" />
       <Label layoutX="294.0" layoutY="128.0" text="Priority" />
       <RadioButton fx:id="noradiobutton" layoutX="412.0" layoutY="128.0" mnemonicParsing="false" text="no" />
+      <Button layoutX="517.0" layoutY="453.0" mnemonicParsing="false" onAction="#homeonactionbutton" prefHeight="26.0" prefWidth="114.0" text="Home" />
    </children>
 </AnchorPane>

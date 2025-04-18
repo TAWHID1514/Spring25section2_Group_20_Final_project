@@ -36,6 +36,11 @@ public class DailyShiftReports {
     @FXML
     private TextField vehiclecounttextfield;
 
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @FXML
     void homeonactionbutton(ActionEvent event) {
 

@@ -38,6 +38,10 @@ public class IncidentReportsPlazaL6 {
     @FXML
     private TableView<?> showdatatableview;
 
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @FXML
     void Submitonactionbutton(ActionEvent event) {
 

@@ -47,6 +47,10 @@ public class ExternalInquiriesContractorsOfficialsL7 {
     @FXML
     private Label showmassagelable;
 
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @FXML
     void approveonactionbutton(ActionEvent event) {
 

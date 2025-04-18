@@ -59,6 +59,11 @@ public class ShiftAttendance {
     @FXML
     private TableColumn<?, ?> TollBoothNumberTABLECOLUMN;
 
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @FXML
     void BACKONACTIONBUTTON(ActionEvent event) {
 

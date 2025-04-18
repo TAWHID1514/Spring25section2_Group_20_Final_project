@@ -12,7 +12,7 @@ import javafx.scene.control.TextField;
 public class ProfileInformation {
 
     @FXML
-    private TableColumn<?, ?> AGETABLECOLUMN;
+    private TableColumn<String, ProfileInformation> AGETABLECOLUMN;
 
     @FXML
     private TextField AGETEXTFIELD;
@@ -21,7 +21,7 @@ public class ProfileInformation {
     private Label DateofBirthDATEPICKER;
 
     @FXML
-    private TableColumn<?, ?> DateofBirthTABLECOLUMN;
+    private TableColumn<String, ProfileInformation> DateofBirthTABLECOLUMN;
 
     @FXML
     private TableColumn<?, ?> DateofJoiningTABLECOLUMN;
@@ -55,6 +55,11 @@ public class ProfileInformation {
 
     @FXML
     private DatePicker dateofbirthdatepicker;
+
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
 
     @FXML
     void HOMEONACTIONBUTTON(ActionEvent event) {

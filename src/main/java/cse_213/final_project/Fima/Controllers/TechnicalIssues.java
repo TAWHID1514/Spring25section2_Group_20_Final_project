@@ -17,6 +17,11 @@ public class TechnicalIssues {
     @FXML
     private TextArea massageshowtextarea;
 
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @FXML
     void backonactionbutton(ActionEvent event) {
 

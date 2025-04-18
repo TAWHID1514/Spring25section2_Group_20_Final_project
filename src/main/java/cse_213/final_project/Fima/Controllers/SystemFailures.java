@@ -39,6 +39,10 @@ public class SystemFailures {
     @FXML
     private RadioButton yesradiobutton;
 
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @FXML
     void homeonactionbutton(ActionEvent event) {
 

@@ -53,6 +53,12 @@ public class PaymentRetry {
     @FXML
     private TableColumn<?, ?> VehicleTypeTABLECOLUMN;
 
+
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @FXML
     void HOMEONACTIONBUTTON(ActionEvent event) {
 
