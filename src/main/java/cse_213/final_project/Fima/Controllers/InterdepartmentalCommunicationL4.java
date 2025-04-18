@@ -25,7 +25,7 @@ public class InterdepartmentalCommunicationL4 {
     private TextArea replymassagetextarea;
 
     @FXML
-    private TableView<?> showdatatableview;
+    private TableView<InterdepartmentalCommunicationL4> showdatatableview;
 
 
     @javafx.fxml.FXML

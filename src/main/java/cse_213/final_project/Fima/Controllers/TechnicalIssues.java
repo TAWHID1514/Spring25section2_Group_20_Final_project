@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 public class TechnicalIssues {
 
     @FXML
-    private ComboBox<?> Issuestypecombobox;
+    private ComboBox<String> Issuestypecombobox;
 
     @FXML
     private TextField TECHNICALissuetextfield;

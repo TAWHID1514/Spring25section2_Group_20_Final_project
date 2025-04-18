@@ -10,7 +10,7 @@ import javafx.scene.control.TableView;
 public class SystemFailures {
 
     @FXML
-    private ComboBox<?> BoothNocombobox;
+    private ComboBox<String> BoothNocombobox;
 
     @FXML
     private TableColumn<String, SystemFailures> BoothNotablecolumn;
@@ -19,7 +19,7 @@ public class SystemFailures {
     private TableColumn<String, SystemFailures> Devicetablecolumn;
 
     @FXML
-    private ComboBox<?> IssueTypecombobox;
+    private ComboBox<String> IssueTypecombobox;
 
     @FXML
     private TableColumn<String, SystemFailures> IssueTypetablecolumn;
@@ -28,13 +28,13 @@ public class SystemFailures {
     private TableColumn<String, SystemFailures> Prioritytablecolumn;
 
     @FXML
-    private ComboBox<?> devicecombobox;
+    private ComboBox<String> devicecombobox;
 
     @FXML
     private RadioButton noradiobutton;
 
     @FXML
-    private TableView<?> showdatatableview;
+    private TableView<SystemFailures> showdatatableview;
 
     @FXML
     private RadioButton yesradiobutton;

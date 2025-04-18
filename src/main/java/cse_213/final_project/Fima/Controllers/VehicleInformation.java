@@ -28,13 +28,13 @@ public class VehicleInformation {
     private TableColumn<String, VehicleInformation> Regestrationtablecolumn;
 
     @FXML
-    private ComboBox<?> VehicleTollcombobox;
+    private ComboBox<String> VehicleTollcombobox;
 
     @FXML
     private TableColumn<String, VehicleInformation> VehicleTolltablecolumn;
 
     @FXML
-    private ComboBox<?> VehicleTypecombobox;
+    private ComboBox<String> VehicleTypecombobox;
 
     @FXML
     private TableColumn<String, VehicleInformation> VehicleTypetablecolumn;
@@ -55,7 +55,7 @@ public class VehicleInformation {
     private TextField regnumtextfield;
 
     @FXML
-    private TableView<?> tableview;
+    private TableView<VehicleInformation> tableview;
 
 
     @javafx.fxml.FXML

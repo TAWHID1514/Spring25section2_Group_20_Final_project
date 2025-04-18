@@ -42,7 +42,7 @@ public class ShiftAttendance {
     private TableColumn<String, ShiftAttendance> OperatorNameTABLECOLUMN;
 
     @FXML
-    private TableView<?> SHOWDATATABLEVIEW;
+    private TableView<ShiftAttendance> SHOWDATATABLEVIEW;
 
     @FXML
     private TextField STARTTIMETEXTFIELD;
@@ -54,7 +54,7 @@ public class ShiftAttendance {
     private TableColumn<String, ShiftAttendance> StartTimeTABLECOLUMN;
 
     @FXML
-    private ComboBox<?> TOLLBOOTHOPERATORCOMBOBOX;
+    private ComboBox<String> TOLLBOOTHOPERATORCOMBOBOX;
 
     @FXML
     private TableColumn<String, ShiftAttendance> TollBoothNumberTABLECOLUMN;

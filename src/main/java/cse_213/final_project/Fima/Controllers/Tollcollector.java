@@ -30,13 +30,13 @@ public class Tollcollector {
     private TextField regnumtextfield;
 
     @FXML
-    private TableView<?> showdatatableview;
+    private TableView<Tollcollector> showdatatableview;
 
     @FXML
     private Label showmassagelable;
 
     @FXML
-    private ComboBox<?> vehicleTypecombobox;
+    private ComboBox<String> vehicleTypecombobox;
 
     @FXML
     private TableColumn<String, Tollcollector> vehicleTypetablecolumn;

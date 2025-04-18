@@ -31,7 +31,7 @@ public class DailyShiftReports {
     private TextArea describeissuetextarea;
 
     @FXML
-    private TableView<?> showdatatableview;
+    private TableView<DailyShiftReports> showdatatableview;
 
     @FXML
     private TextField vehiclecounttextfield;

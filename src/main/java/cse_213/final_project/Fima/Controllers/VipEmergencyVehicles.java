@@ -27,7 +27,7 @@ public class VipEmergencyVehicles {
     private TableColumn<String, VipEmergencyVehicles> VehicleModeltablecolumn;
 
     @FXML
-    private ComboBox<?> VehicleTypecombobox;
+    private ComboBox<String> VehicleTypecombobox;
 
     @FXML
     private TableColumn<String, VipEmergencyVehicles> VehicleTypetablecolumn;
@@ -36,7 +36,7 @@ public class VipEmergencyVehicles {
     private RadioButton noradiobutton;
 
     @FXML
-    private TableView<?> showdatatableview;
+    private TableView<VipEmergencyVehicles> showdatatableview;
 
     @FXML
     private TextField vehiclemodeltextfield;

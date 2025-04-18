@@ -51,7 +51,7 @@ public class ProfileInformation {
     private TableColumn<String, ProfileInformation> NameTABLECOLUMN;
 
     @FXML
-    private TableView<?> SHOWDATATABLEVIEW;
+    private TableView<ProfileInformation> SHOWDATATABLEVIEW;
 
     @FXML
     private DatePicker dateofbirthdatepicker;
