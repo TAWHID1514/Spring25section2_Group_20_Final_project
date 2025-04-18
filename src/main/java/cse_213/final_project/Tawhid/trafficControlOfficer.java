@@ -1,4 +1,4 @@
-package cse_213.final_project.Tawhid.TrafficControlOfficer;
+package cse_213.final_project.Tawhid;
 
 import cse_213.final_project.User;
 

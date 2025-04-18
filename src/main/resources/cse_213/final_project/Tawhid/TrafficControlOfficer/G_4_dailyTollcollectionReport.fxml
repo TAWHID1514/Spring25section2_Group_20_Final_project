@@ -12,22 +12,23 @@
 <AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.G_4_DailyTollcollectionReportFXMLcontroller">
    <children>
       <ComboBox fx:id="VehicleTypeCB" layoutX="113.0" layoutY="100.0" prefWidth="150.0" promptText="Select Vehicle" />
-      <Label layoutX="15.0" layoutY="363.0" text="Amount:" />
       <DatePicker fx:id="todaysDateDP" layoutX="112.0" layoutY="64.0" prefHeight="26.0" prefWidth="150.0" promptText="Today's date" />
-      <TextField fx:id="noOfVehicleTF" layoutX="113.0" layoutY="136.0" promptText="Number of Vehicles" style="-fx-border-color: #1877F2;" />
-      <Label fx:id="AmountLabel" layoutX="66.0" layoutY="359.0" prefHeight="26.0" prefWidth="198.0" style="-fx-border-color: #1877F2;" />
-      <Label layoutX="14.0" layoutY="140.0" text="No Of Vehicle:" />
+      <TextField fx:id="noOfVehicleTF" layoutX="113.0" layoutY="167.0" promptText="Number of Vehicles" style="-fx-border-color: #1877F2;" />
+      <Label layoutX="14.0" layoutY="171.0" text="No Of Vehicle:" />
       <Label layoutX="14.0" layoutY="104.0" text="Vehicle Type:" />
       <Label layoutX="14.0" layoutY="68.0" text="Report date:" />
-      <Button layoutX="172.0" layoutY="174.0" mnemonicParsing="false" onAction="#canculateTotalOA" style="-fx-background-color: #1877F2;" text="Calculate total" textFill="WHITE" />
+      <Button layoutX="326.0" layoutY="174.0" mnemonicParsing="false" onAction="#canculateTotalOA" style="-fx-background-color: #1877F2;" text="Calculate total" textFill="WHITE" />
       <TableView fx:id="tollamountTV" layoutX="15.0" layoutY="212.0" prefHeight="138.0" prefWidth="446.0">
         <columns>
           <TableColumn fx:id="vehicleTypeCOL" prefWidth="99.20001029968262" text="Vehicle Type" />
           <TableColumn fx:id="ratePerVehicle" prefWidth="113.59998321533203" text="Rate per Vehicle" />
-            <TableColumn fx:id="amountCol" prefWidth="117.5999755859375" text="Amount" />
-            <TableColumn fx:id="DateCOL" prefWidth="99.20001029968262" text="Date" />
+            <TableColumn fx:id="NoOfvehicleCol" prefWidth="123.199951171875" text="No of vehicle " />
+            <TableColumn fx:id="amountCol" prefWidth="98.4000244140625" text="Amount" />
         </columns>
       </TableView>
-      <Button layoutX="314.0" layoutY="358.0" mnemonicParsing="false" onAction="#submitAmountOA" prefHeight="27.0" prefWidth="159.0" style="-fx-background-color: #1877F2;" text="Submit Today's Amount" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button layoutX="314.0" layoutY="358.0" mnemonicParsing="false" onAction="#saveOA" prefHeight="27.0" prefWidth="159.0" style="-fx-background-color: #1877F2;" text="Save" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
+      <TextField fx:id="ratePerVehicleField" layoutX="114.0" layoutY="133.0" promptText="Rate per Vehicle" style="-fx-border-color: #1877F2;" />
+      <Label layoutX="15.0" layoutY="137.0" text="Rate per Vehicle:" />
    </children>
 </AnchorPane>

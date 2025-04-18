@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -16,14 +17,17 @@
       <Label layoutX="20.0" layoutY="203.0" text="Exemotion Reason:" />
       <DatePicker fx:id="manageExemptionTravelDP" layoutX="130.0" layoutY="231.0" prefHeight="26.0" prefWidth="150.0" promptText="Travel Date" />
       <Label layoutX="20.0" layoutY="235.0" text="Date:" />
-      <RadioButton layoutX="95.0" layoutY="111.0" mnemonicParsing="false" text="Govt Car" />
-      <RadioButton layoutX="167.0" layoutY="111.0" mnemonicParsing="false" text="VIP" />
-      <RadioButton layoutX="212.0" layoutY="111.0" mnemonicParsing="false" text="Ambulance" />
-      <RadioButton layoutX="300.0" layoutY="111.0" mnemonicParsing="false" text="Fire Service" />
+      <RadioButton fx:id="govtCarRadio" layoutX="95.0" layoutY="111.0" mnemonicParsing="false" text="Govt Car">
+         <toggleGroup>
+            <ToggleGroup fx:id="exemption" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="vipRadio" layoutX="167.0" layoutY="111.0" mnemonicParsing="false" text="VIP" toggleGroup="$exemption" />
+      <RadioButton fx:id="ambulanceRadio" layoutX="212.0" layoutY="111.0" mnemonicParsing="false" text="Ambulance" toggleGroup="$exemption" />
+      <RadioButton fx:id="fireServiceRadio" layoutX="300.0" layoutY="111.0" mnemonicParsing="false" text="Fire Service" toggleGroup="$exemption" />
       <TextField fx:id="manageExemptionDrivingLicenceTF" layoutX="130.0" layoutY="135.0" promptText="Driving Licence" />
       <TextField fx:id="manageExemptionVehiRegNoTF" layoutX="129.0" layoutY="167.0" promptText="Registration No" />
       <TextField fx:id="manageExemptionReasonTF" layoutX="130.0" layoutY="199.0" promptText="Reason of exemotion" />
-      <RadioButton layoutX="385.0" layoutY="111.0" mnemonicParsing="false" text="Govt. Officer" />
+      <RadioButton fx:id="govtOfficerRadio" layoutX="385.0" layoutY="111.0" mnemonicParsing="false" text="Govt. Officer" toggleGroup="$exemption" />
       <Label fx:id="regNoValidationmassagelabelManageEXMP" layoutX="286.0" layoutY="169.0" prefHeight="18.0" prefWidth="198.0" />
       <Label fx:id="errorlabelmanageExemption" layoutX="130.0" layoutY="306.0" prefHeight="26.0" prefWidth="198.0" />
       <Button layoutX="128.0" layoutY="268.0" mnemonicParsing="false" onAction="#ExemptionOA" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #1877F2;" text="Exemption" textFill="WHITE" />
@@ -32,5 +36,6 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
+      <Button layoutX="8.0" layoutY="20.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
    </children>
 </AnchorPane>
