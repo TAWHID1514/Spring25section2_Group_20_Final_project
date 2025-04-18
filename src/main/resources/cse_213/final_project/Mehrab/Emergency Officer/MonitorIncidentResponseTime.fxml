@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="477.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse_213.final_project.Mehrab.MonitorIncidentResponseTimeController">
+
+    <Label layoutX="295.0" layoutY="23.0" text="Monitor Incident Response Time" />
+
+    <Label layoutX="30" layoutY="70" text="Incident ID" />
+    <TextField fx:id="incidentIdField" layoutX="150" layoutY="70" prefWidth="200" promptText="Enter Incident ID" />
+
+    <Label layoutX="30" layoutY="120" text="Incident Type" />
+    <TextField fx:id="incidentTypeField" layoutX="150" layoutY="120" prefWidth="200" promptText="Enter Incident Type" />
+
+    <Label layoutX="413.0" layoutY="70.0" text="Time of Report" />
+    <DatePicker fx:id="timeOfReportPicker" layoutX="533.0" layoutY="70.0" prefWidth="200" />
+
+    <Label layoutX="413.0" layoutY="120.0" text="Time of Arrival" />
+    <DatePicker fx:id="timeOfArrivalPicker" layoutX="533.0" layoutY="120.0" prefWidth="200" />
+
+    <Label layoutX="30.0" layoutY="184.0" text="Time to Resolve (minutes)" />
+    <TextField fx:id="timeToResolveField" layoutX="232.0" layoutY="180.0" prefWidth="200" promptText="Enter Time to Resolve" />
+
+    <Button fx:id="addDataButton" layoutX="295.0" layoutY="250.0" onAction="#addDataButtonOA" prefWidth="150" text="Add Response Time Data" />
+
+    <Label layoutX="30.0" layoutY="284.0" text="Response Time Data" />
+    <TableView fx:id="responseTimeTableView" layoutX="30.0" layoutY="304.0" prefHeight="150" prefWidth="740">
+        <columns>
+            <TableColumn fx:id="incidentIdColumn" prefWidth="120" text="Incident ID" />
+            <TableColumn fx:id="incidentTypeColumn" prefWidth="160" text="Incident Type" />
+            <TableColumn fx:id="timeOfReportColumn" prefWidth="160" text="Time of Report" />
+            <TableColumn fx:id="timeOfArrivalColumn" prefWidth="160" text="Time of Arrival" />
+            <TableColumn fx:id="timeToResolveColumn" prefWidth="120" text="Time to Resolve" />
+        </columns>
+    </TableView>
+</AnchorPane>
