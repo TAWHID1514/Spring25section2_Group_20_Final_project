@@ -1,5 +1,8 @@
 package cse_213.final_project.Mehrab;
 
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TableView;
+
 public class GenerateRevenueReport
 {
     @javafx.fxml.FXML
