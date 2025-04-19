@@ -58,7 +58,9 @@ public class LoginFXMLController
         if ((UsertypeCB.getValue().equals("Traffic control officer"))){
             SceneSwitcher.switchTo("Tawhid/TrafficControlOfficer/Dashboard_TCO.fxml");
         }
-
+        if ((UsertypeCB.getValue().equals("Police Authority"))){
+            SceneSwitcher.switchTo("Tawhid/PoliceAuthurity/Dashboard_PA.fxml");
+        }
 
 
 

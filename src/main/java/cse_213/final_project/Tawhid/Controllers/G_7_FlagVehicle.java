@@ -8,17 +8,13 @@ import java.io.IOException;
 public class G_7_FlagVehicle
 {
     @javafx.fxml.FXML
-    private Label nameTextLabel;
-    @javafx.fxml.FXML
     private TextField regNOTF;
-    @javafx.fxml.FXML
-    private Label licenceNoTextLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void ShowinfoOA(ActionEvent actionEvent) {
     }
 
