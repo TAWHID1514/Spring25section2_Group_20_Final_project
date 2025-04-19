@@ -20,6 +20,8 @@ public class TechnicalIssues {
 
     @javafx.fxml.FXML
     public void initialize() {
+
+        Issuestypecombobox.getItems().addAll("printingissue","scaningissue","submitissue");
     }
 
     @FXML

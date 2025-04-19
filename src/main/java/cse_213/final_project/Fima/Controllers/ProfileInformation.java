@@ -2,12 +2,9 @@ package cse_213.final_project.Fima.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+
+import java.util.ArrayList;
 
 public class ProfileInformation {
 
@@ -59,6 +56,19 @@ public class ProfileInformation {
 
     @javafx.fxml.FXML
     public void initialize() {
+
+
+        ArrayList<ProfileInformation> profileInformationArrayList;
+        ToggleGroup tg;
+
+        String gender="";
+        if(MALERADIOBUTTON.isSelected())
+            gender="Male";
+        else if (FemaleRADIOBUTTON.isSelected())
+            gender="Female";
+
+
+
     }
 
     @FXML

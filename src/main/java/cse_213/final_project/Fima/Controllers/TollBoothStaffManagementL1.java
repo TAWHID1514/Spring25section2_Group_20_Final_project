@@ -7,6 +7,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class TollBoothStaffManagementL1 {
 
@@ -37,10 +38,22 @@ public class TollBoothStaffManagementL1 {
 
     @javafx.fxml.FXML
     public void initialize() {
+
+
     }
 
     @FXML
     void homeonactionbutton(ActionEvent event) {
+
+        SendingDepertmentcombobox.getItems().addAll("HR","SOFTWARE","MAINTENENCE");
+
+
+
+
+        StaffNametablecolumn.setCellValueFactory(new PropertyValueFactory<String,TollBoothStaffManagementL1>("Staff Name"));
+        StaffIDtablecloumn.setCellValueFactory(new PropertyValueFactory<String,TollBoothStaffManagementL1>("Staff ID"));
+        SendingDepertmenttablecloumn.setCellValueFactory(new PropertyValueFactory<String,TollBoothStaffManagementL1>(" Sending Depertment "));
+
 
     }
 

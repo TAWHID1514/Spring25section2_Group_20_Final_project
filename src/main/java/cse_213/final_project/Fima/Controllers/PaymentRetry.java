@@ -2,15 +2,11 @@ package cse_213.final_project.Fima.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class PaymentRetry {
 
@@ -70,6 +66,16 @@ public class PaymentRetry {
         RegNumTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>(" Reg Num"));
         TollBoothNumberTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Toll Booth Number"));
         BoothOperatorNameTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Booth Operator Name"));
+
+
+        ArrayList<PaymentRetry> paymentRetryList;
+        ToggleGroup tg;
+
+        String IssueType="";
+        if(PaymentIssueRADIOBUTTON.isSelected())
+            IssueType="paymentissue";
+        else if (VehicleIssueRADIOBUTTON.isSelected())
+            IssueType="vehicleissue";
 
 
     }
