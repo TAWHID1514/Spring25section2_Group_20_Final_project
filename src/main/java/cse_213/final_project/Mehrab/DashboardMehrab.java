@@ -39,4 +39,12 @@ public class DashboardMehrab
     @javafx.fxml.FXML
     public void dailyRevenueOnClick(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void generateReportAnalysisOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void paytaxOA(ActionEvent actionEvent) {
+    }
 }

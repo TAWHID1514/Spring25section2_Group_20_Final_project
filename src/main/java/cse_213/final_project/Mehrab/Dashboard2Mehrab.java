@@ -39,4 +39,12 @@ public class Dashboard2Mehrab
     @javafx.fxml.FXML
     public void OverviewOA(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void monitorIncidentTImeOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void monitorRoadConditionsOA(ActionEvent actionEvent) {
+    }
 }

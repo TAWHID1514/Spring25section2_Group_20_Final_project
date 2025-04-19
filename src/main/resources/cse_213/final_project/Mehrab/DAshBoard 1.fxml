@@ -21,64 +21,12 @@
                 <Button layoutY="241.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#prepareSalariesOnClick" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" text="Prepare Salaries" />
                 <Button layoutY="283.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#monthlyRevenueOnClick" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" text="View Monthly Revenue" />
                 <Button layoutY="325.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#financialRecommendationOnClick" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" text="View Financial Recommendation" />
-                <Button layoutY="451.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" />
-                <Button layoutY="409.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" />
+                <Button layoutY="451.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#generateReportAnalysisOA" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" text="Report Analysis" />
+                <Button layoutY="409.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#paytaxOA" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" text="Pay Tax" />
                 <Button layoutY="367.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#dailyRevenueOnClick" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" text="Daily Revenue" />
                 <Button layoutY="493.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#signOutOA" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" text="Sign Out" />
-                <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="14.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../image/images/search_11865771.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="14.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../image/images/shield_6822358.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="14.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../image/images/contract_446657.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="14.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../image/images/icons8_GPS_Antenna_64px_1.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="14.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../image/images/sos_11796956.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="14.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../image/images/project-manager_11445634.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="14.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../image/images/notice_6606487.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="14.0" layoutY="503.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../image/images/icons8_Sign_Out_32px.png" />
-                    </image>
-                </ImageView>
                 <Button layoutY="157.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#OverviewOA" prefHeight="42.0" prefWidth="261.0" stylesheets="@style.css" text="Overview" />
-                <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="13.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../image/images/icons8_Home_32px.png" />
-                    </image>
-                </ImageView>
             </children>
         </AnchorPane>
     </left>
-    <center>
-        <ImageView fitHeight="594.0" fitWidth="646.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-            <image>
-                <Image url="@../../../image/29118205.jpg" />
-            </image>
-        </ImageView>
-    </center>
 </BorderPane>
