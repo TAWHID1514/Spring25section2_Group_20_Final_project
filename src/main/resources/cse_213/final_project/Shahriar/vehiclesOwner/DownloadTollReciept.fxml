@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.DownloadTollReciept">
+   <children>
+      <TextField fx:id="Transactionfxidd" layoutX="29.0" layoutY="59.0" text="Transaction ID:" />
+      <Label fx:id="DownloadTollRecieptFxid" layoutX="63.0" layoutY="26.0" prefHeight="18.0" prefWidth="122.0" text="DownloadTollReciept" />
+      <DatePicker fx:id="Datepickerfxid" layoutX="22.0" layoutY="102.0" promptText="Date (optional):" />
+      <TextField fx:id="Amountfxid" layoutX="35.0" layoutY="174.0" text="Amount:" />
+      <TextField fx:id="vehicleNofxid" layoutX="29.0" layoutY="212.0" text="Vehicle No:" />
+      <Label fx:id="recipetfoundlabel" layoutX="63.0" layoutY="140.0" prefHeight="18.0" prefWidth="91.0" text="Receipt Found: " />
+      <ComboBox fx:id="paymentmethodfxid" layoutX="29.0" layoutY="252.0" prefWidth="150.0" promptText="Payment Method" />
+      <Button fx:id="SearchRecieptfxid" layoutX="29.0" layoutY="317.0" mnemonicParsing="false" onAction="#searchRecieptOnaction" prefHeight="26.0" prefWidth="131.0" text="Search Receipt" />
+      <Button fx:id="Downloadrecieptfxid" layoutX="29.0" layoutY="359.0" mnemonicParsing="false" onAction="#DownloadRecieptOnaction" prefHeight="26.0" prefWidth="160.0" text="Download Receipt as PDF" />
+      <TextArea fx:id="textAreafxid" layoutX="293.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
