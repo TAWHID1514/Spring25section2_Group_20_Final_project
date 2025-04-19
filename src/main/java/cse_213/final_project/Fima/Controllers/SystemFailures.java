@@ -2,11 +2,10 @@ package cse_213.final_project.Fima.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.util.ArrayList;
 
 public class SystemFailures {
 
@@ -54,6 +53,19 @@ public class SystemFailures {
         IssueTypetablecolumn.setCellValueFactory(new PropertyValueFactory<String,SystemFailures>("Issue Type"));
         Devicetablecolumn.setCellValueFactory(new PropertyValueFactory<String,SystemFailures>(" Device "));
         Prioritytablecolumn.setCellValueFactory(new PropertyValueFactory<String,SystemFailures>("Priority"));
+
+
+        ArrayList<SystemFailures> systemFailuresArrayList;
+        ToggleGroup tg;
+
+        String Priority="";
+        if(yesradiobutton.isSelected())
+            Priority="Yes";
+        else if (noradiobutton.isSelected())
+            Priority="No";
+
+
+
 
 
 

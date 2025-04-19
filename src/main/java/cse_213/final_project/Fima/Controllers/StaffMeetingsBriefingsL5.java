@@ -3,6 +3,8 @@ package cse_213.final_project.Fima.Controllers;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.util.ArrayList;
+
 public class StaffMeetingsBriefingsL5
 {
     @javafx.fxml.FXML
@@ -28,6 +30,15 @@ public class StaffMeetingsBriefingsL5
 
     @javafx.fxml.FXML
     public void initialize() {
+
+        ArrayList<StaffMeetingsBriefingsL5> staffMeetingsBriefingsL5ArrayList;
+        ToggleGroup tg;
+
+        String StaffAttendees="";
+        if(StaffAttendeesyesradiobutton.isSelected())
+            StaffAttendees="Yes";
+        else if (StaffAttendeesnoradiobutton.isSelected())
+            StaffAttendees="No";
     }
 
     @javafx.fxml.FXML
