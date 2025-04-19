@@ -1,44 +1,77 @@
 package cse_213.final_project.Mehrab;
 
-import javafx.scene.control.*;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Button;
 
-public class DispatchMaintenanceTeamController
-{
-    @javafx.fxml.FXML
+import java.time.LocalDate;
+
+public class DispatchMaintenanceTeamController {
+
+    @FXML
+    private ComboBox<String> incidentTypeComboBox;
+    @FXML
     private TextField locationField;
-    @javafx.fxml.FXML
-    private TableColumn locationColumn;
-    @javafx.fxml.FXML
-    private TableColumn priorityLevelColumn;
-    @javafx.fxml.FXML
-    private ComboBox maintenanceTeamComboBox;
-    @javafx.fxml.FXML
-    private Label errorMessage;
-    @javafx.fxml.FXML
-    private ComboBox incidentTypeComboBox;
-    @javafx.fxml.FXML
+    @FXML
     private TextArea descriptionField;
-    @javafx.fxml.FXML
-    private TableColumn maintenanceTeamColumn;
-    @javafx.fxml.FXML
-    private ComboBox priorityLevelComboBox;
-    @javafx.fxml.FXML
+    @FXML
+    private ComboBox<String> maintenanceTeamComboBox;
+    @FXML
+    private ComboBox<String> priorityLevelComboBox;
+    @FXML
     private DatePicker dispatchDatePicker;
-    @javafx.fxml.FXML
-    private TableView maintenanceTable;
-    @javafx.fxml.FXML
-    private TableColumn incidentTypeColumn;
-    @javafx.fxml.FXML
+    @FXML
     private DatePicker completionDatePicker;
-    @javafx.fxml.FXML
+    @FXML
     private Button dispatchButton;
-    @javafx.fxml.FXML
-    private TableColumn completionDateColumn;
-    @javafx.fxml.FXML
-    private TableColumn dispatchDateColumn;
-    @javafx.fxml.FXML
+    @FXML
+    private TableView<MaintenanceTask> maintenanceTable;
+    @FXML
+    private TableColumn<MaintenanceTask, String> incidentTypeColumn;
+    @FXML
+    private TableColumn<MaintenanceTask, String> locationColumn;
+    @FXML
+    private TableColumn<MaintenanceTask, String> maintenanceTeamColumn;
+    @FXML
+    private TableColumn<MaintenanceTask, String> priorityLevelColumn;
+    @FXML
+    private TableColumn<MaintenanceTask, LocalDate> dispatchDateColumn;
+    @FXML
+    private TableColumn<MaintenanceTask, LocalDate> completionDateColumn;
+    @FXML
+    private Label errorMessage;
+    @FXML
     private Label confirmationMessage;
 
-    @javafx.fxml.FXML
+    private ObservableList<MaintenanceTask> maintenanceTasks;
+
+    @FXML
     public void initialize() {
-    }}
+        incidentTypeComboBox.getItems().addAll("Electrical", "Plumbing", "Carpentry");
+        maintenanceTeamComboBox.getItems().addAll("Team A", "Team B", "Team C");
+        priorityLevelComboBox.getItems().addAll("Low", "Medium", "High");
+
+        maintenanceTasks = FXCollections.observableArrayList();
+        maintenanceTable.setItems(maintenanceTasks);
+
+    }
+
+    @FXML
+    public void dispatchButtonOA() {
+
+    }
+
+    @FXML
+    public void viewTableOA() {
+    }
+
+
+}

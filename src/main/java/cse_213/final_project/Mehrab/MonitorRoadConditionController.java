@@ -1,34 +1,46 @@
 package cse_213.final_project.Mehrab;
 
-public class MonitorRoadConditionController
-{
-    @javafx.fxml.FXML
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
+
+import java.time.LocalDate;
+
+public class MonitorRoadConditionController {
+
+    @FXML
     private TextField roadNameField;
-    @javafx.fxml.FXML
-    private TableColumn severityColumn;
-    @javafx.fxml.FXML
-    private TableColumn roadNameColumn;
-    @javafx.fxml.FXML
-    private TableColumn dateReportedColumn;
-    @javafx.fxml.FXML
-    private ComboBox conditionComboBox;
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<RoadCondition, String> severityColumn;
+    @FXML
+    private TableColumn<RoadCondition, String> roadNameColumn;
+    @FXML
+    private TableColumn<RoadCondition, LocalDate> dateReportedColumn;
+    @FXML
+    private ComboBox<String> conditionComboBox;
+    @FXML
     private DatePicker dateReportedPicker;
-    @javafx.fxml.FXML
-    private TableView roadConditionTableView;
-    @javafx.fxml.FXML
+    @FXML
+    private TableView<RoadCondition> roadConditionTableView;
+    @FXML
     private Label errorMessage;
-    @javafx.fxml.FXML
-    private ComboBox severityComboBox;
-    @javafx.fxml.FXML
-    private TableColumn conditionColumn;
-    @javafx.fxml.FXML
+    @FXML
+    private ComboBox<String> severityComboBox;
+    @FXML
+    private TableColumn<RoadCondition, String> conditionColumn;
+    @FXML
     private Button saveConditionButton;
-    @javafx.fxml.FXML
+    @FXML
     private Label confirmationMessage;
 
-    @javafx.fxml.FXML
+    private ObservableList<RoadCondition> roadConditions;
+
+    @FXML
     public void initialize() {
+        conditionComboBox.setItems(FXCollections.observableArrayList("Good", "Fair", "Poor"));
+        severityComboBox.setItems(FXCollections.observableArrayList("Low", "Medium", "High"));
     }
 
     @javafx.fxml.FXML
