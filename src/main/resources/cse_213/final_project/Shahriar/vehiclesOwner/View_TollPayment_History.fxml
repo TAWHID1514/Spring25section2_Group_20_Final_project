@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="526.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.ViewTollPaymentHistory">
+   <children>
+      <Label layoutX="36.0" layoutY="23.0" prefHeight="18.0" prefWidth="145.0" text="ViewTollPaymentHistory" />
+      <TextField fx:id="Namefxid" layoutX="35.0" layoutY="52.0" promptText="Name" />
+      <TextField fx:id="Vehiclesfxid" layoutX="35.0" layoutY="95.0" promptText="VehiclesId" />
+      <DatePicker fx:id="FromDatefxid" layoutX="22.0" layoutY="138.0" promptText="FromDate" />
+      <TableView fx:id="tablefxid" layoutX="275.0" layoutY="14.0" prefHeight="200.0" prefWidth="294.0">
+        <columns>
+          <TableColumn fx:id="namecolum" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="vehiclescolum" prefWidth="75.0" text="vehiclesId" />
+            <TableColumn fx:id="datecolum" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="amountcolum" prefWidth="75.0" text="Amount" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="TodateFxid" layoutX="22.0" layoutY="187.0" promptText="toDate" />
+      <TextField fx:id="Amountfxid" layoutX="22.0" layoutY="234.0" promptText="Amount" />
+      <Button layoutX="57.0" layoutY="294.0" mnemonicParsing="false" onAction="#SearchbuttonOnaction" prefHeight="26.0" prefWidth="118.0" text="SerchButton" />
+      <Label fx:id="messageLabelfxid" layoutX="83.0" layoutY="370.0" prefHeight="18.0" prefWidth="68.0" text="message" />
+   </children>
+</AnchorPane>

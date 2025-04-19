@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.PayTollBooth">
+   <children>
+      <TextField fx:id="tagidfxid" layoutX="22.0" layoutY="64.0" promptText="tagId" />
+      <ComboBox fx:id="vehiclesTypecombox" layoutX="22.0" layoutY="109.0" prefWidth="150.0" promptText="vehiclesType" />
+      <Label fx:id="PayTollBoothfxid" layoutX="34.0" layoutY="31.0" prefHeight="18.0" prefWidth="71.0" text="PayTollBooth" />
+      <Label fx:id="TollAmountLabelfxid" layoutY="218.0" prefHeight="18.0" prefWidth="97.0" text="TolllAmountLabel" />
+      <Label fx:id="PaymentStatusfxid" layoutX="5.0" layoutY="248.0" prefHeight="18.0" prefWidth="110.0" text="Paymentstatus" />
+      <Button layoutX="8.0" layoutY="145.0" mnemonicParsing="false" onAction="#CalculateOnaction" prefHeight="26.0" prefWidth="150.0" text="calculateTollBotton" />
+      <Button layoutX="8.0" layoutY="180.0" mnemonicParsing="false" onAction="#HandlePaymentOnaction" prefHeight="26.0" prefWidth="142.0" text="HandlePaymentButton" />
+   </children>
+</AnchorPane>
