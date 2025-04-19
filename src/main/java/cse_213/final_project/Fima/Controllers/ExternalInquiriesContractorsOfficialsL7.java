@@ -42,7 +42,7 @@ public class ExternalInquiriesContractorsOfficialsL7 {
     private TextField nametextfield;
 
     @FXML
-    private TableView<?> showdatatableview;
+    private TableView<ExternalInquiriesContractorsOfficialsL7> showdatatableview;
 
     @FXML
     private Label showmassagelable;

@@ -8,6 +8,9 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+import java.time.LocalDate;
 
 public class PaymentRetry {
 
@@ -33,7 +36,7 @@ public class PaymentRetry {
     private TableColumn<String, PaymentRetry> RegNumTABLECOLUMN;
 
     @FXML
-    private TableView<?> SHOWDATATABLEVIEW;
+    private TableView<PaymentRetry> SHOWDATATABLEVIEW;
 
     @FXML
     private Label SHOWMASAGGELABLE;
@@ -48,7 +51,7 @@ public class PaymentRetry {
     private RadioButton VehicleIssueRADIOBUTTON;
 
     @FXML
-    private ComboBox<?> VehicleTypeCOMBOBOX;
+    private ComboBox<String> VehicleTypeCOMBOBOX;
 
     @FXML
     private TableColumn<String, PaymentRetry> VehicleTypeTABLECOLUMN;
@@ -57,6 +60,18 @@ public class PaymentRetry {
 
     @javafx.fxml.FXML
     public void initialize() {
+
+
+        VehicleTypeCOMBOBOX.getItems().addAll("BUS","TRUCK","BIKE","MICROBUS");
+
+
+        IssueTypeTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Issue Type"));
+        VehicleTypeTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Vehicle Type"));
+        RegNumTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>(" Reg Num"));
+        TollBoothNumberTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Toll Booth Number"));
+        BoothOperatorNameTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Booth Operator Name"));
+
+
     }
 
     @FXML

@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
 public class TollBoothStaffManagementL1 {
 
     @FXML
-    private ComboBox<?> SendingDepertmentcombobox;
+    private ComboBox<String> SendingDepertmentcombobox;
 
     @FXML
     private TableColumn<String, TollBoothStaffManagementL1> SendingDepertmenttablecloumn;
@@ -32,7 +32,7 @@ public class TollBoothStaffManagementL1 {
     private TextArea issuedescribetextarea;
 
     @FXML
-    private TableView<?> showdatatableview;
+    private TableView<TollBoothStaffManagementL1> showdatatableview;
 
 
     @javafx.fxml.FXML

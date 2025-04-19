@@ -1,20 +1,27 @@
 package cse_213.final_project.Fima.Controllers;
 
+import cse_213.final_project.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
+import java.io.IOException;
+
 public class TollBoothOperatorDashboardFima {
+
+
+
+    @FXML
+    private Label TollBoothOperatorDashboardlable;
+
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @FXML
-    private Label TollBoothOperatorDashboardlable;
-
-    @FXML
-    void collecttollpaymentsonactionbutton(ActionEvent event) {
+    void collecttollpaymentsonactionbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("Fima/Controllers/TollBoothOperator/.fxml");
 
     }
 

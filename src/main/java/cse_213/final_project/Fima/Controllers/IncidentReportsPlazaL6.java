@@ -12,7 +12,7 @@ import javafx.scene.control.TextField;
 public class IncidentReportsPlazaL6 {
 
     @FXML
-    private ComboBox<?> BoothNumbercombobox;
+    private ComboBox<String> BoothNumbercombobox;
 
     @FXML
     private TableColumn<String, IncidentReportsPlazaL6> BoothNumbertablecolumn;
@@ -36,7 +36,7 @@ public class IncidentReportsPlazaL6 {
     private TextField reporttimetextfield;
 
     @FXML
-    private TableView<?> showdatatableview;
+    private TableView<IncidentReportsPlazaL6> showdatatableview;
 
     @javafx.fxml.FXML
     public void initialize() {

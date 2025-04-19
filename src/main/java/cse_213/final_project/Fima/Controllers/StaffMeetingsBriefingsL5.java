@@ -25,7 +25,7 @@ public class StaffMeetingsBriefingsL5 {
     private TextField MeetingTimetextfield;
 
     @FXML
-    private ComboBox<?> MeetingTypecombobox;
+    private ComboBox<String> MeetingTypecombobox;
 
     @FXML
     private TableColumn<String, StaffMeetingsBriefingsL5> MeetingTypetablecolumn;
@@ -46,7 +46,7 @@ public class StaffMeetingsBriefingsL5 {
     private TableColumn<String, StaffMeetingsBriefingsL5> meetingdatetablecolumn;
 
     @FXML
-    private TableView<?> showdatratableview;
+    private TableView<StaffMeetingsBriefingsL5> showdatratableview;
 
 
     @javafx.fxml.FXML
