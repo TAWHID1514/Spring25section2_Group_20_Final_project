@@ -17,23 +17,21 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TableView fx:id="tableView" layoutX="18.0" layoutY="149.0" prefHeight="160.0" prefWidth="465.0">
+      <TableView fx:id="Flagged_vehicleListTV" layoutX="17.0" layoutY="89.0" prefHeight="160.0" prefWidth="465.0">
         <columns>
-          <TableColumn fx:id="regNoCol" prefWidth="103.20001029968262" text="Reg No" />
-          <TableColumn fx:id="reasonCol" prefWidth="110.40003204345703" text="Flagged Reason" />
-            <TableColumn fx:id="licenceNoCol" prefWidth="145.5999755859375" text="Licence No" />
-            <TableColumn fx:id="dateCol" prefWidth="95.20001220703125" text="Date" />
+          <TableColumn fx:id="regNoCOL" prefWidth="103.20001029968262" text="Reg No" />
+          <TableColumn fx:id="FlaggedReasonCOL" prefWidth="110.40003204345703" text="Flagged Reason" />
+            <TableColumn fx:id="DrivingLicenceNoCOL" prefWidth="145.5999755859375" text="Licence No" />
+            <TableColumn fx:id="DateCOL" prefWidth="95.20001220703125" text="Date" />
         </columns>
       </TableView>
-      <TextField fx:id="fineAmountField" layoutX="179.0" layoutY="321.0" />
-      <Button layoutX="393.0" layoutY="359.0" mnemonicParsing="false" onAction="#SecurityIncidentOA" prefHeight="26.0" prefWidth="77.0" text="Save" />
-      <Text layoutX="97.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fine Amount:" />
-      <DatePicker fx:id="fineDueDatePicker" layoutX="178.0" layoutY="355.0" prefHeight="26.0" prefWidth="150.0" />
-      <Text layoutX="91.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fine Due Date:" />
-      <TextField fx:id="searchField" layoutX="80.0" layoutY="80.0" />
-      <Text layoutX="33.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reg No:" />
-      <Button layoutX="250.0" layoutY="80.0" mnemonicParsing="false" onAction="#searchOA" text="Search" />
-      <Button layoutX="24.0" layoutY="40.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
-      <Button layoutX="410.0" layoutY="80.0" mnemonicParsing="false" onAction="#loadOA" text="Load" />
+      <TextField layoutX="179.0" layoutY="259.0" />
+      <Button layoutX="250.0" layoutY="329.0" mnemonicParsing="false" onAction="#SecurityIncidentOA" prefHeight="26.0" prefWidth="77.0" text="Save" />
+      <Text layoutX="97.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fine Amount:" />
+      <DatePicker layoutX="178.0" layoutY="293.0" prefHeight="26.0" prefWidth="150.0" />
+      <Text layoutX="91.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fine Due Date:" />
+      <TextField fx:id="regNoTF" layoutX="80.0" layoutY="49.0" />
+      <Text layoutX="33.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reg No:" />
+      <Button layoutX="250.0" layoutY="49.0" mnemonicParsing="false" onAction="#searchOA" text="Search" />
    </children>
 </AnchorPane>
