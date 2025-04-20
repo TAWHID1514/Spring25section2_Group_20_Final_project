@@ -18,13 +18,13 @@
                      </font>
                   </Button>
                   <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#SecurityThreadOA" prefHeight="26.0" prefWidth="176.0" text="Handle Security Threads" />
-                  <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#CheckVehicleOA" prefHeight="26.0" prefWidth="176.0" text="Check Vehicles" />
-                  <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onAction="#resolveDepositeOA" prefHeight="26.0" prefWidth="176.0" text="Resolve Deposite" />
-                  <Button layoutX="10.0" layoutY="89.0" mnemonicParsing="false" onAction="#newRequestOA" prefHeight="26.0" prefWidth="176.0" text="View Unpaid toll Status" />
-                  <Button layoutX="10.0" layoutY="116.0" mnemonicParsing="false" onAction="#violationEntryOA" prefHeight="26.0" prefWidth="176.0" text="Violation Entry" />
+                  <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#fineVehicleOA" prefHeight="26.0" prefWidth="176.0" text="Fine Vehicle" />
+                  <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onAction="#unpaidFineStatusOA" prefHeight="26.0" prefWidth="176.0" text="View Unpaid Fine Status" />
+                  <Button layoutX="10.0" layoutY="89.0" mnemonicParsing="false" onAction="#unpaidtollStatusOA" prefHeight="26.0" prefWidth="176.0" text="View Unpaid Toll Status" />
+                  <Button layoutX="10.0" layoutY="116.0" mnemonicParsing="false" onAction="#EnforceTafficeLawOA" prefHeight="26.0" prefWidth="176.0" text="Enforce Traffic Law" />
                   <Button layoutX="10.0" layoutY="142.0" mnemonicParsing="false" onAction="#reportAccidentOA" prefHeight="26.0" prefWidth="176.0" text="Report Accident" />
-                  <Button layoutX="10.0" layoutY="168.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="176.0" text="Inquiry" />
-                  <Button layoutX="10.0" layoutY="195.0" mnemonicParsing="false" onAction="#lostFoundOA" prefHeight="26.0" prefWidth="176.0" text="Lost and Found Item" />
+                  <Button layoutX="10.0" layoutY="168.0" mnemonicParsing="false" onAction="#lostOA" prefHeight="26.0" prefWidth="176.0" text="Lost Item" />
+                  <Button layoutX="10.0" layoutY="195.0" mnemonicParsing="false" onAction="#FoundOA" prefHeight="26.0" prefWidth="176.0" text="Found Item" />
                   <Button layoutX="10.0" layoutY="221.0" mnemonicParsing="false" onAction="#logOutOA" prefHeight="26.0" prefWidth="176.0" text="Log Out" />
                </children>
             </VBox>

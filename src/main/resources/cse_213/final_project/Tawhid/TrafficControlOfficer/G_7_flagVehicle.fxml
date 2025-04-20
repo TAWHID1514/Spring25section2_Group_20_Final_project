@@ -11,20 +11,22 @@
 <AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.G_7_FlagVehicle">
    <children>
       <Label layoutX="15.0" layoutY="153.0" text="Reg No:" />
-      <TextField fx:id="regNOTF" layoutX="114.0" layoutY="149.0" prefHeight="26.0" prefWidth="202.0" promptText="Dhaka- Metro XX-XXXX" />
-      <CheckBox layoutX="115.0" layoutY="189.0" mnemonicParsing="false" onAction="#StolenCarOA" prefHeight="18.0" prefWidth="79.0" text="Stolen Car" />
-      <CheckBox layoutX="221.0" layoutY="189.0" mnemonicParsing="false" onAction="#overSpeedingOA" prefHeight="18.0" prefWidth="107.0" text="Over Speeding" />
-      <CheckBox layoutX="115.0" layoutY="215.0" mnemonicParsing="false" onAction="#illigalparkingOA" prefHeight="18.0" prefWidth="98.0" text="Illigal Parking" />
-      <CheckBox layoutX="221.0" layoutY="215.0" mnemonicParsing="false" onAction="#LicenceExpOA" prefHeight="18.0" prefWidth="107.0" text="Licence Expired" />
-      <Button layoutX="204.0" layoutY="267.0" mnemonicParsing="false" onAction="#flagCarOA" prefHeight="26.0" prefWidth="91.0" text="Flag Car" />
+      <TextField fx:id="regNoField" layoutX="114.0" layoutY="149.0" prefHeight="26.0" prefWidth="202.0" promptText="Dhaka- Metro XX-XXXX" />
+      <CheckBox fx:id="stolenCarCheckBox" layoutX="115.0" layoutY="230.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="79.0" text="Stolen Car" />
+      <CheckBox fx:id="overSpeedingCheckBox" layoutX="221.0" layoutY="230.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="107.0" text="Over Speeding" />
+      <CheckBox fx:id="illegalParkingCheckBox" layoutX="115.0" layoutY="256.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="98.0" text="Illigal Parking" />
+      <CheckBox fx:id="licenceExpiredCheckBox" layoutX="221.0" layoutY="256.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="107.0" text="Licence Expired" />
+      <Button layoutX="204.0" layoutY="308.0" mnemonicParsing="false" onAction="#flagCarOA" prefHeight="26.0" prefWidth="91.0" text="Flag Car" />
       <Label layoutX="186.0" layoutY="14.0" text="Flag Vehicle">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="15.0" layoutY="198.0" text="Flagged Reason:" />
+      <Label layoutX="15.0" layoutY="239.0" text="Flagged Reason:" />
       <Label layoutX="15.0" layoutY="122.0" text="Date:" />
-      <DatePicker layoutX="115.0" layoutY="117.0" prefHeight="26.0" prefWidth="202.0" />
+      <DatePicker fx:id="datePicker" layoutX="115.0" layoutY="117.0" prefHeight="26.0" prefWidth="202.0" />
       <Button layoutX="17.0" layoutY="19.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
+      <Label layoutX="17.0" layoutY="186.0" text="Licence No:" />
+      <TextField fx:id="licenceNoField" layoutX="116.0" layoutY="182.0" prefHeight="26.0" prefWidth="202.0" />
    </children>
 </AnchorPane>

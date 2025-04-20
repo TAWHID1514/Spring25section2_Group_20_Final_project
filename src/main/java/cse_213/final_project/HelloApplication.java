@@ -13,7 +13,7 @@ public class HelloApplication extends Application {
         SceneSwitcher.stage=stage;
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Log In");
+        stage.setTitle("Padma Bridge toll management system");
         stage.setScene(scene);
         stage.show();
     }

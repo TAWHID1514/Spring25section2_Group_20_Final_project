@@ -2,7 +2,7 @@ package cse_213.final_project;
 
 import java.time.LocalDate;
 
-public class User {
+public abstract class User  {
     String Name,Email,phoneNo,password,type,addrass;
     int Id;
     LocalDate DOB;

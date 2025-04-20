@@ -32,6 +32,8 @@ public class G_2_UpdateTollviolationRecordFXMLController {
                 "10 wheeler", "14 wheeler", "18 wheeler", "22 wheeler", "26 wheeler"
         );
 
+//        DateOfUpdateDP.disableProperty().bind(unpaidRadioButton.selectedProperty().not());
+
 
         DateOfUpdateDP.setDisable(true);
         TotalAmountTF.setDisable(true);

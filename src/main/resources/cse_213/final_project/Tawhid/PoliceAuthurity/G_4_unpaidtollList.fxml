@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.G4UnpaidtollListController">
    <children>
-      <TableView fx:id="tollUnpaidTableView" layoutX="10.0" layoutY="78.0" prefHeight="138.0" prefWidth="478.0">
+      <TableView fx:id="tollUnpaidTableView" layoutX="10.0" layoutY="115.0" prefHeight="138.0" prefWidth="478.0">
         <columns>
           <TableColumn fx:id="tollUnpaidVehicleRegNoCol" prefWidth="193.5999813079834" text="Vehicle Reg NO" />
           <TableColumn fx:id="tollUnpaidVehicleTypeCol" prefWidth="152.0" text="Vehicle Type" />
@@ -30,11 +30,12 @@
       <Label layoutX="32.0" layoutY="290.0" text="Toll Amount:" />
       <Label fx:id="tollAmountLabel" layoutX="112.0" layoutY="289.0" prefHeight="18.0" prefWidth="174.0" />
       <Button layoutX="148.0" layoutY="348.0" mnemonicParsing="false" onAction="#fileCaseOA" prefHeight="26.0" prefWidth="85.0" text="File Case" />
-      <Button layoutX="377.0" layoutY="222.0" mnemonicParsing="false" onAction="#ViewDetailsOA" text="View details" />
+      <Button layoutX="377.0" layoutY="259.0" mnemonicParsing="false" onAction="#ViewDetailsOA" text="View details" />
       <RadioButton fx:id="paidRadioButton" layoutX="91.0" layoutY="320.0" mnemonicParsing="false" text="Paid" />
       <RadioButton fx:id="unpaidRadioButton" layoutX="145.0" layoutY="320.0" mnemonicParsing="false" text="Unpaid" />
       <Label layoutX="32.0" layoutY="318.0" text="Status:" />
-      <TextField layoutX="10.0" layoutY="48.0" />
-      <Button layoutX="165.0" layoutY="48.0" mnemonicParsing="false" text="Search" />
+      <TextField layoutX="110.0" layoutY="80.0" />
+      <Button layoutX="273.0" layoutY="80.0" mnemonicParsing="false" text="Search" />
+      <Button layoutX="29.0" layoutY="38.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
    </children>
 </AnchorPane>

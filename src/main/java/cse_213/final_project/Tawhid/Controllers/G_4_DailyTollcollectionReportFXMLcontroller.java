@@ -46,10 +46,9 @@ public class G_4_DailyTollcollectionReportFXMLcontroller
                 "10 wheeler", "14 wheeler", "18 wheeler", "22 wheeler", "26 wheeler"
         ));
 
-        // Set today's date by default
         todaysDateDP.setValue(LocalDate.now());
 
-        // Fill toll rate when vehicle selected
+
         VehicleTypeCB.setOnAction(event -> {
             String type = VehicleTypeCB.getValue();
             int rate = getRate(type);
@@ -84,24 +83,19 @@ public class G_4_DailyTollcollectionReportFXMLcontroller
     public void canculateTotalOA(ActionEvent actionEvent) {
         try {
             String type = VehicleTypeCB.getValue();
-            int rate = Integer.parseInt(ratePerVehicleField.getText());
+            float rate = Float.parseFloat(ratePerVehicleField.getText());
             int number = Integer.parseInt(noOfVehicleTF.getText());
-            int total = rate * number;
+            int total = (int) (rate * number);
             String date = todaysDateDP.getValue().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 
             TollData entry = new TollData(type, rate, total, date);
             tollList.add(entry);
+            tollamountTV.getItems().add(entry);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
-
-
-
-
-
 
 
     @javafx.fxml.FXML

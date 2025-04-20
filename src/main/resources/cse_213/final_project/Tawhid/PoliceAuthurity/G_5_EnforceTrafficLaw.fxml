@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.G5EnforceTrafficLaw">
    <children>
-      <TableView layoutX="33.0" layoutY="100.0" prefHeight="124.0" prefWidth="432.0">
+      <TableView layoutX="33.0" layoutY="156.0" prefHeight="124.0" prefWidth="432.0">
         <columns>
           <TableColumn prefWidth="136.80005645751953" text="Reg No" />
           <TableColumn prefWidth="111.199951171875" text="Licence No" />
@@ -23,11 +23,12 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="33.0" layoutY="60.0" />
-      <Button layoutX="189.0" layoutY="60.0" mnemonicParsing="false" text="Search" />
-      <Label layoutX="33.0" layoutY="271.0" text="Total Amount:" />
-      <Label fx:id="totalAmountTextlabel" layoutX="114.0" layoutY="270.0" prefHeight="18.0" prefWidth="150.0" />
-      <Button layoutX="62.0" layoutY="302.0" mnemonicParsing="false" onAction="#collectAmountOA" text="Collect Amount" />
-      <Button layoutX="166.0" layoutY="302.0" mnemonicParsing="false" onAction="#impoundVehicleOA" text="Impound vehicle" />
+      <TextField layoutX="101.0" layoutY="116.0" />
+      <Button layoutX="257.0" layoutY="116.0" mnemonicParsing="false" text="Search" />
+      <Label layoutX="33.0" layoutY="311.0" text="Total Amount:" />
+      <Label fx:id="totalAmountTextlabel" layoutX="114.0" layoutY="310.0" prefHeight="18.0" prefWidth="150.0" />
+      <Button layoutX="62.0" layoutY="342.0" mnemonicParsing="false" onAction="#collectAmountOA" text="Collect Amount" />
+      <Button layoutX="166.0" layoutY="342.0" mnemonicParsing="false" onAction="#impoundVehicleOA" text="Impound vehicle" />
+      <Button layoutX="33.0" layoutY="51.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
    </children>
 </AnchorPane>

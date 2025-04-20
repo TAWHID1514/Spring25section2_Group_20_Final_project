@@ -10,10 +10,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Tawhid.Controllers.G2FineCar">
    <children>
-      <TableView fx:id="flaggedCarTV" layoutX="22.0" layoutY="96.0" prefHeight="142.0" prefWidth="458.0">
+      <TableView fx:id="flaggedCarTV" layoutX="22.0" layoutY="110.0" prefHeight="142.0" prefWidth="458.0">
         <columns>
           <TableColumn fx:id="regNoCol" prefWidth="132.8000545501709" text="Reg No" />
           <TableColumn fx:id="flaggedReasonCOl" prefWidth="121.59991455078125" text="Flagged reason" />
@@ -25,8 +24,8 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="searchTF" layoutX="21.0" layoutY="60.0" />
-      <Button layoutX="194.0" layoutY="60.0" mnemonicParsing="false" onAction="#searchOA" text="Search" />
+      <TextField fx:id="searchTF" layoutX="80.0" layoutY="74.0" />
+      <Button layoutX="253.0" layoutY="74.0" mnemonicParsing="false" onAction="#searchOA" text="Search" />
       <TextField fx:id="fineAmountTF" layoutX="119.0" layoutY="297.0" />
       <Label layoutX="21.0" layoutY="266.0" text="Flagged reason:" />
       <ComboBox fx:id="flaggedReasonCB" layoutX="119.0" layoutY="262.0" prefWidth="150.0" />
@@ -34,5 +33,6 @@
       <Button layoutX="225.0" layoutY="360.0" mnemonicParsing="false" onAction="#saveOA" text="Save" />
       <DatePicker fx:id="DuedateDP" layoutX="118.0" layoutY="328.0" prefHeight="26.0" prefWidth="150.0" />
       <Label layoutX="21.0" layoutY="332.0" text="Due date:" />
+      <Button layoutX="21.0" layoutY="32.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
    </children>
 </AnchorPane>
