@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.RegisterVehicles2">
    <children>
       <Label layoutX="32.0" layoutY="36.0" prefHeight="18.0" prefWidth="97.0" text="RegisterVehicles" />
@@ -14,5 +13,6 @@
       <ComboBox layoutX="26.0" layoutY="115.0" prefWidth="150.0" promptText="VehiclesTypes" />
       <Label fx:id="filelablefxid" layoutX="53.0" layoutY="158.0" text="FileLabel" />
       <Button layoutX="27.0" layoutY="188.0" mnemonicParsing="false" onAction="#SubmittbuttonOnaction" text="Button" />
+      <Button layoutX="27.0" layoutY="229.0" mnemonicParsing="false" onAction="#backOnaction" text="back" />
    </children>
 </AnchorPane>

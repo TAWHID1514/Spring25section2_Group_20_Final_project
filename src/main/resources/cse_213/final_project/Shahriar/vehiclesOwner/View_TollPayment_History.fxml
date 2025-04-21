@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="526.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.ViewTollPaymentHistory2">
    <children>
       <Label layoutX="36.0" layoutY="23.0" prefHeight="18.0" prefWidth="145.0" text="ViewTollPaymentHistory" />
@@ -27,5 +26,6 @@
       <TextField fx:id="Amountfxid" layoutX="22.0" layoutY="234.0" promptText="Amount" />
       <Button layoutX="57.0" layoutY="294.0" mnemonicParsing="false" onAction="#SearchbuttonOnaction" prefHeight="26.0" prefWidth="118.0" text="SerchButton" />
       <Label fx:id="messageLabelfxid" layoutX="83.0" layoutY="370.0" prefHeight="18.0" prefWidth="68.0" text="message" />
+      <Button layoutX="31.0" layoutY="423.0" mnemonicParsing="false" onAction="#backOnaction" text="back" />
    </children>
 </AnchorPane>

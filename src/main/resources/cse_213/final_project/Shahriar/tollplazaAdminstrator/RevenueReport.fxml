@@ -9,7 +9,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.RevenueReport">
    <children>
       <Label fx:id="revenuereportfxid" layoutX="32.0" layoutY="23.0" prefHeight="18.0" prefWidth="92.0" text="RevenueReport" />
@@ -27,5 +26,6 @@
         </columns>
       </TableView>
       <Button layoutX="16.0" layoutY="254.0" mnemonicParsing="false" onAction="#downloadReportpdfonAction" prefHeight="26.0" prefWidth="143.0" text="Download Report pdf" />
+      <Button layoutX="609.0" layoutY="361.0" mnemonicParsing="false" onAction="#backOnaction" text="back" />
    </children>
 </AnchorPane>

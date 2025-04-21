@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.DownloadTollReciept2">
    <children>
       <TextField fx:id="Transactionfxidd" layoutX="29.0" layoutY="59.0" text="Transaction ID:" />
@@ -21,5 +20,6 @@
       <Button fx:id="SearchRecieptfxid" layoutX="29.0" layoutY="317.0" mnemonicParsing="false" onAction="#searchRecieptOnaction" prefHeight="26.0" prefWidth="131.0" text="Search Receipt" />
       <Button fx:id="Downloadrecieptfxid" layoutX="29.0" layoutY="359.0" mnemonicParsing="false" onAction="#DownloadRecieptOnaction" prefHeight="26.0" prefWidth="160.0" text="Download Receipt as PDF" />
       <TextArea fx:id="textAreafxid" layoutX="293.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="355.0" layoutY="346.0" mnemonicParsing="false" onAction="#backOnaction" text="back" />
    </children>
 </AnchorPane>

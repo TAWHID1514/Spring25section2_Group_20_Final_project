@@ -40,4 +40,8 @@ public class TollCollectionReport
     @javafx.fxml.FXML
     public void excellaspdfonaction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void homeOnaction(ActionEvent actionEvent) {
+    }
 }

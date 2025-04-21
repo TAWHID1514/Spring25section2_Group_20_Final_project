@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane fx:id="Recharge" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.RechargeEtageBlance2">
    <children>
       <TextField fx:id="rechargefxid" layoutX="34.0" layoutY="62.0" promptText="rechargeId" />
@@ -15,5 +14,6 @@
       <ComboBox fx:id="rechargeMethodfxid" layoutX="32.0" layoutY="155.0" prefWidth="150.0" promptText="paymentMethod" />
       <Label fx:id="labelStatusfxid" layoutX="41.0" layoutY="240.0" prefHeight="18.0" prefWidth="67.0" text="labelStatus" />
       <Button layoutX="34.0" layoutY="200.0" mnemonicParsing="false" onAction="#rechargeButtOnonAction" text="RechargeButton" />
+      <Button layoutX="15.0" layoutY="290.0" mnemonicParsing="false" onAction="#backOnaction" text="back" />
    </children>
 </AnchorPane>
