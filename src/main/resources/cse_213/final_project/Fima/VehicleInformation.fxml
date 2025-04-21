@@ -17,11 +17,11 @@
       <ComboBox fx:id="VehicleTollcombobox" layoutX="208.0" layoutY="128.0" prefWidth="150.0" promptText="Vehicle Toll" />
       <TextField fx:id="ownernametextfield" layoutX="209.0" layoutY="73.0" promptText="Owner Name" />
       <DatePicker fx:id="datedatepicker" layoutX="26.0" layoutY="119.0" prefHeight="26.0" prefWidth="150.0" promptText="Date" />
-      <Label fx:id="Regestrationlable" layoutX="377.0" layoutY="132.0" text="Regestration" />
-      <RadioButton fx:id="Yesradiobutton" layoutX="533.0" layoutY="132.0" mnemonicParsing="false" text="Yes" />
-      <RadioButton fx:id="noradiobutton" layoutX="471.0" layoutY="132.0" mnemonicParsing="false" text="No" />
+      <Label fx:id="Regestrationlable" layoutX="208.0" layoutY="169.0" text="Regestration" />
+      <RadioButton fx:id="Yesradiobutton" layoutX="350.0" layoutY="169.0" mnemonicParsing="false" text="Yes" />
+      <RadioButton fx:id="noradiobutton" layoutX="292.0" layoutY="169.0" mnemonicParsing="false" text="No" />
       <Button layoutX="471.0" layoutY="411.0" mnemonicParsing="false" onAction="#backOnActionButton" prefHeight="26.0" prefWidth="101.0" text="Back" />
-      <Button layoutX="198.0" layoutY="384.0" mnemonicParsing="false" onAction="#saveOnActionButton" prefHeight="26.0" prefWidth="132.0" text="Save" />
+      <Button layoutX="434.0" layoutY="177.0" mnemonicParsing="false" onAction="#saveOnActionButton" prefHeight="26.0" prefWidth="132.0" text="Save" />
       <TableView fx:id="tableview" layoutX="14.0" layoutY="223.0" prefHeight="146.0" prefWidth="574.0">
         <columns>
           <TableColumn fx:id="VehicleTypetablecolumn" prefWidth="113.60003662109375" text="Vehicle Type" />

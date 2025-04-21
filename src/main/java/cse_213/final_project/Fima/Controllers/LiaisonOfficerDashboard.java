@@ -2,6 +2,10 @@ package cse_213.final_project.Fima.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+
+import java.io.IOException;
 
 public class LiaisonOfficerDashboard {
 
@@ -11,7 +15,11 @@ public class LiaisonOfficerDashboard {
     }
 
     @FXML
-    void CrisisResponseonactionbutton(ActionEvent event) {
+    void CrisisResponseonactionbutton(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Dispatch Maintenance Team.fxml"));
+        Node node = fxmlLoader.load() ;
+        dashboardBP.setCenter(node);
+
 
     }
 
