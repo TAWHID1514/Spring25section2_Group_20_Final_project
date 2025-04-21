@@ -1,4 +1,4 @@
-package cse_213.final_project.Shahriar.modelclass;
+package cse_213.final_project.Shahriar.modelclass2;
 
 public class UpdatevehiclesInfo {
     private String vehiclesId;

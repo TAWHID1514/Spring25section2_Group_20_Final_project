@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.SystemAlert">
+   <children>
+      <TableView fx:id="tableView" layoutX="38.0" layoutY="85.0" prefHeight="200.0" prefWidth="315.0">
+        <columns>
+          <TableColumn fx:id="lanecolum" prefWidth="75.0" text="lane" />
+          <TableColumn fx:id="componentcolum" prefWidth="75.0" text="component" />
+            <TableColumn fx:id="issuecolum" prefWidth="75.0" text="issue" />
+            <TableColumn fx:id="timecolum" prefWidth="75.0" text="Time" />
+        </columns>
+      </TableView>
+      <Label fx:id="SystemAlertfxid" layoutX="48.0" layoutY="40.0" prefHeight="18.0" prefWidth="105.0" text="SystemAlert" />
+      <Button layoutX="161.0" layoutY="304.0" mnemonicParsing="false" onAction="#refreshAlertOnaction" text="refreshAlert" />
+      <Button fx:id="LoadAlertOnAction" layoutX="274.0" layoutY="304.0" mnemonicParsing="false" text="LoadAlert" />
+      <Label fx:id="satusLabelfxid" layoutX="154.0" layoutY="358.0" prefHeight="18.0" prefWidth="106.0" text="statuslabel" />
+   </children>
+</AnchorPane>

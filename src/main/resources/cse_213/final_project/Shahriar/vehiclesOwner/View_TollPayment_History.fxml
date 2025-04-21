@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="526.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.ViewTollPaymentHistory">
+<AnchorPane prefHeight="526.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.ViewTollPaymentHistory2">
    <children>
       <Label layoutX="36.0" layoutY="23.0" prefHeight="18.0" prefWidth="145.0" text="ViewTollPaymentHistory" />
       <TextField fx:id="Namefxid" layoutX="35.0" layoutY="52.0" promptText="Name" />

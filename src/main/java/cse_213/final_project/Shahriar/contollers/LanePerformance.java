@@ -1,28 +1,37 @@
 package cse_213.final_project.Shahriar.contollers;
 
 import javafx.event.ActionEvent;
-import javafx.scene.chart.BarChart;
+import javafx.scene.chart.LineChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 
+import java.awt.*;
+
 public class LanePerformance
 {
     @javafx.fxml.FXML
-    private BarChart lanechart;
+    private ComboBox selectlanecombobox;
     @javafx.fxml.FXML
-    private Label labelStatus;
+    private Label lanePerformancefxid;
     @javafx.fxml.FXML
-    private DatePicker datepicker;
+    private DatePicker fromDatepicker;
     @javafx.fxml.FXML
-    private ComboBox<String> lanesectorcombobox;
+    private Label labelstatusfxid;
+    @javafx.fxml.FXML
+    private DatePicker toDatepicker;
+    @javafx.fxml.FXML
+    private LineChart linechartfxid;
+    @javafx.fxml.FXML
+    private TextField vehiclesPassedfxid;
+    @javafx.fxml.FXML
+    private TextField avegeTimefxid;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void handleperforfanceonaction(ActionEvent actionEvent) {
-
+    public void handlePerformanceOnactoion(ActionEvent actionEvent) {
     }
 }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.TollCollectionReport">
+   <children>
+      <Label fx:id="tollcollectionReportfxid" layoutX="32.0" layoutY="14.0" prefHeight="18.0" prefWidth="125.0" text="toll collection Report" />
+      <DatePicker fx:id="fromDatepicker" layoutX="7.0" layoutY="37.0" promptText="fromDate:" />
+      <ComboBox fx:id="monthlyTypecombobox" layoutX="231.0" layoutY="19.0" prefWidth="150.0" promptText="monthlyType:" />
+      <Button layoutX="430.0" layoutY="11.0" mnemonicParsing="false" onAction="#generateonaction" text="GenarateReport" />
+      <TableView fx:id="tableview" layoutX="7.0" layoutY="113.0" prefHeight="134.0" prefWidth="258.0">
+        <columns>
+          <TableColumn fx:id="fromDatecolum" prefWidth="75.0" text="fromDate" />
+          <TableColumn fx:id="vehiclePassedcolum" prefWidth="98.4000244140625" text="vehiclesPasssed" />
+            <TableColumn fx:id="yollcollectcolum" prefWidth="75.0" text="Tollcollect" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="todatepicker" layoutX="7.0" layoutY="76.0" promptText="todate" />
+      <BarChart fx:id="barchart" layoutX="306.0" layoutY="140.0" prefHeight="186.0" prefWidth="278.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button layoutX="69.0" layoutY="291.0" mnemonicParsing="false" onAction="#exportaspdfOnacttion" prefHeight="26.0" prefWidth="106.0" text="export as pdf" />
+      <Button layoutX="224.0" layoutY="291.0" mnemonicParsing="false" onAction="#excellaspdfonaction" text="excell as pdf" />
+   </children>
+</AnchorPane>

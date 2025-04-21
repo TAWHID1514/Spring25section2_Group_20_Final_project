@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.ReportComplaint">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.ReportComplaint2">
    <children>
       <Label fx:id="ReportComPlaintFxid" layoutX="47.0" layoutY="35.0" prefHeight="18.0" prefWidth="145.0" text="Reeport ComPlaint" />
       <ComboBox fx:id="IssuTypecombobox" layoutX="30.0" layoutY="72.0" prefWidth="150.0" promptText="IsssuType" />

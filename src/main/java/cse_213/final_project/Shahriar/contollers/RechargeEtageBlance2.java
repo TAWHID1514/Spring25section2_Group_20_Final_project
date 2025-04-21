@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
-public class RechargeEtageBlance
+public class RechargeEtageBlance2
 {
     @javafx.fxml.FXML
     private TextField rechargefxid;

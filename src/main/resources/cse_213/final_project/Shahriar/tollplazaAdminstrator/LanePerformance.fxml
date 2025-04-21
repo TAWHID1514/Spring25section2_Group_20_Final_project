@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.LanePerformance">
    <children>
-      <ComboBox fx:id="lanesectorcombobox" layoutX="37.0" layoutY="35.0" prefWidth="150.0" />
-      <DatePicker fx:id="datepicker" layoutX="37.0" layoutY="81.0" />
-      <BarChart fx:id="lanechart" layoutX="7.0" layoutY="112.0" prefHeight="175.0" prefWidth="430.0">
+      <Label fx:id="lanePerformancefxid" layoutX="29.0" layoutY="14.0" prefHeight="25.0" prefWidth="102.0" text="LanePerformance" />
+      <ComboBox fx:id="selectlanecombobox" layoutX="5.0" layoutY="47.0" prefWidth="150.0" promptText="selectLane" />
+      <DatePicker fx:id="fromDatepicker" layoutX="2.0" layoutY="84.0" promptText="FromDate:" />
+      <DatePicker fx:id="toDatepicker" layoutX="2.0" layoutY="125.0" promptText="ToDate:" />
+      <LineChart fx:id="linechartfxid" layoutX="216.0" layoutY="159.0" prefHeight="226.0" prefWidth="308.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
         <yAxis>
           <NumberAxis side="LEFT" />
         </yAxis>
-      </BarChart>
-      <Label fx:id="labelStatus" layoutX="50.0" layoutY="298.0" prefHeight="18.0" prefWidth="107.0" />
-      <Button layoutX="360.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleperforfanceonaction" prefHeight="26.0" prefWidth="77.0" text="button" />
+      </LineChart>
+      <Label fx:id="labelstatusfxid" layoutX="10.0" layoutY="167.0" prefHeight="18.0" prefWidth="89.0" text="LabelStatus" />
+      <Button layoutX="258.0" layoutY="112.0" mnemonicParsing="false" onAction="#handlePerformanceOnactoion" text="HandlePerformance" />
+      <TextField fx:id="vehiclesPassedfxid" layoutX="216.0" layoutY="35.0" text="vehiclesPassedNo:" />
+      <TextField fx:id="avegeTimefxid" layoutX="217.0" layoutY="71.0" text="averagetime" />
    </children>
 </AnchorPane>

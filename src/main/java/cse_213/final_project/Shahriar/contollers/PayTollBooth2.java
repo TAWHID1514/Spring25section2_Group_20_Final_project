@@ -5,7 +5,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class PayTollBooth
+public class PayTollBooth2
 {
     @javafx.fxml.FXML
     private ComboBox vehiclesTypecombox;

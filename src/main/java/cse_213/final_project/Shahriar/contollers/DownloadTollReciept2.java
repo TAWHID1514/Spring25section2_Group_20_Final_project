@@ -3,7 +3,7 @@ package cse_213.final_project.Shahriar.contollers;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
-public class DownloadTollReciept
+public class DownloadTollReciept2
 {
     @javafx.fxml.FXML
     private DatePicker Datepickerfxid;

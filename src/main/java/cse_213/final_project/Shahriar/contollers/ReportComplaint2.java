@@ -5,7 +5,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
-public class ReportComplaint
+public class ReportComplaint2
 {
     @javafx.fxml.FXML
     private TextArea TextAreafxid;

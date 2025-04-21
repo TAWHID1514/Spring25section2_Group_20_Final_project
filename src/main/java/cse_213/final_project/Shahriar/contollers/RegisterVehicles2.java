@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class RegisterVehicles
+public class RegisterVehicles2
 {
     @javafx.fxml.FXML
     private Label filelablefxid;

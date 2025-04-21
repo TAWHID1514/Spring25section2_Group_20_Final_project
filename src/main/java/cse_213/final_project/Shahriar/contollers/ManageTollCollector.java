@@ -2,32 +2,42 @@ package cse_213.final_project.Shahriar.contollers;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+
+import java.awt.*;
 
 public class ManageTollCollector
 {
     @javafx.fxml.FXML
-    private TextField Namefield;
+    private Label manageTollCollectorfxid;
     @javafx.fxml.FXML
-    private ComboBox rolebox;
+    private ComboBox selectLanecombobox;
     @javafx.fxml.FXML
-    private TableView collectorTable;
+    private TextField collectorNamefxid;
     @javafx.fxml.FXML
-    private TableColumn namecolum;
+    private TableColumn selectlanecolum;
     @javafx.fxml.FXML
-    private TableColumn rolecolum;
+    private TableColumn collectNamecolum;
+    @javafx.fxml.FXML
+    private ComboBox selectRolecombobox;
+    @javafx.fxml.FXML
+    private TableColumn selectRollcolum;
+    @javafx.fxml.FXML
+    private TableView tableview;
+    @javafx.fxml.FXML
+    private TextField labelStatusfixid;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void handleRemoveCollectoronaction(ActionEvent actionEvent) {
+    public void removeCollectorOnaction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleAddCollectoronaction(ActionEvent actionEvent) {
+    public void addcollectorOnaction(ActionEvent actionEvent) {
     }
 }

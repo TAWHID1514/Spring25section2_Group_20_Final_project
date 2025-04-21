@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.AnnouncementController">
+   <children>
+      <Label fx:id="AnnounceementControllerfxid" layoutX="17.0" layoutY="14.0" prefHeight="18.0" prefWidth="144.0" text="AnnouncementController" />
+      <TextField fx:id="titlefxid" layoutX="14.0" layoutY="54.0" text="Title" />
+      <TextArea fx:id="areamessage" layoutX="8.0" layoutY="91.0" prefHeight="46.0" prefWidth="185.0" text="text:" />
+      <ComboBox fx:id="audiencecombobox" layoutX="194.0" layoutY="23.0" prefWidth="150.0" promptText="audience" />
+      <TableView fx:id="tableView" layoutX="200.0" layoutY="54.0" prefHeight="200.0" prefWidth="208.0">
+        <columns>
+          <TableColumn fx:id="titlecolum" prefWidth="75.0" text="title" />
+          <TableColumn fx:id="audiencecolum" prefWidth="75.0" text="audience" />
+            <TableColumn fx:id="datecolum" prefWidth="75.0" text="date" />
+        </columns>
+      </TableView>
+      <Button layoutX="37.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleSendOnaction" text="handleSend" />
+   </children>
+</AnchorPane>

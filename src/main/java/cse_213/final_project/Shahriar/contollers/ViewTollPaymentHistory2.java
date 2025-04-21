@@ -3,7 +3,7 @@ package cse_213.final_project.Shahriar.contollers;
 import javafx.event.*;
 import javafx.scene.control.*;
 
-public class ViewTollPaymentHistory
+public class ViewTollPaymentHistory2
 {
     @javafx.fxml.FXML
     private DatePicker FromDatefxid;
