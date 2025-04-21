@@ -4,16 +4,15 @@ import cse_213.final_project.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 
 public class TollBoothOperatorDashboardFima {
 
 
-
     @FXML
-    private Label TollBoothOperatorDashboardlable;
-
+    private BorderPane DashboardBorderPane_1;
 
     @javafx.fxml.FXML
     public void initialize() {
