@@ -22,15 +22,15 @@ public class G1HandleSecurity
     @javafx.fxml.FXML
     private TableColumn<FlaggedCar, String> reasonCol;
     @javafx.fxml.FXML
-    private TableColumn<FlaggedCar, String> regNoCol;
-    @javafx.fxml.FXML
     private TextField fineAmountField;
     @javafx.fxml.FXML
     private TableColumn<FlaggedCar, String> licenceNoCol;
     @javafx.fxml.FXML
     private DatePicker fineDueDatePicker;
-
+    @javafx.fxml.FXML
+    private TableColumn<FlaggedCar, String> regNoCol;
     private ObservableList<FlaggedCar> flaggedCars = FXCollections.observableArrayList();
+
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -41,6 +41,15 @@ public class G1HandleSecurity
 
         loadFlaggedCars();
         tableView.setItems(flaggedCars);
+    }
+
+    private void readFlaggedCars() {
+        try (ObjectInputStream inputStream= new ObjectInputStream(new FileInputStream("flagged_cars.bin"))) {
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void loadFlaggedCars() {
@@ -96,7 +105,6 @@ public class G1HandleSecurity
         tableView.setItems(filtered);
     }
 
-    @javafx.fxml.FXML
     public void backOA(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("Tawhid/PoliceAuthurity/Dashboard_PA.fxml");
     }

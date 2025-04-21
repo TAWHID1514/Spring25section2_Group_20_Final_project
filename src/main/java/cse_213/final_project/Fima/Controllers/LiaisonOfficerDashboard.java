@@ -4,13 +4,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 
 public class LiaisonOfficerDashboard {
 
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
     }
 
@@ -18,6 +19,7 @@ public class LiaisonOfficerDashboard {
     void CrisisResponseonactionbutton(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Dispatch Maintenance Team.fxml"));
         Node node = fxmlLoader.load() ;
+        BorderPane dashboardBP = new BorderPane();
         dashboardBP.setCenter(node);
 
 
