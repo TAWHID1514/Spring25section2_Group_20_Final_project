@@ -1,75 +1,50 @@
 package cse_213.final_project.Fima.Controllers;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
-public class VehicleInformation {
-
-    @FXML
-    private TableColumn<String, VehicleInformation> Datetablecolumn;
-
-    @FXML
-    private TableColumn<String, VehicleInformation> OwnerNametablecolumn;
-
-    @FXML
-    private TableColumn<String, VehicleInformation> RegNumtablecolumn;
-
-    @FXML
-    private Label Regestrationlable;
-
-    @FXML
-    private TableColumn<String, VehicleInformation> Regestrationtablecolumn;
-
-    @FXML
-    private ComboBox<String> VehicleTollcombobox;
-
-    @FXML
-    private TableColumn<String, VehicleInformation> VehicleTolltablecolumn;
-
-    @FXML
-    private ComboBox<String> VehicleTypecombobox;
-
-    @FXML
-    private TableColumn<String, VehicleInformation> VehicleTypetablecolumn;
-
-    @FXML
-    private RadioButton Yesradiobutton;
-
-    @FXML
-    private DatePicker datedatepicker;
-
-    @FXML
+public class VehicleInformation
+{
+    @javafx.fxml.FXML
+    private ComboBox VehicleTypecombobox;
+    @javafx.fxml.FXML
+    private TableColumn VehicleTypetablecolumn;
+    @javafx.fxml.FXML
+    private TableColumn RegNumtablecolumn;
+    @javafx.fxml.FXML
     private RadioButton noradiobutton;
-
-    @FXML
-    private TextField ownernametextfield;
-
-    @FXML
+    @javafx.fxml.FXML
+    private ComboBox VehicleTollcombobox;
+    @javafx.fxml.FXML
     private TextField regnumtextfield;
-
-    @FXML
-    private TableView<VehicleInformation> tableview;
-
+    @javafx.fxml.FXML
+    private TableColumn OwnerNametablecolumn;
+    @javafx.fxml.FXML
+    private RadioButton Yesradiobutton;
+    @javafx.fxml.FXML
+    private TableColumn Regestrationtablecolumn;
+    @javafx.fxml.FXML
+    private TableColumn Datetablecolumn;
+    @javafx.fxml.FXML
+    private DatePicker datedatepicker;
+    @javafx.fxml.FXML
+    private TextField ownernametextfield;
+    @javafx.fxml.FXML
+    private Label Regestrationlable;
+    @javafx.fxml.FXML
+    private TableView tableview;
+    @javafx.fxml.FXML
+    private TableColumn VehicleTolltablecolumn;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @FXML
-    void backOnActionButton(ActionEvent event) {
-
+    @javafx.fxml.FXML
+    public void backOnActionButton(ActionEvent actionEvent) {
     }
 
-    @FXML
-    void saveOnActionButton(ActionEvent event) {
-
+    @javafx.fxml.FXML
+    public void saveOnActionButton(ActionEvent actionEvent) {
     }
-
 }
