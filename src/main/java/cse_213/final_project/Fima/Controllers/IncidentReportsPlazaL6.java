@@ -52,6 +52,7 @@ public class IncidentReportsPlazaL6 {
     @FXML
     void Submitonactionbutton(ActionEvent event) {
 
+
     }
 
     @FXML
