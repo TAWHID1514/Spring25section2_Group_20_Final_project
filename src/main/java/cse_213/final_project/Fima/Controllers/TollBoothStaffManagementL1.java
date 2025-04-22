@@ -1,13 +1,20 @@
 package cse_213.final_project.Fima.Controllers;
 
+import cse_213.final_project.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class TollBoothStaffManagementL1 {
 
@@ -37,15 +44,7 @@ public class TollBoothStaffManagementL1 {
 
 
     @javafx.fxml.FXML
-    public void initialize() {
-
-
-    }
-
-    @FXML
-    void homeonactionbutton(ActionEvent event) {
-
-        SendingDepertmentcombobox.getItems().addAll("HR","SOFTWARE","MAINTENENCE");
+    public void initialize() {SendingDepertmentcombobox.getItems().addAll("HR","SOFTWARE","MAINTENENCE");
 
 
 
@@ -53,6 +52,21 @@ public class TollBoothStaffManagementL1 {
         StaffNametablecolumn.setCellValueFactory(new PropertyValueFactory<String,TollBoothStaffManagementL1>("Staff Name"));
         StaffIDtablecloumn.setCellValueFactory(new PropertyValueFactory<String,TollBoothStaffManagementL1>("Staff ID"));
         SendingDepertmenttablecloumn.setCellValueFactory(new PropertyValueFactory<String,TollBoothStaffManagementL1>(" Sending Depertment "));
+
+
+
+    }
+
+    @FXML
+    void homeonactionbutton(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LiaisonOfficer_Dashboard_V2.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setTitle("Hello");
+        stage.setScene(scene);
+        stage.show();
+
 
 
     }

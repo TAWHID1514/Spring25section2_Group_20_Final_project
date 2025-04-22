@@ -1,7 +1,14 @@
 package cse_213.final_project.Fima.Controllers;
 
+import cse_213.final_project.HelloApplication;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class VehicleInformation
 {
@@ -41,7 +48,14 @@ public class VehicleInformation
     }
 
     @javafx.fxml.FXML
-    public void backOnActionButton(ActionEvent actionEvent) {
+    public void backOnActionButton(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("TollBoothOperator_Dashboard_V1.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) (((Node) actionEvent.getSource()).getScene().getWindow());
+        stage.setTitle("Hello");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @javafx.fxml.FXML
