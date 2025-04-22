@@ -11,7 +11,6 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.TollCollectionReport">
    <children>
       <Label fx:id="tollcollectionReportfxid" layoutX="32.0" layoutY="14.0" prefHeight="18.0" prefWidth="125.0" text="toll collection Report" />
@@ -36,5 +35,6 @@
       </BarChart>
       <Button layoutX="69.0" layoutY="291.0" mnemonicParsing="false" onAction="#exportaspdfOnacttion" prefHeight="26.0" prefWidth="106.0" text="export as pdf" />
       <Button layoutX="224.0" layoutY="291.0" mnemonicParsing="false" onAction="#excellaspdfonaction" text="excell as pdf" />
+      <Button layoutX="254.0" layoutY="361.0" mnemonicParsing="false" onAction="#homeOnaction" text="Home" />
    </children>
 </AnchorPane>

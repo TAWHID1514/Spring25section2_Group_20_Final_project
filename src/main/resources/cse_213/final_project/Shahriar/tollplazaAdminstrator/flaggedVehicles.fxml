@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.FlaggedVehicles">
    <children>
       <Label fx:id="Flaggedvehiclesfxid" layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="94.0" text="FlaggedVehicles" />
@@ -27,5 +26,6 @@
       <Button layoutX="57.0" layoutY="253.0" mnemonicParsing="false" onAction="#confirmedFlagOnaction" text="confirmedFlag" />
       <Button layoutX="194.0" layoutY="253.0" mnemonicParsing="false" onAction="#removeFlagOnaction" text="RemoveFlag" />
       <Button layoutX="320.0" layoutY="252.0" mnemonicParsing="false" onAction="#forwardtoflagOnaction" prefHeight="26.0" prefWidth="115.0" text="Forward To police" />
+      <Button layoutX="497.0" layoutY="352.0" mnemonicParsing="false" onAction="#backOnaction" text="back" />
    </children>
 </AnchorPane>

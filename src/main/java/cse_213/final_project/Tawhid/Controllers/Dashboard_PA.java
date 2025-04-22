@@ -6,7 +6,7 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
-public class Dashboard_PA
+public class  Dashboard_PA
 {
     @javafx.fxml.FXML
     private AnchorPane PoliceAuthurityAP;

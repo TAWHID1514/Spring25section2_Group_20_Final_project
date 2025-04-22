@@ -8,7 +8,7 @@ public class Announcement {
     private String Audience;
     private LocalDateTime Date;
 
-    public Announcement(String title, String messageArea, String audience, LocalDateTime date) {
+    public Announcement(String title, String messageArea, String audience, String date) {
         this.title = title;
         this.messageArea = messageArea;
         Audience = audience;

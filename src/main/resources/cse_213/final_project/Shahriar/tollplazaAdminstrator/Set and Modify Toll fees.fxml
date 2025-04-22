@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse_213.final_project.Shahriar.contollers.SetAndModifyTollFees">
    <children>
       <Label fx:id="setMOdifyTollFeesfxid" layoutX="36.0" layoutY="22.0" prefHeight="18.0" prefWidth="148.0" text="Set and Modify Toll fees" />
@@ -16,5 +15,6 @@
       <Button layoutX="27.0" layoutY="153.0" mnemonicParsing="false" onAction="#updateTollRateonaction" prefHeight="26.0" prefWidth="98.0" text="updateTollrate" />
       <Label fx:id="labelStatusfxid" layoutX="36.0" layoutY="200.0" prefHeight="18.0" prefWidth="111.0" text="labelstatus" />
       <DatePicker fx:id="datepicker" layoutX="22.0" layoutY="47.0" promptText="date:" />
+      <Button layoutX="27.0" layoutY="241.0" mnemonicParsing="false" onAction="#homeOnaction" text="home" />
    </children>
 </AnchorPane>
