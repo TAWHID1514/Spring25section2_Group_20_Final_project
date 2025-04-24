@@ -22,6 +22,7 @@ public class CrisisResponseCoordinationL8 {
 
     @javafx.fxml.FXML
     public void initialize() {
+
     }
 
     @FXML
@@ -38,6 +39,8 @@ public class CrisisResponseCoordinationL8 {
 
     @FXML
     void submitonactionbutton(ActionEvent event) {
+        Situationdetailstextarea.getText();
+
 
     }
 

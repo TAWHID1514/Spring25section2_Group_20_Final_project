@@ -58,10 +58,16 @@ public class PaymentRetry {
     @FXML
     private TableColumn<String, PaymentRetry> VehicleTypeTABLECOLUMN;
 
+    ArrayList<PaymentRetry> paymentRetryList;
+    ToggleGroup tg;
+
 
 
     @javafx.fxml.FXML
     public void initialize() {
+        tg = new ToggleGroup();
+        PaymentIssueRADIOBUTTON.setToggleGroup(tg);
+        VehicleIssueRADIOBUTTON.setToggleGroup(tg);
 
 
         VehicleTypeCOMBOBOX.getItems().addAll("BUS","TRUCK","BIKE","MICROBUS");
@@ -74,14 +80,7 @@ public class PaymentRetry {
         BoothOperatorNameTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Booth Operator Name"));
 
 
-        ArrayList<PaymentRetry> paymentRetryList;
-        ToggleGroup tg;
 
-        String IssueType="";
-        if(PaymentIssueRADIOBUTTON.isSelected())
-            IssueType="paymentissue";
-        else if (VehicleIssueRADIOBUTTON.isSelected())
-            IssueType="vehicleissue";
 
 
     }
@@ -100,6 +99,26 @@ public class PaymentRetry {
 
     @FXML
     void SUBMITONACTIONBUTTON(ActionEvent event) {
+
+
+        String IssueType="";
+        if(PaymentIssueRADIOBUTTON.isSelected())
+            IssueType="paymentissue";
+        else if (VehicleIssueRADIOBUTTON.isSelected())
+            IssueType="vehicleissue";
+
+
+        Integer.parseInt(TOLLBOOTHNUMBERTEXTFIELD.getText());
+
+        VehicleTypeCOMBOBOX.getValue();
+        Integer.parseInt(REGNUMBERTEXTFIELD.getText());
+        Integer.parseInt(TOLLBOOTHNUMBERTEXTFIELD.getText());
+        BOOTHOPERATORNAMETEXTFIELD.getText();
+
+
+
+
+
 
     }
 
