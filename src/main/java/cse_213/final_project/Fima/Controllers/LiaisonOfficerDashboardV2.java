@@ -7,8 +7,8 @@ import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 
-public class LiaisonOfficerDashboardV2
-{
+public class LiaisonOfficerDashboardV2 {
+
     @javafx.fxml.FXML
     private BorderPane DashboardBorderPane;
 
