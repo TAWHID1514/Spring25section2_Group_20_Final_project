@@ -45,8 +45,16 @@ public class SystemFailures {
     @FXML
     private RadioButton yesradiobutton;
 
+    ArrayList<SystemFailures> systemFailuresArrayList;
+    ToggleGroup tg;
+
     @javafx.fxml.FXML
     public void initialize() {
+
+
+        tg = new ToggleGroup();
+        yesradiobutton.setToggleGroup(tg);
+        noradiobutton.setToggleGroup(tg);
 
         BoothNocombobox.getItems().addAll("1","2","3","4","5","6");
         IssueTypecombobox.getItems().addAll("TECHNICALISSUE","MAINTENANCEISSUE","SOFTWAREISSUE");
@@ -61,14 +69,7 @@ public class SystemFailures {
         Prioritytablecolumn.setCellValueFactory(new PropertyValueFactory<String,SystemFailures>("Priority"));
 
 
-        ArrayList<SystemFailures> systemFailuresArrayList;
-        ToggleGroup tg;
 
-        String Priority="";
-        if(yesradiobutton.isSelected())
-            Priority="Yes";
-        else if (noradiobutton.isSelected())
-            Priority="No";
 
 
 
@@ -91,6 +92,13 @@ public class SystemFailures {
 
     @FXML
     void submitonactionbutton(ActionEvent event) {
+
+        String Priority="";
+        if(yesradiobutton.isSelected())
+            Priority="Yes";
+        else if (noradiobutton.isSelected())
+            Priority="No";
+
 
 
 
