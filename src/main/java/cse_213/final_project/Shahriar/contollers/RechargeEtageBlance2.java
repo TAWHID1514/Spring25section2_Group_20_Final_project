@@ -7,6 +7,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class RechargeEtageBlance2 {
 
     @FXML

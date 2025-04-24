@@ -1,5 +1,6 @@
 package cse_213.final_project.Shahriar.contollers;
 
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.*;
 import javafx.fxml.FXML;
@@ -8,7 +9,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+
+import java.time.LocalDate;
+
 
 public class ViewTollPaymentHistory2 {
 
@@ -48,11 +53,11 @@ public class ViewTollPaymentHistory2 {
         tablefxid.setItems(allRecords);
 
         // Sample data
-        allRecords.addAll(
-                new PaymentRecord("Tawhid Bin Moslim", "Car", "200.00", "2025-04-15"),
-                new PaymentRecord("Tawhid Bin Moslim", "Car", "300.00", "2025-04-18"),
-                new PaymentRecord("Tawhid Bin Moslim", "Truck", "600.00", "2025-04-20")
-        );
+        boolean addAll;
+        if (allRecords.addAll(
+                new Object[]{new PaymentRecord("Tawhid Bin Moslim", "Car", "200.00", "2025-04-15"), new PaymentRecord("Tawhid Bin Moslim", "Car", "300.00", "2025-04-18"), new PaymentRecord("Tawhid Bin Moslim", "Truck", "600.00", "2025-04-20")}))
+            addAll = true;
+        else addAll = false;
     }
 
     @FXML
@@ -66,8 +71,8 @@ public class ViewTollPaymentHistory2 {
         }
 
         ObservableList<Object> filtered = FXCollections.observableArrayList();
-        for (PaymentRecord record : allRecords) {
-            LocalDate recordDate = LocalDate.parse(record.getDate());
+        for (Object record : allRecords) {
+            LocalDate recordDate = LocalDate.parse(messageLabelfxid.getText());
             if ((recordDate.isEqual(from) || recordDate.isAfter(from)) &&
                     (recordDate.isEqual(to) || recordDate.isBefore(to))) {
                 filtered.add(record);
@@ -78,7 +83,7 @@ public class ViewTollPaymentHistory2 {
         messageLabelfxid.setText(filtered.isEmpty() ? "No records found." : "Showing results...");
 
         if (!filtered.isEmpty()) {
-            PaymentRecord first = filtered.get(0);
+            Object first = filtered.get(0);
             Namefxid.setText(String.valueOf(first.getClass()));
             Vehiclesfxid.setText(String.valueOf(first.getClass()));
             Amountfxid.setText(String.valueOf(first.getClass()));

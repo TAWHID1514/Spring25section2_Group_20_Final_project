@@ -13,6 +13,9 @@ import java.io.IOException;
 
 public class DashboardShahriar
 {
+    @javafx.fxml.FXML
+    private Label tollPlazaAdminstratorfxid;
+
     // Helper method for scene switching
     private void switchScene(ActionEvent event, String fxmlFile) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/view/" + fxmlFile));
@@ -23,28 +26,25 @@ public class DashboardShahriar
 
 
     @javafx.fxml.FXML
-    private Label Tollplaza;
-
-    @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleFlaggedVehicles(ActionEvent actionEvent) throws IOException {
         switchScene(actionEvent, "flagged_vehicles.fxml");//goal5
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleLanePerformance(ActionEvent actionEvent) throws IOException {
         switchScene(actionEvent, "lane_performance.fxml");//goal3
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleSetTollFees(ActionEvent actionEvent) throws IOException {
         switchScene(actionEvent, "set_toll_fee.fxml");//goal1
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleUpdateTollFees(ActionEvent actionEvent) throws IOException {
         switchScene(actionEvent, "update_toll_fee.fxml");//goal2
     }
@@ -53,26 +53,58 @@ public class DashboardShahriar
     public void logoutonaction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleRevenueReport(ActionEvent actionEvent) throws IOException {
         switchScene(actionEvent, "revenue_report.fxml");//goal4
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleAnnouncements(ActionEvent actionEvent) throws IOException {
         switchScene(actionEvent, "announcement_dashboard.fxml");//goal8
 
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleSystemHealth(ActionEvent actionEvent) throws IOException {
         switchScene(actionEvent, "system_health.fxml");//goal7
     }
 
 
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleTollTrafficReports(ActionEvent actionEvent) throws IOException {
         switchScene(actionEvent, "toll_traffic_report.fxml");//goal6
+    }
+
+    @javafx.fxml.FXML
+    public void LanePerformanceDashboardOnaction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void maintenanceSecheduleOnaction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void managrtollCollectorsOnaction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ShiftScheduleManagementOnaction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void RevenueReportonaction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void FlaggedVehiclesOnaction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void VehiclesStatisticsOnaction(Event event) {
+    }
+
+    @javafx.fxml.FXML
+    public void tollratemangamentOnaction(ActionEvent actionEvent) {
     }
 }

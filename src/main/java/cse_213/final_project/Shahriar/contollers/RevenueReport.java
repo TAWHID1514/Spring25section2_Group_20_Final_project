@@ -18,6 +18,8 @@ import javafx.stage.Stage;
 import java.awt.*;
 import java.time.LocalDate;
 
+
+
 public class RevenueReport<RevenueEntry> {
 
     @FXML
@@ -75,7 +77,7 @@ public class RevenueReport<RevenueEntry> {
             double amount = Double.parseDouble(amountStr);
             double total = count * amount;
 
-            RevenueEntry entry = new RevenueEntry(type, countStr, amountStr, date.toString(), String.valueOf(total));
+            rebenueentry entry = new rebenueentry(type, countStr, amountStr, date.toString(), String.valueOf(total));
             reportData.add(entry);
 
             revenuereportfxid.setText("Report added. (Simulated download)");

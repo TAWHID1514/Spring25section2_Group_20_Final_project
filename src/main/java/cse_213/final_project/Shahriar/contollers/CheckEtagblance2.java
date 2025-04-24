@@ -46,9 +46,9 @@ public class CheckEtagblance2 {
             textareafxid.setText("Active account. Last top-up: 15 April 2025.");
             checkEtagblancefxid.setText("E-Tag Balance Retrieved.");
         } else {
-            namefxid.clear();
-            Blancefxid.clear();
-            textareafxid.clear();
+            namefxid.getColumns();
+            Blancefxid.getColumns();
+            textareafxid.getColumns();
             checkEtagblancefxid.setText("E-Tag not found.");
         }
     }

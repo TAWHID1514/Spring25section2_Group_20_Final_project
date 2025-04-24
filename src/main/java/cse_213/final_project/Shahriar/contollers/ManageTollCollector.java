@@ -1,5 +1,7 @@
 package cse_213.final_project.Shahriar.contollers;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,10 +12,17 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.awt.*;
+import java.util.Set;
+import java.util.function.BiConsumer;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collector;
+
 
 public class ManageTollCollector {
 
@@ -63,11 +72,36 @@ public class ManageTollCollector {
             return;
         }
 
-        Collector collector = new Collector(name, lane, role);
+        Collector collector = new Collector() {
+            @Override
+            public Supplier supplier() {
+                return null;
+            }
+
+            @Override
+            public BiConsumer accumulator() {
+                return null;
+            }
+
+            @Override
+            public BinaryOperator combiner() {
+                return null;
+            }
+
+            @Override
+            public Function finisher() {
+                return null;
+            }
+
+            @Override
+            public Set<Characteristics> characteristics() {
+                return Set.of();
+            }
+        };
         collectorList.add(collector);
         labelStatusfixid.setText("Collector added successfully.");
 
-        collectorNamefxid.clear();
+
         selectLanecombobox.getSelectionModel().clearSelection();
         selectRolecombobox.getSelectionModel().clearSelection();
     }

@@ -2,9 +2,7 @@ package cse_213.final_project.Shahriar.contollers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.chart.BarChart;
-import javafx.scene.chart.LineChart;
-import javafx.scene.chart.XYChart;
+import javafx.scene.chart.*;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;

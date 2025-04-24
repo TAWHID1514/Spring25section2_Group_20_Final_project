@@ -6,6 +6,10 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class PayTollBooth2 {
 
     @FXML
@@ -24,6 +28,7 @@ public class PayTollBooth2 {
     private Label PayTollBoothfxid;
 
     private Map<String, Double> tollRates;
+    private String motorcycle;
 
     @FXML
     public void initialize() {
@@ -32,23 +37,23 @@ public class PayTollBooth2 {
 
         // Simulated toll rates (could come from a database or admin config)
         tollRates = new HashMap<>();
-        tollRates.put("Car", 50.0);
-        tollRates.put("Truck", 100.0);
-        tollRates.put("Bus", 80.0);
-        tollRates.put("Motorcycle", 30.0);
+        tollRates("Car", 50.0);
+        tollRates("Truck", 100.0);
+        tollRates("Bus", 80.0);
+        tollRates("Motorcycle", 30.0);
+    }
+
+    private void tollRates(String motorcycle, double v) {
+        this.motorcycle = motorcycle;
     }
 
     @FXML
     public void CalculateOnaction(ActionEvent actionEvent) {
         String selectedType = vehiclesTypecombox.getValue();
-        if (selectedType != null && tollRates.containsKey(selectedType)) {
-            double amount = tollRates.get(selectedType);
-            TollAmountLabelfxid.setText("Tk " + amount);
-            PaymentStatusfxid.setText("");
-        } else {
-            TollAmountLabelfxid.setText("N/A");
-            PaymentStatusfxid.setText("Please select a valid vehicle type.");
-        }
+        String selectedType2 = selectedType;
+        TollAmountLabelfxid.setText("""
+                N/A""");
+        PaymentStatusfxid.setText("Please select a valid vehicle type.");
     }
 
     @FXML
@@ -63,7 +68,7 @@ public class PayTollBooth2 {
 
         // Simulate tag validation and balance check (can be replaced with DB logic)
         boolean isTagValid = tagId.startsWith("ET"); // basic validation
-        double toll = tollRates.getOrDefault(selectedType, 0.0);
+        tollRate toll = new tollRate(getClass());
 
         if (isTagValid) {
             // Simulate successful payment

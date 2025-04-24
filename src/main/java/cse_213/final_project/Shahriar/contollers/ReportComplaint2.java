@@ -7,6 +7,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 
+import java.io.File;
+
+
 public class ReportComplaint2 {
 
     @FXML

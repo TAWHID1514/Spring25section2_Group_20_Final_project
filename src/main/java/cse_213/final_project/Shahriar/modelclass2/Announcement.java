@@ -1,12 +1,10 @@
 package cse_213.final_project.Shahriar.modelclass2;
 
-import java.time.LocalDateTime;
-
 public class Announcement {
     private String title;
     private String messageArea;
     private String Audience;
-    private LocalDateTime Date;
+    private String Date;
 
     public Announcement(String title, String messageArea, String audience, String date) {
         this.title = title;
@@ -39,11 +37,11 @@ public class Announcement {
         Audience = audience;
     }
 
-    public LocalDateTime getDate() {
+    public String getDate() {
         return Date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(String date) {
         Date = date;
     }
 
