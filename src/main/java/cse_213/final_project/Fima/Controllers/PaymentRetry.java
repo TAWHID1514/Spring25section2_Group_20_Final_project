@@ -73,7 +73,7 @@ public class PaymentRetry {
         VehicleTypeCOMBOBOX.getItems().addAll("BUS","TRUCK","BIKE","MICROBUS");
 
 
-        IssueTypeTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Issue Type"));
+        IssueTypeTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Issue Tupe"));
         VehicleTypeTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Vehicle Type"));
         RegNumTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>(" Reg Num"));
         TollBoothNumberTABLECOLUMN.setCellValueFactory(new PropertyValueFactory<String,PaymentRetry>("Toll Booth Number"));

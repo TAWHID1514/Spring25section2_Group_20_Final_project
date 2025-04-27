@@ -44,13 +44,27 @@ public class ShiftAttendance
     private TextField OPERATORNAMETEXTFIELD;
     @javafx.fxml.FXML
     private DatePicker DATEDATEPICKER;
+    ToggleGroup tg;
 
     @javafx.fxml.FXML
     public void initialize() {
+        tg = new ToggleGroup();
+        NIGHTRADIOBUTTON.setToggleGroup(tg);
+        DAYRADIOBUTTON.setToggleGroup(tg);
+
+
+
+
+
     }
 
     @javafx.fxml.FXML
     public void SUBMITONACTIONBUTTON(ActionEvent actionEvent) {
+        String Shift="";
+        if(NIGHTRADIOBUTTON.isSelected())
+            Shift ="Night";
+        else if (DAYRADIOBUTTON.isSelected())
+            Shift="Day";
     }
 
     @javafx.fxml.FXML

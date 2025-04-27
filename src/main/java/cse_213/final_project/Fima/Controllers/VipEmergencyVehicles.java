@@ -6,15 +6,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class VipEmergencyVehicles {
 
@@ -50,13 +46,25 @@ public class VipEmergencyVehicles {
 
     @FXML
     private RadioButton yesradiobutton;
+    ArrayList<VipEmergencyVehicles> vipEmergencyVehiclesArrayList;
+    ToggleGroup tg;
 
     @javafx.fxml.FXML
     public void initialize() {
+        tg = new ToggleGroup();
+        yesradiobutton.setToggleGroup(tg);
+        noradiobutton.setToggleGroup(tg);
+
     }
 
     @FXML
     void generateOnActionButton(ActionEvent event) {
+
+        String Priority="";
+        if(yesradiobutton.isSelected())
+            Priority="Yes";
+        else if (noradiobutton.isSelected())
+            Priority="No";
 
     }
 

@@ -34,17 +34,18 @@ public class StaffMeetingsBriefingsL5
     @javafx.fxml.FXML
     private TextArea MeetingInfotextarea;
 
+    ArrayList<StaffMeetingsBriefingsL5> staffMeetingsBriefingsL5ArrayList;
+    ToggleGroup tg;
+
     @javafx.fxml.FXML
     public void initialize() {
 
-        ArrayList<StaffMeetingsBriefingsL5> staffMeetingsBriefingsL5ArrayList;
-        ToggleGroup tg;
 
-        String StaffAttendees="";
-        if(StaffAttendeesyesradiobutton.isSelected())
-            StaffAttendees="Yes";
-        else if (StaffAttendeesnoradiobutton.isSelected())
-            StaffAttendees="No";
+       tg = new ToggleGroup();
+       StaffAttendeesyesradiobutton.setToggleGroup(tg);
+       StaffAttendeesnoradiobutton.setToggleGroup(tg);
+
+
     }
 
     @javafx.fxml.FXML
@@ -60,5 +61,12 @@ public class StaffMeetingsBriefingsL5
 
     @javafx.fxml.FXML
     public void submitonactionbutton(ActionEvent actionEvent) {
+
+
+        String StaffAttendees="";
+        if(StaffAttendeesyesradiobutton.isSelected())
+            StaffAttendees="Yes";
+        else if (StaffAttendeesnoradiobutton.isSelected())
+            StaffAttendees="No";
     }
 }

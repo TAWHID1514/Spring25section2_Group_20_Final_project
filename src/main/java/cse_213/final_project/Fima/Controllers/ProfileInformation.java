@@ -59,19 +59,21 @@ public class ProfileInformation {
     @FXML
     private DatePicker dateofbirthdatepicker;
 
+    ArrayList<ProfileInformation> profileInformationArrayList;
+    ToggleGroup tg;
+
+
 
     @javafx.fxml.FXML
     public void initialize() {
 
 
-        ArrayList<ProfileInformation> profileInformationArrayList;
-        ToggleGroup tg;
+       tg = new ToggleGroup();
+        MALERADIOBUTTON.setToggleGroup(tg);
+        FemaleRADIOBUTTON.setToggleGroup(tg);
 
-        String gender="";
-        if(MALERADIOBUTTON.isSelected())
-            gender="Male";
-        else if (FemaleRADIOBUTTON.isSelected())
-            gender="Female";
+
+
 
 
 
@@ -91,6 +93,14 @@ public class ProfileInformation {
 
     @FXML
     void SUBMITONACTIONBUTTON(ActionEvent event) {
+        String gender="";
+        if(MALERADIOBUTTON.isSelected())
+            gender="Male";
+        else if (FemaleRADIOBUTTON.isSelected())
+            gender="Female";
+
+
+
 
     }
 

@@ -9,6 +9,7 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class VehicleInformation
 {
@@ -42,9 +43,15 @@ public class VehicleInformation
     private TableView tableview;
     @javafx.fxml.FXML
     private TableColumn VehicleTolltablecolumn;
+    ArrayList<VehicleInformation> vehicleInformationArrayList;
+    ToggleGroup tg;
 
     @javafx.fxml.FXML
     public void initialize() {
+        tg = new ToggleGroup();
+        noradiobutton.setToggleGroup(tg);
+        Yesradiobutton.setToggleGroup(tg);
+
     }
 
     @javafx.fxml.FXML
@@ -60,5 +67,11 @@ public class VehicleInformation
 
     @javafx.fxml.FXML
     public void saveOnActionButton(ActionEvent actionEvent) {
+
+        String Regestration="";
+        if(noradiobutton.isSelected())
+            Regestration="Yes";
+        else if (Yesradiobutton.isSelected())
+            Regestration="No";
     }
 }
