@@ -62,7 +62,7 @@ public class LoginFXMLController
             SceneSwitcher.switchTo("Tawhid/PoliceAuthurity/Dashboard_PA.fxml");
         }
         if ((UsertypeCB.getValue().equals("LiaisonOfficerDashboardV2"))){
-            SceneSwitcher.switchTo("Fima/LiaisonOfficer_Dashboard_V2.fxml");
+            SceneSwitcher.switchTo("Fima/LiaisonOfficer/LiaisonOfficer_Dashboard_V2.fxml");
         }
         if ((UsertypeCB.getValue().equals("TollBoothOperatorDashboardFima"))){
             SceneSwitcher.switchTo("TollBoothOperatorDashboard.fxml");
